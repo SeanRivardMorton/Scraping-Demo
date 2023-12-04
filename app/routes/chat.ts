@@ -16,6 +16,7 @@ router.post("/drift", async (req, res) => {
 });
 
 // supports a query parameter to find a specific company.
+// example: /chat/find?companyName=absolute
 router.post("/find", async (req: FindRequest, res) => {
   const { companyName } = req.query;
 

@@ -10,14 +10,17 @@ const findCompanyChatProviders = async (search?: string) => {
     search ? file.includes(search) : true
   );
 
-  const allData = Promise.all(
+  const allData = await Promise.all(
     filtered.map(async (file: string) => {
       const html = await readFile(`${BASE_PATH}/${file}`);
       return await parseHTML(html, file);
     })
   );
 
-  return await allData;
+  const driftCount = allData.filter((data) => data.hasDrift).length;
+  const salesForceCount = allData.filter((data) => data.hasSalesForce).length;
+
+  return await { allData, total: allData.length, driftCount, salesForceCount };
 };
 
 const readDirectory = async () => {
