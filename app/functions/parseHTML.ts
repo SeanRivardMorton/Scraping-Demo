@@ -60,7 +60,20 @@ const containsKeywords = (html: string, selector: string) => {
 const prefixWithHttps = (url: string) =>
   url.includes("http") ? url : `https://${url}`;
 
-export const parseHTML = async (html: string, fileName: string) => {
+export type ParsedHTML = {
+  companyName: string;
+  companyUrl: string;
+  hasDrift: boolean;
+  hasSalesForce: boolean;
+  hasLiveChatInc: boolean;
+  hasHubSpot: boolean;
+  chatProvider: ChatProvider;
+};
+
+export const parseHTML = async (
+  html: string,
+  fileName: string
+): Promise<ParsedHTML> => {
   const hasDriftCached = containsKeywords(html, DRIFT_CHAT_SELECTOR);
   const hasSalesForceCached = containsKeywords(html, SALESFORCE_CHAT_SELECTOR);
 
@@ -69,10 +82,6 @@ export const parseHTML = async (html: string, fileName: string) => {
   const companyName = metaData.companyName || fileName.split(".")[0];
   const companyUrl =
     metaData.companyUrl || prefixWithHttps(fileName.split(".")[0] + ".com");
-
-  console.log("** Company Name: ", companyName);
-  console.log("** Company Url: ", companyUrl);
-  console.log(" ");
 
   const { hasDrift, hasSalesForce, hasLiveChatInc, hasHubSpot } =
     (!hasDriftCached || !hasSalesForceCached) && companyUrl
@@ -106,6 +115,7 @@ export const parseHTML = async (html: string, fileName: string) => {
 
   return {
     companyName: companyName || fileName,
+    companyUrl,
     hasDrift: definitelyHasDrift,
     hasSalesForce,
     hasLiveChatInc,

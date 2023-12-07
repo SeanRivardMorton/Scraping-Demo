@@ -1,8 +1,24 @@
 import { BASE_PATH } from "../constants";
 import { writeFileAsync } from "../crawler/helpers";
-import { parseHTML, readFile } from "./parseHTML";
+import { ParsedHTML, parseHTML, readFile } from "./parseHTML";
 import * as fs from "fs";
 import * as path from "path";
+
+// 6 is a nice round number
+export const CHUNK_SIZE = 6;
+
+const chunkFiles = (arr: any[], chunkSize: number) => {
+  const chunks = [];
+  for (let i = 0; i < arr.length; i += chunkSize) {
+    const chunk = arr.slice(i, i + chunkSize);
+    chunks.push(chunk);
+  }
+  return chunks;
+};
+
+const process = async (arr: any[], fn: any) => {
+  return await Promise.all(arr.map(fn));
+};
 
 const findCompanyChatProviders = async (search?: string) => {
   const localFiles = await readDirectory();
@@ -11,23 +27,24 @@ const findCompanyChatProviders = async (search?: string) => {
     search ? file.includes(search) : true
   );
 
-  const allData = [];
-  let companyCount = 0;
+  // chunk the files into batches, so we can move faster
+  // than one at a time, but not run out of memory.
+  const chunks = chunkFiles(filtered, CHUNK_SIZE);
 
-  // split the files of filtered into two arraya
+  const allData: ParsedHTML[] = [];
 
-  // iterate over files in data directory
-  for (const file of filtered) {
-    console.log(" ");
-    console.log("------------ Crawling: ", file, "--------------");
-
-    const html = await readFile(`${BASE_PATH}/${file}`);
-    const parsed = await parseHTML(html, file);
-    allData.push(parsed);
-
-    companyCount += 1;
-    console.log(`** ${companyCount} of ${filtered.length} companies crawled`);
+  let chunkCount = 0;
+  for (const chunk of chunks) {
+    await process(chunk, async (file: string) => {
+      const html = await readFile(`${BASE_PATH}/${file}`);
+      const parsed = await parseHTML(html, file);
+      allData.push(parsed);
+      chunkCount++;
+      console.log(`** Chunk ${chunkCount} of ${filtered.length} completed.`);
+    });
   }
+
+  console.log(allData);
 
   const driftCount = allData.filter((data) => data.hasDrift).length;
   const salesForceCount = allData.filter((data) => data.hasSalesForce).length;

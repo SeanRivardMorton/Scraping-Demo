@@ -64,7 +64,7 @@ export const simulateNormalMovement = async (
   target = "body"
 ) => {
   try {
-    await page.waitForSelector(target, { timeout: 500 });
+    await page.waitForSelector(target, { timeout: 2000 });
     await cursor.move(target);
   } catch (e) {
     logger(`Couldn't find ${target} on page`);

@@ -1,0 +1,909 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1">
+
+  <!-- Preload global CSS and most-used fonts -->
+  <style type="text/css">:host,:root{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Solid";--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Regular";--fa-font-light:normal 300 1em/1 "Font Awesome 6 Light";--fa-font-thin:normal 100 1em/1 "Font Awesome 6 Thin";--fa-font-duotone:normal 900 1em/1 "Font Awesome 6 Duotone";--fa-font-sharp-solid:normal 900 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-regular:normal 400 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-light:normal 300 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-thin:normal 100 1em/1 "Font Awesome 6 Sharp";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}svg:not(:host).svg-inline--fa,svg:not(:root).svg-inline--fa{overflow:visible;box-sizing:content-box}.svg-inline--fa{display:var(--fa-display,inline-block);height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-2xs{vertical-align:.1em}.svg-inline--fa.fa-xs{vertical-align:0}.svg-inline--fa.fa-sm{vertical-align:-.0714285705em}.svg-inline--fa.fa-lg{vertical-align:-.2em}.svg-inline--fa.fa-xl{vertical-align:-.25em}.svg-inline--fa.fa-2xl{vertical-align:-.3125em}.svg-inline--fa.fa-pull-left{margin-right:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-pull-right{margin-left:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-li{width:var(--fa-li-width,2em);top:.25em}.svg-inline--fa.fa-fw{width:var(--fa-fw-width,1.25em)}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:var(--fa-counter-background-color,#ff253a);border-radius:var(--fa-counter-border-radius,1em);box-sizing:border-box;color:var(--fa-inverse,#fff);line-height:var(--fa-counter-line-height,1);max-width:var(--fa-counter-max-width,5em);min-width:var(--fa-counter-min-width,1.5em);overflow:hidden;padding:var(--fa-counter-padding,.25em .5em);right:var(--fa-right,0);text-overflow:ellipsis;top:var(--fa-top,0);-webkit-transform:scale(var(--fa-counter-scale,.25));transform:scale(var(--fa-counter-scale,.25));-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:var(--fa-bottom,0);right:var(--fa-right,0);top:auto;-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:var(--fa-bottom,0);left:var(--fa-left,0);right:auto;top:auto;-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{top:var(--fa-top,0);right:var(--fa-right,0);-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:var(--fa-left,0);right:auto;top:var(--fa-top,0);-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:top left;transform-origin:top left}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-2xs{font-size:.625em;line-height:.1em;vertical-align:.225em}.fa-xs{font-size:.75em;line-height:.0833333337em;vertical-align:.125em}.fa-sm{font-size:.875em;line-height:.0714285718em;vertical-align:.0535714295em}.fa-lg{font-size:1.25em;line-height:.05em;vertical-align:-.075em}.fa-xl{font-size:1.5em;line-height:.0416666682em;vertical-align:-.125em}.fa-2xl{font-size:2em;line-height:.03125em;vertical-align:-.1875em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:var(--fa-li-margin,2.5em);padding-left:0}.fa-ul>li{position:relative}.fa-li{left:calc(var(--fa-li-width,2em) * -1);position:absolute;text-align:center;width:var(--fa-li-width,2em);line-height:inherit}.fa-border{border-color:var(--fa-border-color,#eee);border-radius:var(--fa-border-radius,.1em);border-style:var(--fa-border-style,solid);border-width:var(--fa-border-width,.08em);padding:var(--fa-border-padding,.2em .25em .15em)}.fa-pull-left{float:left;margin-right:var(--fa-pull-margin,.3em)}.fa-pull-right{float:right;margin-left:var(--fa-pull-margin,.3em)}.fa-beat{-webkit-animation-name:fa-beat;animation-name:fa-beat;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-bounce{-webkit-animation-name:fa-bounce;animation-name:fa-bounce;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1))}.fa-fade{-webkit-animation-name:fa-fade;animation-name:fa-fade;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-beat-fade{-webkit-animation-name:fa-beat-fade;animation-name:fa-beat-fade;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-flip{-webkit-animation-name:fa-flip;animation-name:fa-flip;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-shake{-webkit-animation-name:fa-shake;animation-name:fa-shake;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,2s);animation-duration:var(--fa-animation-duration,2s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin-reverse{--fa-animation-direction:reverse}.fa-pulse,.fa-spin-pulse{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,steps(8));animation-timing-function:var(--fa-animation-timing,steps(8))}@media (prefers-reduced-motion:reduce){.fa-beat,.fa-beat-fade,.fa-bounce,.fa-fade,.fa-flip,.fa-pulse,.fa-shake,.fa-spin,.fa-spin-pulse{-webkit-animation-delay:-1ms;animation-delay:-1ms;-webkit-animation-duration:1ms;animation-duration:1ms;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transition-duration:0s;transition-duration:0s}}@-webkit-keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@-webkit-keyframes fa-bounce{0%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}100%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}}@keyframes fa-bounce{0%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}100%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}}@-webkit-keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@-webkit-keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity,.4);-webkit-transform:scale(1);transform:scale(1)}50%{opacity:1;-webkit-transform:scale(var(--fa-beat-fade-scale,1.125));transform:scale(var(--fa-beat-fade-scale,1.125))}}@keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity,.4);-webkit-transform:scale(1);transform:scale(1)}50%{opacity:1;-webkit-transform:scale(var(--fa-beat-fade-scale,1.125));transform:scale(var(--fa-beat-fade-scale,1.125))}}@-webkit-keyframes fa-flip{50%{-webkit-transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg));transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg))}}@keyframes fa-flip{50%{-webkit-transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg));transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg))}}@-webkit-keyframes fa-shake{0%{-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}4%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}24%,8%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}12%,28%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-22deg);transform:rotate(-22deg)}20%{-webkit-transform:rotate(22deg);transform:rotate(22deg)}32%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}36%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}100%,40%{-webkit-transform:rotate(0);transform:rotate(0)}}@keyframes fa-shake{0%{-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}4%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}24%,8%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}12%,28%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-22deg);transform:rotate(-22deg)}20%{-webkit-transform:rotate(22deg);transform:rotate(22deg)}32%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}36%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}100%,40%{-webkit-transform:rotate(0);transform:rotate(0)}}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}.fa-rotate-by{-webkit-transform:rotate(var(--fa-rotate-angle,none));transform:rotate(var(--fa-rotate-angle,none))}.fa-stack{display:inline-block;vertical-align:middle;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0;z-index:var(--fa-stack-z-index,auto)}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:var(--fa-inverse,#fff)}.fa-sr-only,.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.fa-sr-only-focusable:not(:focus),.sr-only-focusable:not(:focus){position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fa-duotone.fa-inverse,.fad.fa-inverse{color:var(--fa-inverse,#fff)}</style><link rel="preload" href="/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/fonts/WorkSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/fonts/WorkSans-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="/css/styles.css?id=2aac0c7d411820dc04aa8a636a6029b3" as="style">
+
+  
+  
+
+    <!-- Site Styling -->
+    <link rel="stylesheet" href="/css/styles.css?id=2aac0c7d411820dc04aa8a636a6029b3">
+
+    <!-- Page Styling -->
+    
+  <link rel="stylesheet" href="/css/homepage.css?id=fbdd2e76773fb3187382a502c9564d08">
+
+
+  
+
+  <!-- Page Title -->
+  <title>
+    
+    
+      
+    
+    Digital Marketing &amp; Growth Marketing Platform | AdRoll
+  </title>
+
+  <!-- meta info -->
+  <meta name="description" content="With AdRoll's AI-driven marketing software, you can get sophisticated audience targeting, cross-channel engagement, advanced measurement and attribution, all in one place. Build a brand customers love, turn more visitors into customers, and grow customer loyalty with AdRoll’s growth platform.">
+
+  
+  
+    <link rel="canonical" href="https://www.adroll.com/">
+  
+
+  <!-- Structured Data -->
+      <!-- Sitewide Schema Structued Data -->
+
+    <!-- Corporation Data -->
+    <script type="text/javascript" data-cfasync="false" charset="UTF-8" async="" src="https://cdn.heapanalytics.com/js/replay/libs/latest/auryc.lib.js"></script><script type="text/javascript" async="" src="https://cdn.heapanalytics.com/js/heap-1766097971.js"></script><script type="text/javascript" src="https://cdn.segment.com/next-integrations/integrations/vendor/commons.c42222c4cb2f8913500f.js.gz" async="" status="loaded"></script><script type="text/javascript" src="https://cdn.segment.com/next-integrations/integrations/heap/2.1.2/heap.dynamic.js.gz" async="" status="loaded"></script><script async="" src="https://s.adroll.com/j/VMYZUWPHFRH37EAOEU2EQS/roundtrip.js"></script><script type="text/javascript" async="" src="https://ws.zoominfo.com/pixel/MWB1NQftcHfyFVwRkJok"></script><script type="text/javascript" async="" src="//munchkin.marketo.net/163/munchkin.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z6V9VWD6DL&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/Sy0LGznWXipqk72a6SJ8Dd1wqAonKqxR/analytics.min.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-W4PPZ6"></script><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Corporation",
+        "name" : "AdRoll",
+        "url" : "https://www.adroll.com",
+        "logo" : "https://www.adroll.com/assets/img/adroll-logo-black.png",
+        "sameAs" : [
+            "https://www.facebook.com/adroll",
+            "https://twitter.com/adroll",
+            "https://www.linkedin.com/company/adroll/",
+            "https://www.instagram.com/adroll/"
+        ]
+    }
+    </script>
+
+    <!-- Logo Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.adroll.com",
+        "logo": "https://www.adroll.com/assets/img/adroll-logo-black.png"
+    }
+    </script>  
+
+    <!-- Glossary Term Breadcrumbs -->
+    
+    
+    <!-- Reviews Structured Data -->
+    
+
+  <!-- Facebook + LinkedIn -->
+  <meta property="og:title" content="Digital Marketing &amp; Growth Marketing Platform | AdRoll">
+  <meta property="og:description" content="With AdRoll's AI-driven marketing software, you can get sophisticated audience targeting, cross-channel engagement, advanced measurement and attribution, all in one place. Build a brand customers love, turn more visitors into customers, and grow customer loyalty with AdRoll’s growth platform.">
+  <meta property="og:site_name" content="AdRoll">
+  <meta property="og:type" content="website">
+  
+  <meta property="og:url" content="https://www.adroll.com/">
+  
+  
+    <meta property="og:image" content="https://www.adroll.com/assets/img/globals/social-shares/fb/hp.png">
+  
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="AdRoll">
+  <meta name="twitter:title" content="Digital Marketing &amp; Growth Marketing Platform | AdRoll">
+  <meta name="twitter:description" content="With AdRoll's AI-driven marketing software, you can get sophisticated audience targeting, cross-channel engagement, advanced measurement and attribution, all in one place. Build a brand customers love, turn more visitors into customers, and grow customer loyalty with AdRoll’s growth platform.">
+  
+    <meta property="twitter:image" content="https://www.adroll.com/assets/blog/social/Twitter-Summary.png">
+  
+
+  <!-- favicon -->
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+  
+
+  <!-- Current Environment -->
+  <meta name="environment" content="production">
+
+  <!-- Robots -->
+  
+    
+      <meta name="robots" content="index, follow">
+    
+  
+
+  <!-- Preconnect DNS calls for improved performance -->
+  <link rel="preconnect" href="https://pages.adroll.com">
+  <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com">
+  <link rel="preconnect" href="https://munchkin.marketo.net">
+
+  <!-- Prefetch DNS -->
+  <link rel="dns-prefetch" href="/assets/img">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-W4PPZ6");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  
+  
+
+  
+  
+
+  <!-- Start VWO Async Smartcode -->
+  <script type="text/javascript">
+    window._vwo_code =
+      window._vwo_code ||
+      (function () {
+        var account_id = 243806,
+          settings_tolerance = 2000,
+          library_tolerance = 2500,
+          use_existing_jquery = false,
+          is_spa = 1,
+          hide_element = "body",
+          /* DO NOT EDIT BELOW THIS LINE */
+          f = false,
+          d = document,
+          code = {
+            use_existing_jquery: function () {
+              return use_existing_jquery;
+            },
+            library_tolerance: function () {
+              return library_tolerance;
+            },
+            finish: function () {
+              if (!f) {
+                f = true;
+                var a = d.getElementById("_vis_opt_path_hides");
+                if (a) a.parentNode.removeChild(a);
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            load: function (a) {
+              var b = d.createElement("script");
+              b.src = a;
+              b.type = "text/javascript";
+              b.innerText;
+              b.onerror = function () {
+                _vwo_code.finish();
+              };
+              d.getElementsByTagName("head")[0].appendChild(b);
+            },
+            init: function () {
+              window.settings_timer = setTimeout(
+                "_vwo_code.finish()",
+                settings_tolerance
+              );
+              var a = d.createElement("style"),
+                b = hide_element
+                  ? hide_element +
+                    "{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}"
+                  : "",
+                h = d.getElementsByTagName("head")[0];
+              a.setAttribute("id", "_vis_opt_path_hides");
+              a.setAttribute("type", "text/css");
+              if (a.styleSheet) a.styleSheet.cssText = b;
+              else a.appendChild(d.createTextNode(b));
+              h.appendChild(a);
+              this.load(
+                "https://dev.visualwebsiteoptimizer.com/j.php?a=" +
+                  account_id +
+                  "&u=" +
+                  encodeURIComponent(d.URL) +
+                  "&f=" +
+                  +is_spa +
+                  "&r=" +
+                  Math.random()
+              );
+              return settings_timer;
+            },
+          };
+        window._vwo_settings_timer = code.init();
+        return code;
+      })();
+  </script><script src="https://dev.visualwebsiteoptimizer.com/j.php?a=243806&amp;u=https%3A%2F%2Fwww.adroll.com%2F&amp;f=1&amp;r=0.5047267919542613" type="text/javascript"></script>
+  <!-- End VWO Async Smartcode -->
+  
+
+  <!-- Fontawesome Kit -->
+  <script defer="" src="https://kit.fontawesome.com/f85e46548b.js" crossorigin="anonymous"></script><script referrerpolicy="strict-origin" id="fa-main" data-auto-a11y="true" data-auto-fetch-svg="" data-fetch-svg-from="https://ka-p.fontawesome.com/releases/v6.5.1/svgs" data-fetch-uploaded-svg-from="https://kit-uploads.fontawesome.com">!function(){"use strict";function n(a,t){var e,n=Object.keys(a);return Object.getOwnPropertySymbols&&(e=Object.getOwnPropertySymbols(a),t&&(e=e.filter(function(t){return Object.getOwnPropertyDescriptor(a,t).enumerable})),n.push.apply(n,e)),n}function k(a){for(var t=1;t<arguments.length;t++){var e=null!=arguments[t]?arguments[t]:{};t%2?n(Object(e),!0).forEach(function(t){u(a,t,e[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(a,Object.getOwnPropertyDescriptors(e)):n(Object(e)).forEach(function(t){Object.defineProperty(a,t,Object.getOwnPropertyDescriptor(e,t))})}return a}function r(t){return(r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function t(){t=function(t,a){return new n(t,void 0,a)};var r=RegExp.prototype,i=new WeakMap;function n(t,a,e){a=new RegExp(t,a);return i.set(a,e||i.get(t)),s(a,n.prototype)}function o(e,t){var n=i.get(t);return Object.keys(n).reduce(function(t,a){return t[a]=e[n[a]],t},Object.create(null))}return function(t,a){if("function"!=typeof a&&null!==a)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(a&&a.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),Object.defineProperty(t,"prototype",{writable:!1}),a&&s(t,a)}(n,RegExp),n.prototype.exec=function(t){t=r.exec.call(this,t);return t&&(t.groups=o(t,this)),t},n.prototype[Symbol.replace]=function(t,a){if("string"==typeof a){var e=i.get(this);return r[Symbol.replace].call(this,t,a.replace(/\$<([^>]+)>/g,function(t,a){return"$"+e[a]}))}if("function"!=typeof a)return r[Symbol.replace].call(this,t,a);var n=this;return r[Symbol.replace].call(this,t,function(){var t=arguments;return"object"!=typeof t[t.length-1]&&(t=[].slice.call(t)).push(o(t,n)),a.apply(this,t)})},t.apply(this,arguments)}function i(t,a){for(var e=0;e<a.length;e++){var n=a[e];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function u(t,a,e){return a in t?Object.defineProperty(t,a,{value:e,enumerable:!0,configurable:!0,writable:!0}):t[a]=e,t}function s(t,a){return(s=Object.setPrototypeOf||function(t,a){return t.__proto__=a,t})(t,a)}function m(t,a){return function(t){if(Array.isArray(t))return t}(t)||function(t,a){var e=null==t?null:"undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(null!=e){var n,r,i=[],o=!0,s=!1;try{for(e=e.call(t);!(o=(n=e.next()).done)&&(i.push(n.value),!a||i.length!==a);o=!0);}catch(t){s=!0,r=t}finally{try{o||null==e.return||e.return()}finally{if(s)throw r}}return i}}(t,a)||e(t,a)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function l(t){return function(t){if(Array.isArray(t))return o(t)}(t)||function(t){if("undefined"!=typeof Symbol&&null!=t[Symbol.iterator]||null!=t["@@iterator"])return Array.from(t)}(t)||e(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function e(t,a){if(t){if("string"==typeof t)return o(t,a);var e=Object.prototype.toString.call(t).slice(8,-1);return"Map"===(e="Object"===e&&t.constructor?t.constructor.name:e)||"Set"===e?Array.from(t):"Arguments"===e||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(e)?o(t,a):void 0}}function o(t,a){(null==a||a>t.length)&&(a=t.length);for(var e=0,n=new Array(a);e<a;e++)n[e]=t[e];return n}function a(){}var c={},f={},d=null,p={mark:a,measure:a};try{"undefined"!=typeof window&&(c=window),"undefined"!=typeof document&&(f=document),"undefined"!=typeof MutationObserver&&(d=MutationObserver),"undefined"!=typeof performance&&(p=performance)}catch(t){}var v=(c.navigator||{}).userAgent,v=void 0===v?"":v,g=c,b=f,h=d,c=p,y=!!g.document,w=!!b.documentElement&&!!b.head&&"function"==typeof b.addEventListener&&"function"==typeof b.createElement,x=~v.indexOf("MSIE")||~v.indexOf("Trident/"),f="___FONT_AWESOME___",S=16,A="svg-inline--fa",O="data-fa-i2svg",N="data-fa-pseudo-element",P="data-fa-pseudo-element-pending",C="data-prefix",j="data-icon",E="fontawesome-i2svg",z="async",M=["HTML","HEAD","STYLE","SCRIPT"],F=function(){try{return!0}catch(t){return!1}}(),R="classic",I="sharp",L=[R,I];function Y(t){return new Proxy(t,{get:function(t,a){return a in t?t[a]:t[R]}})}var T={fas:"solid",far:"regular",fal:"light",fat:"thin",fad:"duotone",fab:"brands",fass:"sharp-solid",fasr:"sharp-regular",fasl:"sharp-light",fast:"sharp-thin"},D=Y((u(d={},R,{fa:"solid",fas:"solid","fa-solid":"solid",far:"regular","fa-regular":"regular",fal:"light","fa-light":"light",fat:"thin","fa-thin":"thin",fad:"duotone","fa-duotone":"duotone",fab:"brands","fa-brands":"brands",fak:"kit",fakd:"kit","fa-kit":"kit","fa-kit-duotone":"kit"}),u(d,I,{fa:"solid",fass:"solid","fa-solid":"solid",fasr:"regular","fa-regular":"regular",fasl:"light","fa-light":"light",fast:"thin","fa-thin":"thin"}),d)),U=Y((u(p={},R,{solid:"fas",regular:"far",light:"fal",thin:"fat",duotone:"fad",brands:"fab",kit:"fak"}),u(p,I,{solid:"fass",regular:"fasr",light:"fasl",thin:"fast"}),p)),_=Y((u(v={},R,{fab:"fa-brands",fad:"fa-duotone",fak:"fa-kit",fal:"fa-light",far:"fa-regular",fas:"fa-solid",fat:"fa-thin"}),u(v,I,{fass:"fa-solid",fasr:"fa-regular",fasl:"fa-light",fast:"fa-thin"}),v)),H=Y((u(d={},R,{"fa-brands":"fab","fa-duotone":"fad","fa-kit":"fak","fa-light":"fal","fa-regular":"far","fa-solid":"fas","fa-thin":"fat"}),u(d,I,{"fa-solid":"fass","fa-regular":"fasr","fa-light":"fasl","fa-thin":"fast"}),d)),W=/fa(s|r|l|t|d|b|k|ss|sr|sl|st)?[\-\ ]/,V="fa-layers-text",B=/Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Sharp|Kit)?.*/i,G=Y((u(p={},R,{900:"fas",400:"far",normal:"far",300:"fal",100:"fat"}),u(p,I,{900:"fass",400:"fasr",300:"fasl",100:"fast"}),p)),v=[1,2,3,4,5,6,7,8,9,10],d=v.concat([11,12,13,14,15,16,17,18,19,20]),X=["class","data-prefix","data-icon","data-fa-transform","data-fa-mask"],K={GROUP:"duotone-group",SWAP_OPACITY:"swap-opacity",PRIMARY:"primary",SECONDARY:"secondary"},p=new Set;Object.keys(U[R]).map(p.add.bind(p)),Object.keys(U[I]).map(p.add.bind(p));var q=[].concat(L,l(p),["2xs","xs","sm","lg","xl","2xl","beat","border","fade","beat-fade","bounce","flip-both","flip-horizontal","flip-vertical","flip","fw","inverse","layers-counter","layers-text","layers","li","pull-left","pull-right","pulse","rotate-180","rotate-270","rotate-90","rotate-by","shake","spin-pulse","spin-reverse","spin","stack-1x","stack-2x","stack","ul",K.GROUP,K.SWAP_OPACITY,K.PRIMARY,K.SECONDARY]).concat(v.map(function(t){return"".concat(t,"x")})).concat(d.map(function(t){return"w-".concat(t)})),$=g.FontAwesomeConfig||{};b&&"function"==typeof b.querySelector&&((Q=[["data-family-prefix","familyPrefix"],["data-css-prefix","cssPrefix"],["data-family-default","familyDefault"],["data-style-default","styleDefault"],["data-replacement-class","replacementClass"],["data-auto-replace-svg","autoReplaceSvg"],["data-auto-add-css","autoAddCss"],["data-auto-a11y","autoA11y"],["data-search-pseudo-elements","searchPseudoElements"],["data-observe-mutations","observeMutations"],["data-mutate-approach","mutateApproach"],["data-keep-original-source","keepOriginalSource"],["data-measure-performance","measurePerformance"],["data-show-missing-icons","showMissingIcons"]]).push(["data-auto-fetch-svg","autoFetchSvg"],["data-fetch-svg-from","fetchSvgFrom"],["data-fetch-uploaded-svg-from","fetchUploadedSvgFrom"]),Q.forEach(function(t){var a=m(t,2),t=a[0],a=a[1],t=""===(t=function(t){var a=b.querySelector("script["+t+"]");if(a)return a.getAttribute(t)}(t))||"false"!==t&&("true"===t||t);null!=t&&($[a]=t)}));p={styleDefault:"solid",familyDefault:"classic",cssPrefix:"fa",replacementClass:A,autoReplaceSvg:!0,autoAddCss:!0,autoA11y:!0,searchPseudoElements:!1,observeMutations:!0,mutateApproach:"async",keepOriginalSource:!0,measurePerformance:!1,showMissingIcons:!0,autoFetchSvg:!1,fetchSvgFrom:null,fetchUploadedSvgFrom:null};$.familyPrefix&&($.cssPrefix=$.familyPrefix);var J=k(k({},p),$);J.autoReplaceSvg||(J.observeMutations=!1);var Q,v=/\/js\/.*\.js.*/,d='Manually set config.fetchSvgFrom = "URL" or use <script data-fetch-svg-from="URL" ...> to explicitly configure.';J.autoFetchSvg&&!J.fetchSvgFrom&&b&&b.currentScript&&(-1<(Q=b.currentScript.getAttribute("src")).search(v)&&(F||console.info("Font Awesome SVG Auto-fetching URL has been determined using document.currentScript. This features is not supported in any version of Internet Explorer. ".concat(d)),J.fetchSvgFrom=Q.replace(v,"/svgs"))),J.fetchSvgFrom&&((dt=b.createElement("a")).href=J.fetchSvgFrom,J.fetchSvgFrom=dt.href),!J.autoFetchSvg||J.fetchSvgFrom||F||(console.error("Disabling Font Awesome auto-fetching of SVG icons (it was enabled) because we could not guess the correct URL to load them from. ".concat(d)),J.autoFetchSvg=!1);var Z={};Object.keys(p).forEach(function(a){Object.defineProperty(Z,a,{enumerable:!0,set:function(t){J[a]=t,tt.forEach(function(t){return t(Z)})},get:function(){return J[a]}})}),Object.defineProperty(Z,"familyPrefix",{enumerable:!0,set:function(t){J.cssPrefix=t,tt.forEach(function(t){return t(Z)})},get:function(){return J.cssPrefix}}),g.FontAwesomeConfig=Z;var tt=[];var at=S,et={size:16,x:0,y:0,rotate:0,flipX:!1,flipY:!1};var nt="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";function rt(){for(var t=12,a="";0<t--;)a+=nt[62*Math.random()|0];return a}function it(t){for(var a=[],e=(t||[]).length>>>0;e--;)a[e]=t[e];return a}function ot(t){return t.classList?it(t.classList):(t.getAttribute("class")||"").split(" ").filter(function(t){return t})}function st(t){return"".concat(t).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function ct(e){return Object.keys(e||{}).reduce(function(t,a){return t+"".concat(a,": ").concat(e[a].trim(),";")},"")}function ft(t){return t.size!==et.size||t.x!==et.x||t.y!==et.y||t.rotate!==et.rotate||t.flipX||t.flipY}function lt(){var t,a,e=A,n=Z.cssPrefix,r=Z.replacementClass,i=':host,:root{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Solid";--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Regular";--fa-font-light:normal 300 1em/1 "Font Awesome 6 Light";--fa-font-thin:normal 100 1em/1 "Font Awesome 6 Thin";--fa-font-duotone:normal 900 1em/1 "Font Awesome 6 Duotone";--fa-font-sharp-solid:normal 900 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-regular:normal 400 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-light:normal 300 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-thin:normal 100 1em/1 "Font Awesome 6 Sharp";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}svg:not(:host).svg-inline--fa,svg:not(:root).svg-inline--fa{overflow:visible;box-sizing:content-box}.svg-inline--fa{display:var(--fa-display,inline-block);height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-2xs{vertical-align:.1em}.svg-inline--fa.fa-xs{vertical-align:0}.svg-inline--fa.fa-sm{vertical-align:-.0714285705em}.svg-inline--fa.fa-lg{vertical-align:-.2em}.svg-inline--fa.fa-xl{vertical-align:-.25em}.svg-inline--fa.fa-2xl{vertical-align:-.3125em}.svg-inline--fa.fa-pull-left{margin-right:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-pull-right{margin-left:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-li{width:var(--fa-li-width,2em);top:.25em}.svg-inline--fa.fa-fw{width:var(--fa-fw-width,1.25em)}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:var(--fa-counter-background-color,#ff253a);border-radius:var(--fa-counter-border-radius,1em);box-sizing:border-box;color:var(--fa-inverse,#fff);line-height:var(--fa-counter-line-height,1);max-width:var(--fa-counter-max-width,5em);min-width:var(--fa-counter-min-width,1.5em);overflow:hidden;padding:var(--fa-counter-padding,.25em .5em);right:var(--fa-right,0);text-overflow:ellipsis;top:var(--fa-top,0);-webkit-transform:scale(var(--fa-counter-scale,.25));transform:scale(var(--fa-counter-scale,.25));-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:var(--fa-bottom,0);right:var(--fa-right,0);top:auto;-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:var(--fa-bottom,0);left:var(--fa-left,0);right:auto;top:auto;-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{top:var(--fa-top,0);right:var(--fa-right,0);-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:var(--fa-left,0);right:auto;top:var(--fa-top,0);-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:top left;transform-origin:top left}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-2xs{font-size:.625em;line-height:.1em;vertical-align:.225em}.fa-xs{font-size:.75em;line-height:.0833333337em;vertical-align:.125em}.fa-sm{font-size:.875em;line-height:.0714285718em;vertical-align:.0535714295em}.fa-lg{font-size:1.25em;line-height:.05em;vertical-align:-.075em}.fa-xl{font-size:1.5em;line-height:.0416666682em;vertical-align:-.125em}.fa-2xl{font-size:2em;line-height:.03125em;vertical-align:-.1875em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:var(--fa-li-margin,2.5em);padding-left:0}.fa-ul>li{position:relative}.fa-li{left:calc(var(--fa-li-width,2em) * -1);position:absolute;text-align:center;width:var(--fa-li-width,2em);line-height:inherit}.fa-border{border-color:var(--fa-border-color,#eee);border-radius:var(--fa-border-radius,.1em);border-style:var(--fa-border-style,solid);border-width:var(--fa-border-width,.08em);padding:var(--fa-border-padding,.2em .25em .15em)}.fa-pull-left{float:left;margin-right:var(--fa-pull-margin,.3em)}.fa-pull-right{float:right;margin-left:var(--fa-pull-margin,.3em)}.fa-beat{-webkit-animation-name:fa-beat;animation-name:fa-beat;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-bounce{-webkit-animation-name:fa-bounce;animation-name:fa-bounce;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1))}.fa-fade{-webkit-animation-name:fa-fade;animation-name:fa-fade;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-beat-fade{-webkit-animation-name:fa-beat-fade;animation-name:fa-beat-fade;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-flip{-webkit-animation-name:fa-flip;animation-name:fa-flip;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-shake{-webkit-animation-name:fa-shake;animation-name:fa-shake;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,2s);animation-duration:var(--fa-animation-duration,2s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin-reverse{--fa-animation-direction:reverse}.fa-pulse,.fa-spin-pulse{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,steps(8));animation-timing-function:var(--fa-animation-timing,steps(8))}@media (prefers-reduced-motion:reduce){.fa-beat,.fa-beat-fade,.fa-bounce,.fa-fade,.fa-flip,.fa-pulse,.fa-shake,.fa-spin,.fa-spin-pulse{-webkit-animation-delay:-1ms;animation-delay:-1ms;-webkit-animation-duration:1ms;animation-duration:1ms;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transition-duration:0s;transition-duration:0s}}@-webkit-keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@-webkit-keyframes fa-bounce{0%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}100%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}}@keyframes fa-bounce{0%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}100%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}}@-webkit-keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@-webkit-keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity,.4);-webkit-transform:scale(1);transform:scale(1)}50%{opacity:1;-webkit-transform:scale(var(--fa-beat-fade-scale,1.125));transform:scale(var(--fa-beat-fade-scale,1.125))}}@keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity,.4);-webkit-transform:scale(1);transform:scale(1)}50%{opacity:1;-webkit-transform:scale(var(--fa-beat-fade-scale,1.125));transform:scale(var(--fa-beat-fade-scale,1.125))}}@-webkit-keyframes fa-flip{50%{-webkit-transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg));transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg))}}@keyframes fa-flip{50%{-webkit-transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg));transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg))}}@-webkit-keyframes fa-shake{0%{-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}4%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}24%,8%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}12%,28%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-22deg);transform:rotate(-22deg)}20%{-webkit-transform:rotate(22deg);transform:rotate(22deg)}32%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}36%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}100%,40%{-webkit-transform:rotate(0);transform:rotate(0)}}@keyframes fa-shake{0%{-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}4%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}24%,8%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}12%,28%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-22deg);transform:rotate(-22deg)}20%{-webkit-transform:rotate(22deg);transform:rotate(22deg)}32%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}36%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}100%,40%{-webkit-transform:rotate(0);transform:rotate(0)}}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}.fa-rotate-by{-webkit-transform:rotate(var(--fa-rotate-angle,none));transform:rotate(var(--fa-rotate-angle,none))}.fa-stack{display:inline-block;vertical-align:middle;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0;z-index:var(--fa-stack-z-index,auto)}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:var(--fa-inverse,#fff)}.fa-sr-only,.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.fa-sr-only-focusable:not(:focus),.sr-only-focusable:not(:focus){position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fa-duotone.fa-inverse,.fad.fa-inverse{color:var(--fa-inverse,#fff)}';return"fa"===n&&r===e||(t=new RegExp("\\.".concat("fa","\\-"),"g"),a=new RegExp("\\--".concat("fa","\\-"),"g"),e=new RegExp("\\.".concat(e),"g"),i=i.replace(t,".".concat(n,"-")).replace(a,"--".concat(n,"-")).replace(e,".".concat(r))),i}var ut=!1;function mt(){Z.autoAddCss&&!ut&&(function(t){if(t&&w){var a=b.createElement("style");a.setAttribute("type","text/css"),a.innerHTML=t;for(var e=b.head.childNodes,n=null,r=e.length-1;-1<r;r--){var i=e[r],o=(i.tagName||"").toUpperCase();-1<["STYLE","LINK"].indexOf(o)&&(n=i)}b.head.insertBefore(a,n)}}(lt()),ut=!0)}var v={mixout:function(){return{dom:{css:lt,insertCss:mt}}},hooks:function(){return{beforeDOMElementCreation:function(){mt()},beforeI2svg:function(){mt()}}}},dt=g||{};dt[f]||(dt[f]={}),dt[f].styles||(dt[f].styles={}),dt[f].hooks||(dt[f].hooks={}),dt[f].shims||(dt[f].shims=[]);function pt(){b.removeEventListener("DOMContentLoaded",pt),bt=1,gt.map(function(t){return t()})}var vt=dt[f],gt=[],bt=!1;function ht(t){w&&(bt?setTimeout(t,0):gt.push(t))}function yt(t){var e,a=t.tag,n=t.attributes,r=void 0===n?{}:n,n=t.children,n=void 0===n?[]:n;return"string"==typeof t?st(t):"<".concat(a," ").concat((e=r,Object.keys(e||{}).reduce(function(t,a){return t+"".concat(a,'="').concat(st(e[a]),'" ')},"").trim()),">").concat(n.map(yt).join(""),"</").concat(a,">")}function kt(t,a,e){if(t&&t[a]&&t[a][e])return{prefix:a,iconName:e,icon:t[a][e]}}w&&((bt=(b.documentElement.doScroll?/^loaded|^c/:/^loaded|^i|^c/).test(b.readyState))||b.addEventListener("DOMContentLoaded",pt));function wt(t,a,e,n){for(var r,i,o=Object.keys(t),s=o.length,c=void 0!==n?xt(a,n):a,f=void 0===e?(r=1,t[o[0]]):(r=0,e);r<s;r++)f=c(f,t[i=o[r]],i,t);return f}var xt=function(r,i){return function(t,a,e,n){return r.call(i,t,a,e,n)}};function St(t){t=function(t){for(var a=[],e=0,n=t.length;e<n;){var r,i=t.charCodeAt(e++);55296<=i&&i<=56319&&e<n?56320==(64512&(r=t.charCodeAt(e++)))?a.push(((1023&i)<<10)+(1023&r)+65536):(a.push(i),e--):a.push(i)}return a}(t);return 1===t.length?t[0].toString(16):null}function At(t,a){var e,n=t.length,r=t.charCodeAt(a);return 55296<=r&&r<=56319&&a+1<n&&56320<=(e=t.charCodeAt(a+1))&&e<=57343?1024*(r-55296)+e-56320+65536:r}function Ot(t){if(1===t.length){t=At(t,0);return 57344<=t&&t<=63743}}function Nt(n){return Object.keys(n).reduce(function(t,a){var e=n[a];return!!e.icon?t[e.iconName]=e.icon:t[a]=e,t},{})}function Pt(t,a,e){var n=(2<arguments.length&&void 0!==e?e:{}).skipHooks,e=void 0!==n&&n,n=Nt(a);"function"!=typeof vt.hooks.addPack||e?vt.styles[t]=k(k({},vt.styles[t]||{}),n):vt.hooks.addPack(t,Nt(a)),"fas"===t&&Pt("fa",a)}var Ct=/viewBox="0 0 ([0-9]+) ([0-9]+)"/,jt=/path d="([^"]+)"/,Et=[t(/path d="((?:(?!")[\s\S])+)".*path d="((?:(?!")[\s\S])+)"/,{d1:1,d2:2}),t(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)".*path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/,{cls1:1,d1:2,cls2:3,d2:4}),t(/path class="((?:(?!")[\s\S])+)".*d="((?:(?!")[\s\S])+)"/,{cls1:1,d1:2})];var zt=vt.styles,Mt=vt.shims,Ft=(u(d={},R,Object.values(_[R])),u(d,I,Object.values(_[I])),d),Rt=null,It={},Lt={},Yt={},Tt={},Dt={},Ut=(u(p={},R,Object.keys(D[R])),u(p,I,Object.keys(D[I])),p);function _t(t,a,e){var n,r,i,o,s,c,f,l=(o=i=null,s=(n=e).match(Ct),c=n.match(jt),(f=n.match(Et[0])||n.match(Et[1])||n.match(Et[2]))?(e=(r=f.groups).cls1,n=r.d1,f=r.cls2,r=r.d2,n&&r&&!e&&!f?o=[n,r]:n&&e&&!r?o=-1<e.indexOf("primary")?["",n]:[n,""]:n&&r&&e&&f&&(o=-1<e.indexOf("primary")?[r,n]:[n,r])):c&&2===c.length&&(o=c[1]),i=s&&o?[parseInt(s[1],10),parseInt(s[2],10),[],null,o]:i);l&&!Ot(a)&&(Pt(t,u({},a,l),{skipHooks:!0}),Bt()),Ht[t][a].map(function(t){t(l)}),delete Ht[t][a]}var Ht={};function Wt(t,a){return(Ot(t)?"unicode/".concat(St(t)):"".concat(t)).concat(void 0===a?"":"-".concat(a),".svg")}function Vt(t,a){var e=a.split("-"),a=e[0],e=e.slice(1).join("-");return a!==t||""===e||~q.indexOf(e)?null:e}function Bt(){function t(n){return wt(zt,function(t,a,e){return t[e]=wt(a,n,{}),t},{})}It=t(function(a,t,e){return t[3]&&(a[t[3]]=e),t[2]&&t[2].filter(function(t){return"number"==typeof t}).forEach(function(t){a[t.toString(16)]=e}),a}),Lt=t(function(a,t,e){return a[e]=e,t[2]&&t[2].filter(function(t){return"string"==typeof t}).forEach(function(t){a[t]=e}),a}),Dt=t(function(a,t,e){t=t[2];return a[e]=e,t.forEach(function(t){a[t]=e}),a});var r="far"in zt||Z.autoFetchSvg,a=wt(Mt,function(t,a){var e=a[0],n=a[1],a=a[2];return"far"!==n||r||(n="fas"),"string"==typeof e&&(t.names[e]={prefix:n,iconName:a}),"number"==typeof e&&(t.unicodes[e.toString(16)]={prefix:n,iconName:a}),t},{names:{},unicodes:{}});Yt=a.names,Tt=a.unicodes,Rt=$t(Z.styleDefault,{family:Z.familyDefault})}function Gt(t,a){return(It[t]||{})[a]}function Xt(t,a){return(Dt[t]||{})[a]}function Kt(t){return Yt[t]||{prefix:null,iconName:null}}dt=function(t){Rt=$t(t.styleDefault,{family:Z.familyDefault})},tt.push(dt),Bt();function qt(){return{prefix:null,iconName:null,rest:[]}}function $t(t,a){var e=(1<arguments.length&&void 0!==a?a:{}).family,a=void 0===e?R:e,e=D[a][t],e=U[a][t]||U[a][e],t=t in vt.styles?t:null;return e||t||null}var Jt=(u(f={},R,Object.keys(_[R])),u(f,I,Object.keys(_[I])),f);function Qt(t,a){var a=(1<arguments.length&&void 0!==a?a:{}).skipLookups,n=void 0!==a&&a,r=(u(a={},R,"".concat(Z.cssPrefix,"-").concat(R)),u(a,I,"".concat(Z.cssPrefix,"-").concat(I)),a),i=null,o=R;(t.includes(r[R])||t.some(function(t){return Jt[R].includes(t)}))&&(o=R),(t.includes(r[I])||t.some(function(t){return Jt[I].includes(t)}))&&(o=I);a=t.reduce(function(t,a){var e=Vt(Z.cssPrefix,a);return zt[a]?(a=Ft[o].includes(a)?H[o][a]:a,i=a,t.prefix=a):-1<Ut[o].indexOf(a)?(i=a,t.prefix=$t(a,{family:o})):e?t.iconName=e:a!==Z.replacementClass&&a!==r[R]&&a!==r[I]&&t.rest.push(a),!n&&t.prefix&&t.iconName&&(e="fa"===i?Kt(t.iconName):{},a=Xt(t.prefix,t.iconName),e.prefix&&(i=null),t.iconName=e.iconName||a||t.iconName,t.prefix=e.prefix||t.prefix,"far"!==t.prefix||zt.far||!zt.fas||Z.autoFetchSvg||(t.prefix="fas")),t},qt());return(t.includes("fa-brands")||t.includes("fab"))&&(a.prefix="fab"),(t.includes("fa-duotone")||t.includes("fad"))&&(a.prefix="fad"),a.prefix||o!==I||!zt.fass&&!Z.autoFetchSvg||(a.prefix="fass",a.iconName=Xt(a.prefix,a.iconName)||a.iconName),"fa"!==a.prefix&&"fa"!==i||(a.prefix=Rt||"fas"),a}var d=function(){function t(){!function(t,a){if(!(t instanceof a))throw new TypeError("Cannot call a class as a function")}(this,t),this.definitions={}}var a,e,n;return a=t,(e=[{key:"add",value:function(){for(var e=this,t=arguments.length,a=new Array(t),n=0;n<t;n++)a[n]=arguments[n];var r=a.reduce(this._pullDefinitions,{});Object.keys(r).forEach(function(t){e.definitions[t]=k(k({},e.definitions[t]||{}),r[t]),Pt(t,r[t]);var a=_[R][t];a&&Pt(a,r[t]),Bt()})}},{key:"reset",value:function(){this.definitions={}}},{key:"_pullDefinitions",value:function(r,t){var i=t.prefix&&t.iconName&&t.icon?{0:t}:t;return Object.keys(i).map(function(t){var a=i[t],e=a.prefix,t=a.iconName,n=a.icon,a=n[2];r[e]||(r[e]={}),0<a.length&&a.forEach(function(t){"string"==typeof t&&(r[e][t]=n)}),r[e][t]=n}),r}}])&&i(a.prototype,e),n&&i(a,n),Object.defineProperty(a,"prototype",{writable:!1}),t}(),p=[],Zt={},ta={},aa=Object.keys(ta);function ea(t,a){for(var e=arguments.length,n=new Array(2<e?e-2:0),r=2;r<e;r++)n[r-2]=arguments[r];return(Zt[t]||[]).forEach(function(t){a=t.apply(null,[a].concat(n))}),a}function na(t){for(var a=arguments.length,e=new Array(1<a?a-1:0),n=1;n<a;n++)e[n-1]=arguments[n];(Zt[t]||[]).forEach(function(t){t.apply(null,e)})}function ra(t){var a=t,t=Array.prototype.slice.call(arguments,1);return ta[a]?ta[a].apply(null,t):void 0}function ia(t){"fa"===t.prefix&&(t.prefix="fas");var a=t.iconName,t=t.prefix||Rt;if(a)return a=Xt(t,a)||a,kt(oa.definitions,t,a)||kt(vt.styles,t,a)}var oa=new d,sa={noAuto:function(){Z.autoReplaceSvg=!1,Z.observeMutations=!1,na("noAuto")},config:Z,dom:{i2svg:function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{};return w?(na("beforeI2svg",t),ra("pseudoElements2svg",t),ra("i2svg",t)):Promise.reject("Operation requires a DOM of some kind.")},watch:function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{},a=t.autoReplaceSvgRoot;!1===Z.autoReplaceSvg&&(Z.autoReplaceSvg=!0),Z.observeMutations=!0,ht(function(){ca({autoReplaceSvgRoot:a}),na("watch",t)})}},parse:{icon:function(t){if(null===t)return null;if("object"===r(t)&&t.prefix&&t.iconName)return{prefix:t.prefix,iconName:Xt(t.prefix,t.iconName)||t.iconName};if(Array.isArray(t)&&2===t.length){var a=0===t[1].indexOf("fa-")?t[1].slice(3):t[1],e=$t(t[0]);return{prefix:e,iconName:Xt(e,a)||a}}if("string"==typeof t&&(-1<t.indexOf("".concat(Z.cssPrefix,"-"))||t.match(W))){a=Qt(t.split(" "),{skipLookups:!0});return{prefix:a.prefix||Rt,iconName:Xt(a.prefix,a.iconName)||a.iconName}}return"string"==typeof t?{prefix:Rt,iconName:Xt(Rt,t)||t}:void 0}},library:oa,findIconDefinition:ia,toHtml:yt},ca=function(){var t=(0<arguments.length&&void 0!==arguments[0]?arguments[0]:{}).autoReplaceSvgRoot,t=void 0===t?b:t;(0<Object.keys(vt.styles).length||Z.autoFetchSvg)&&w&&Z.autoReplaceSvg&&sa.dom.i2svg({node:t})};function fa(a,t){return Object.defineProperty(a,"abstract",{get:t}),Object.defineProperty(a,"html",{get:function(){return a.abstract.map(yt)}}),Object.defineProperty(a,"node",{get:function(){if(w){var t=b.createElement("div");return t.innerHTML=a.html,t.children}}}),a}function la(t){var a=t.icons,e=a.main,n=a.mask,r=t.prefix,i=t.iconName,o=t.transform,s=t.symbol,c=t.title,f=t.maskId,l=t.titleId,u=t.extra,m=t.watchable,d=void 0!==m&&m,p=n.found?n:e,a=p.width,t=p.height,m="fak"===r,p=[Z.replacementClass,i?"".concat(Z.cssPrefix,"-").concat(i):""].filter(function(t){return-1===u.classes.indexOf(t)}).filter(function(t){return""!==t||!!t}).concat(u.classes).join(" "),p={children:[],attributes:k(k({},u.attributes),{},{"data-prefix":r,"data-icon":i,class:p,role:u.attributes.role||"img",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 ".concat(a," ").concat(t)})},t=m&&!~u.classes.indexOf("fa-fw")?{width:"".concat(a/t*16*.0625,"em")}:{};d&&(p.attributes[O]=""),c&&(p.children.push({tag:"title",attributes:{id:p.attributes["aria-labelledby"]||"title-".concat(l||rt())},children:[c]}),delete p.attributes.title);var v,g,b,h,y,t=k(k({},p),{},{prefix:r,iconName:i,main:e,mask:n,maskId:f,transform:o,symbol:s,styles:k(k({},t),u.styles)}),n=n.found&&e.found?ra("generateAbstractMask",t)||{children:[],attributes:{}}:ra("generateAbstractIcon",t)||{children:[],attributes:{}},e=n.children,n=n.attributes;return t.children=e,t.attributes=n,s?(g=(v=t).prefix,b=v.iconName,h=v.children,y=v.attributes,v=!0===(v=v.symbol)?"".concat(g,"-").concat(Z.cssPrefix,"-").concat(b):v,[{tag:"svg",attributes:{style:"display: none;"},children:[{tag:"symbol",attributes:k(k({},y),{},{id:v}),children:h}]}]):(b=(g=t).children,y=g.main,v=g.mask,h=g.attributes,t=g.styles,ft(g=g.transform)&&y.found&&!v.found&&(v=y.width/y.height/2,y=.5,h.style=ct(k(k({},t),{},{"transform-origin":"".concat(v+g.x/16,"em ").concat(y+g.y/16,"em")}))),[{tag:"svg",attributes:h,children:b}])}function ua(t){var a=t.content,e=t.width,n=t.height,r=t.transform,i=t.title,o=t.extra,s=t.watchable,c=void 0!==s&&s,t=k(k(k({},o.attributes),i?{title:i}:{}),{},{class:o.classes.join(" ")});c&&(t[O]="");s=k({},o.styles);ft(r)&&(s.transform=(o=(c={transform:r,startCentered:!0,width:e,height:n}).transform,r=c.width,n=void 0===(e=c.height)?S:e,c=void 0!==(e=c.startCentered)&&e,e="",e+=c&&x?"translate(".concat(o.x/at-(void 0===r?S:r)/2,"em, ").concat(o.y/at-n/2,"em) "):c?"translate(calc(-50% + ".concat(o.x/at,"em), calc(-50% + ").concat(o.y/at,"em)) "):"translate(".concat(o.x/at,"em, ").concat(o.y/at,"em) "),e+="scale(".concat(o.size/at*(o.flipX?-1:1),", ").concat(o.size/at*(o.flipY?-1:1),") "),e+="rotate(".concat(o.rotate,"deg) ")),s["-webkit-transform"]=s.transform);s=ct(s);0<s.length&&(t.style=s);s=[];return s.push({tag:"span",attributes:t,children:[a]}),i&&s.push({tag:"span",attributes:{class:"sr-only"},children:[i]}),s}var ma=vt.styles;function da(t){var a=t[0],e=t[1],t=m(t.slice(4),1)[0];return{found:!0,width:a,height:e,icon:Array.isArray(t)?{tag:"g",attributes:{class:"".concat(Z.cssPrefix,"-").concat(K.GROUP)},children:[{tag:"path",attributes:{class:"".concat(Z.cssPrefix,"-").concat(K.SECONDARY),fill:"currentColor",d:t[0]}},{tag:"path",attributes:{class:"".concat(Z.cssPrefix,"-").concat(K.PRIMARY),fill:"currentColor",d:t[1]}}]}:{tag:"path",attributes:{fill:"currentColor",d:t}}}}var pa={found:!1,width:512,height:512};function va(t,a){F||Z.showMissingIcons||!t||console.error('Icon with name "'.concat(t,'" and prefix "').concat(a,'" is missing.'))}function ga(r,i){var o=i;return"fa"===i&&null!==Z.styleDefault&&(i=Rt),new Promise(function(a,t){ra("missingIconAbstract");if("fa"===o&&(n=Kt(r)||{},r=n.iconName||r,i=n.prefix||i),r&&i&&ma[i]&&ma[i][r]){var e=ma[i][r];return a(da(e))}var n={},e=function(t,a){var t=0<arguments.length&&void 0!==t?t:{},e=1<arguments.length?a:void 0;if(e&&Ot(e)){if(t&&t.iconUploads){var n=t.iconUploads,a=Object.keys(n).find(function(t){return n[t]&&n[t].u&&n[t].u===St(e)});if(a)return n[a].v}}else if(t&&t.iconUploads&&t.iconUploads[e]&&t.iconUploads[e].v)return t.iconUploads[e].v}(g.FontAwesomeKitConfig,r);if(g.FontAwesomeKitConfig&&g.FontAwesomeKitConfig.token&&(n.token=g.FontAwesomeKitConfig.token),"fak"===i&&(n.version=e),r&&i&&Z.autoFetchSvg)return function(e,n){var t=2<arguments.length&&void 0!==arguments[2]?arguments[2]:{},r="fak"===e,a=t.url,i=void 0===a?Z.fetchSvgFrom:a,a=t.uploadedSvgUrl,o=void 0===a?Z.fetchUploadedSvgFrom:a,s=t.token,c=t.version;return Ht[e]&&Ht[e][n]||(Ht[e]=k(k({},Ht[e]||{}),u({},n,[]))),new Promise(function(a,t){if(!i)return t(new Error("No URL available to fetch SVGs from. Specify in params or by setting config.fetchSvgFrom"));if(r&&!o)return t(new Error("No URL available to fetch kit SVGs from. Specify in params or by setting config.fetchKitSvgFrom"));t=r?"".concat(o,"/").concat(s,"/icons/").concat(Wt(n,c)):"".concat(i,"/").concat(T[e],"/").concat(Wt(n));if(s&&(t="".concat(t,"?token=").concat(s)),vt.styles[e]&&vt.styles[e][n])return a(vt.styles[e][n]);Ht[e][n].push(function(t){a(t)}),1===Ht[e][n].length&&("function"==typeof fetch?fetch(t,{mode:"cors"}).then(function(t){return t.text()}).then(function(t){_t(e,n,t)}).catch(function(){_t(e,n,"")}):_t(e,n,""))})}(i,r,k({},n)).then(function(t){t?a(da(t)):(va(r,i),a(k(k({},pa),{},{icon:Z.showMissingIcons&&r&&ra("missingIconAbstract")||{}})))}).catch(t);va(r,i),a(k(k({},pa),{},{icon:Z.showMissingIcons&&r&&ra("missingIconAbstract")||{}}))})}function ba(){}function ha(t){ya.mark("".concat(ka," ").concat(t," ends")),ya.measure("".concat(ka," ").concat(t),"".concat(ka," ").concat(t," begins"),"".concat(ka," ").concat(t," ends"))}var ya=Z.measurePerformance&&c&&c.mark&&c.measure?c:{mark:ba,measure:ba},ka='FA "6.5.1"',wa={begin:function(t){return ya.mark("".concat(ka," ").concat(t," begins")),function(){return ha(t)}},end:ha},xa=function(){};function Sa(t){return"string"==typeof(t.getAttribute?t.getAttribute(O):null)}function Aa(t){return b.createElementNS("http://www.w3.org/2000/svg",t)}function Oa(t){return b.createElement(t)}var Na={replace:function(t){var a=t[0];a.parentNode&&(t[1].forEach(function(t){a.parentNode.insertBefore(function a(e,t){var t=(1<arguments.length&&void 0!==t?t:{}).ceFn,n=void 0===t?"svg"===e.tag?Aa:Oa:t;if("string"==typeof e)return b.createTextNode(e);var r=n(e.tag);return Object.keys(e.attributes||[]).forEach(function(t){r.setAttribute(t,e.attributes[t])}),(e.children||[]).forEach(function(t){r.appendChild(a(t,{ceFn:n}))}),r}(t),a)}),null===a.getAttribute(O)&&Z.keepOriginalSource?(t=b.createComment(" ".concat(a.outerHTML," ")),a.parentNode.replaceChild(t,a)):a.remove())},nest:function(t){var a=t[0],e=t[1];if(~ot(a).indexOf(Z.replacementClass))return Na.replace(t);var n=new RegExp("".concat(Z.cssPrefix,"-.*"));delete e[0].attributes.id,e[0].attributes.class&&(t=e[0].attributes.class.split(" ").reduce(function(t,a){return(a===Z.replacementClass||a.match(n)?t.toSvg:t.toNode).push(a),t},{toNode:[],toSvg:[]}),e[0].attributes.class=t.toSvg.join(" "),0===t.toNode.length?a.removeAttribute("class"):a.setAttribute("class",t.toNode.join(" ")));e=e.map(yt).join("\n");a.setAttribute(O,""),a.innerHTML=e}};function Pa(t){t()}function Ca(e,t){var n="function"==typeof t?t:xa;0===e.length?n():(Z.mutateApproach===z?g.requestAnimationFrame||Pa:Pa)(function(){var t=!0!==Z.autoReplaceSvg&&Na[Z.autoReplaceSvg]||Na.replace,a=wa.begin("mutate");e.map(t),a(),n()})}var ja=!1;function Ea(){ja=!0}function za(){ja=!1}var Ma=null;function Fa(t){var i,o,a,s;h&&Z.observeMutations&&(a=t.treeCallback,i=void 0===a?xa:a,a=t.nodeCallback,o=void 0===a?xa:a,a=t.pseudoElementsCallback,s=void 0===a?xa:a,t=void 0===(t=t.observeMutationsRoot)?b:t,Ma=new h(function(t){var r;ja||(r=Rt,it(t).forEach(function(t){var a,e,n;"childList"===t.type&&0<t.addedNodes.length&&!Sa(t.addedNodes[0])&&(Z.searchPseudoElements&&s(t.target),i(t.target)),"attributes"===t.type&&t.target.parentNode&&Z.searchPseudoElements&&s(t.target.parentNode),"attributes"===t.type&&Sa(t.target)&&~X.indexOf(t.attributeName)&&("class"===t.attributeName&&(e=t.target,n=e.getAttribute?e.getAttribute(C):null,e=e.getAttribute?e.getAttribute(j):null,n&&e)?(e=(a=Qt(ot(t.target))).prefix,a=a.iconName,t.target.setAttribute(C,e||r),a&&t.target.setAttribute(j,a)):(a=t.target)&&a.classList&&a.classList.contains&&a.classList.contains(Z.replacementClass)&&o(t.target))}))}),w&&Ma.observe(t,{childList:!0,attributes:!0,characterData:!0,subtree:!0}))}function Ra(t){var a=t.getAttribute("data-prefix"),e=t.getAttribute("data-icon"),n=void 0!==t.innerText?t.innerText.trim():"",r=Qt(ot(t));return r.prefix||(r.prefix=Rt),a&&e&&(r.prefix=a,r.iconName=e),r.iconName&&r.prefix||(r.prefix&&0<n.length&&(r.iconName=(e=r.prefix,n=t.innerText,(Lt[e]||{})[n]||Gt(r.prefix,St(t.innerText)))),!r.iconName&&Z.autoFetchSvg&&t.firstChild&&t.firstChild.nodeType===Node.TEXT_NODE&&(r.iconName=t.firstChild.data)),r}function Ia(t,a){var e=1<arguments.length&&void 0!==a?a:{styleParser:!0},n=Ra(t),r=n.iconName,i=n.prefix,o=n.rest,s=(a=it((s=t).attributes).reduce(function(t,a){return"class"!==t.name&&"style"!==t.name&&(t[a.name]=a.value),t},{}),n=s.getAttribute("title"),s=s.getAttribute("data-fa-title-id"),Z.autoA11y&&(n?a["aria-labelledby"]="".concat(Z.replacementClass,"-title-").concat(s||rt()):(a["aria-hidden"]="true",a.focusable="false")),a),a=ea("parseNodeAttributes",{},t),c=e.styleParser?(e=(c=t).getAttribute("style"),c=[],c=e?e.split(";").reduce(function(t,a){var e=a.split(":"),a=e[0],e=e.slice(1);return a&&0<e.length&&(t[a]=e.join(":").trim()),t},{}):c):[];return k({iconName:r,title:t.getAttribute("title"),titleId:t.getAttribute("data-fa-title-id"),prefix:i,transform:et,mask:{iconName:null,prefix:null,rest:[]},maskId:null,symbol:!1,extra:{classes:o,styles:c,attributes:s}},a)}var La=vt.styles;function Ya(t){var a="nest"===Z.autoReplaceSvg?Ia(t,{styleParser:!1}):Ia(t);return~a.extra.classes.indexOf(V)?ra("generateLayersText",t,a):ra("generateSvgReplacementMutation",t,a)}var Ta=new Set;function Da(t){var n=1<arguments.length&&void 0!==arguments[1]?arguments[1]:null;if(!w)return Promise.resolve();function r(t){return a.add("".concat(E,"-").concat(t))}function i(t){return a.remove("".concat(E,"-").concat(t))}var a=b.documentElement.classList,e=Z.autoFetchSvg?Ta:L.map(function(t){return"fa-".concat(t)}).concat(Object.keys(La));e.includes("fa")||e.push("fa");var o=[".".concat(V,":not([").concat(O,"])")].concat(e.map(function(t){return".".concat(t,":not([").concat(O,"])")})).join(", ");if(0===o.length)return Promise.resolve();e=[];try{e=it(t.querySelectorAll(o))}catch(t){}if(!(0<e.length))return Promise.resolve();r("pending"),i("complete");var s=wa.begin("onTree"),c=e.reduce(function(t,a){try{var e=Ya(a);e&&t.push(e)}catch(t){F||"MissingIcon"===t.name&&console.error(t)}return t},[]);return new Promise(function(a,e){Promise.all(c).then(function(t){Ca(t,function(){r("active"),r("complete"),i("pending"),"function"==typeof n&&n(),s(),a()})}).catch(function(t){s(),e(t)})})}function Ua(t){var a=1<arguments.length&&void 0!==arguments[1]?arguments[1]:null;Ya(t).then(function(t){t&&Ca([t],a)})}L.map(function(t){Ta.add("fa-".concat(t))}),Object.keys(D[R]).map(Ta.add.bind(Ta)),Object.keys(D[I]).map(Ta.add.bind(Ta));function _a(t){var a=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},e=a.transform,n=void 0===e?et:e,r=void 0!==(e=a.symbol)&&e,i=void 0===(e=a.mask)?null:e,o=void 0===(e=a.maskId)?null:e,s=void 0===(e=a.title)?null:e,c=void 0===(e=a.titleId)?null:e,f=void 0===(e=a.classes)?[]:e,l=void 0===(e=a.attributes)?{}:e,u=void 0===(e=a.styles)?{}:e;if(t){var m=t.prefix,d=t.iconName,p=t.icon;return fa(k({type:"icon"},t),function(){return na("beforeDOMElementCreation",{iconDefinition:t,params:a}),Z.autoA11y&&(s?l["aria-labelledby"]="".concat(Z.replacementClass,"-title-").concat(c||rt()):(l["aria-hidden"]="true",l.focusable="false")),la({icons:{main:da(p),mask:i?da(i.icon):{found:!1,width:null,height:null,icon:{}}},prefix:m,iconName:d,transform:k(k({},et),n),symbol:r,title:s,maskId:o,titleId:c,extra:{attributes:l,styles:u,classes:f}})})}}var Ta=l(Ta),dt={mixout:function(){return{icon:(n=_a,function(t){var a=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},e=(t||{}).icon?t:ia(t||{}),t=(t=a.mask)&&((t||{}).icon?t:ia(t||{}));return n(e,k(k({},a),{},{mask:t}))})};var n},hooks:function(){return{mutationObserverCallbacks:function(t){return t.treeCallback=Da,t.nodeCallback=Ua,t}}},provides:function(t){t.i2svg=function(t){var a=t.node,t=t.callback;return Da(void 0===a?b:a,void 0===t?function(){}:t)},t.generateSvgReplacementMutation=function(n,t){var r=t.iconName,i=t.title,o=t.titleId,s=t.prefix,c=t.transform,f=t.symbol,a=t.mask,l=t.maskId,u=t.extra;return new Promise(function(e,t){Promise.all([ga(r,s),a.iconName?ga(a.iconName,a.prefix):Promise.resolve({found:!1,width:512,height:512,icon:{}})]).then(function(t){var a=m(t,2),t=a[0],a=a[1];e([n,la({icons:{main:t,mask:a},prefix:s,iconName:r,transform:c,symbol:f,maskId:l,title:i,titleId:o,extra:u,watchable:!0})])}).catch(t)})},t.generateAbstractIcon=function(t){var a,e=t.children,n=t.attributes,r=t.main,i=t.transform,t=ct(t.styles);return 0<t.length&&(n.style=t),ft(i)&&(a=ra("generateAbstractTransformGrouping",{main:r,transform:i,containerWidth:r.width,iconWidth:r.width})),e.push(a||r.icon),{children:e,attributes:n}}}},f={mixout:function(){return{layer:function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},a=e.classes,n=void 0===a?[]:a;return fa({type:"layer"},function(){na("beforeDOMElementCreation",{assembler:t,params:e});var a=[];return t(function(t){Array.isArray(t)?t.map(function(t){a=a.concat(t.abstract)}):a=a.concat(t.abstract)}),[{tag:"span",attributes:{class:["".concat(Z.cssPrefix,"-layers")].concat(l(n)).join(" ")},children:a}]})}}}},d={mixout:function(){return{counter:function(r){var i=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},t=i.title,o=void 0===t?null:t,t=i.classes,s=void 0===t?[]:t,t=i.attributes,c=void 0===t?{}:t,t=i.styles,f=void 0===t?{}:t;return fa({type:"counter",content:r},function(){return na("beforeDOMElementCreation",{content:r,params:i}),t={content:r.toString(),title:o,extra:{attributes:c,styles:f,classes:["".concat(Z.cssPrefix,"-layers-counter")].concat(l(s))}},a=t.content,e=t.title,n=t.extra,t=k(k(k({},n.attributes),e?{title:e}:{}),{},{class:n.classes.join(" ")}),0<(n=ct(n.styles)).length&&(t.style=n),(n=[]).push({tag:"span",attributes:t,children:[a]}),e&&n.push({tag:"span",attributes:{class:"sr-only"},children:[e]}),n;var t,a,e,n})}}}},c={mixout:function(){return{text:function(t){var a=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},e=a.transform,n=void 0===e?et:e,e=a.title,r=void 0===e?null:e,e=a.classes,i=void 0===e?[]:e,e=a.attributes,o=void 0===e?{}:e,e=a.styles,s=void 0===e?{}:e;return fa({type:"text",content:t},function(){return na("beforeDOMElementCreation",{content:t,params:a}),ua({content:t,transform:k(k({},et),n),title:r,extra:{attributes:o,styles:s,classes:["".concat(Z.cssPrefix,"-layers-text")].concat(l(i))}})})}}},provides:function(t){t.generateLayersText=function(t,a){var e,n=a.title,r=a.transform,i=a.extra,o=null,s=null;return x&&(e=parseInt(getComputedStyle(t).fontSize,10),o=(a=t.getBoundingClientRect()).width/e,s=a.height/e),Z.autoA11y&&!n&&(i.attributes["aria-hidden"]="true"),Promise.resolve([t,ua({content:t.innerHTML,width:o,height:s,transform:r,title:n,extra:i,watchable:!0})])}}},Ha=new RegExp('"',"ug"),Wa=[1105920,1112319];function Va(m,d){var p="".concat(P).concat(d.replace(":","-"));return new Promise(function(e,t){if(null!==m.getAttribute(p))return e();var n,a,r,i,o,s=it(m.children).filter(function(t){return t.getAttribute(N)===d})[0],c=g.getComputedStyle(m,d),f=c.getPropertyValue("font-family").match(B),l=c.getPropertyValue("font-weight"),u=c.getPropertyValue("content");if(s&&!f)return m.removeChild(s),e();f&&"none"!==u&&""!==u?(a=c.getPropertyValue("content"),u=~["Sharp"].indexOf(f[2])?I:R,n=~["Solid","Regular","Light","Thin","Duotone","Brands","Kit"].indexOf(f[2])?U[u][f[2].toLowerCase()]:G[u][l],u=(a=(u=(c=a).replace(Ha,""),l=At(u,0),c=Wa[0]<=l&&l<=Wa[1],{value:St((l=2===u.length&&u[0]===u[1])?u[0]:u),isSecondary:c||l})).value,c=a.isSecondary,l=f[0].startsWith("FontAwesome"),a=Gt(n,u),r=a,l&&(l=Tt[f=u],f=Gt("fas",f),(f=l||(f?{prefix:"fas",iconName:f}:null)||{prefix:null,iconName:null}).iconName&&f.prefix&&(a=f.iconName,n=f.prefix)),r=r||u,!(a=a||String.fromCharCode(parseInt(u,16)))||c||s&&s.getAttribute(C)===n&&s.getAttribute(j)===r?e():(m.setAttribute(p,r),s&&m.removeChild(s),(o=(i={iconName:null,title:null,titleId:null,prefix:null,transform:et,symbol:!1,mask:{iconName:null,prefix:null,rest:[]},maskId:null,extra:{classes:[],styles:{},attributes:{}}}).extra).attributes[N]=d,ga(a,n).then(function(t){var a=la(k(k({},i),{},{icons:{main:t,mask:qt()},prefix:n,iconName:r,extra:o,watchable:!0})),t=b.createElementNS("http://www.w3.org/2000/svg","svg");"::before"===d?m.insertBefore(t,m.firstChild):m.appendChild(t),t.outerHTML=a.map(yt).join("\n"),m.removeAttribute(p),e()}).catch(t))):e()})}function Ba(t){return Promise.all([Va(t,"::before"),Va(t,"::after")])}function Ga(t){return!(t.parentNode===document.head||~M.indexOf(t.tagName.toUpperCase())||t.getAttribute(N)||t.parentNode&&"svg"===t.parentNode.tagName)}function Xa(r){if(w)return new Promise(function(t,a){var e=it(r.querySelectorAll("*")).filter(Ga).map(Ba),n=wa.begin("searchPseudoElements");Ea(),Promise.all(e).then(function(){n(),za(),t()}).catch(function(){n(),za(),a()})})}function Ka(t){return t.toLowerCase().split(" ").reduce(function(t,a){var e=a.toLowerCase().split("-"),a=e[0],n=e.slice(1).join("-");if(a&&"h"===n)return t.flipX=!0,t;if(a&&"v"===n)return t.flipY=!0,t;if(n=parseFloat(n),isNaN(n))return t;switch(a){case"grow":t.size=t.size+n;break;case"shrink":t.size=t.size-n;break;case"left":t.x=t.x-n;break;case"right":t.x=t.x+n;break;case"up":t.y=t.y-n;break;case"down":t.y=t.y+n;break;case"rotate":t.rotate=t.rotate+n}return t},{size:16,x:0,y:0,flipX:!1,flipY:!1,rotate:0})}var qa=!1,$a={x:0,y:0,width:"100%",height:"100%"};function Ja(t){return t.attributes&&(t.attributes.fill||(!(1<arguments.length&&void 0!==arguments[1])||arguments[1]))&&(t.attributes.fill="black"),t}var Qa;Qa={mixoutsTo:sa}.mixoutsTo,p=[v,dt,f,d,c,{hooks:function(){return{mutationObserverCallbacks:function(t){return t.pseudoElementsCallback=Xa,t}}},provides:function(t){t.pseudoElements2svg=function(t){t=t.node;Z.searchPseudoElements&&Xa(void 0===t?b:t)}}},{mixout:function(){return{dom:{unwatch:function(){Ea(),qa=!0}}}},hooks:function(){return{bootstrap:function(){Fa(ea("mutationObserverCallbacks",{}))},noAuto:function(){Ma&&Ma.disconnect()},watch:function(t){t=t.observeMutationsRoot;qa?za():Fa(ea("mutationObserverCallbacks",{observeMutationsRoot:t}))}}}},{mixout:function(){return{parse:{transform:Ka}}},hooks:function(){return{parseNodeAttributes:function(t,a){a=a.getAttribute("data-fa-transform");return a&&(t.transform=Ka(a)),t}}},provides:function(t){t.generateAbstractTransformGrouping=function(t){var a=t.main,e=t.transform,n=t.containerWidth,r=t.iconWidth,i={transform:"translate(".concat(n/2," 256)")},t="translate(".concat(32*e.x,", ").concat(32*e.y,") "),n="scale(".concat(e.size/16*(e.flipX?-1:1),", ").concat(e.size/16*(e.flipY?-1:1),") "),e="rotate(".concat(e.rotate," 0 0)"),r={outer:i,inner:{transform:"".concat(t," ").concat(n," ").concat(e)},path:{transform:"translate(".concat(r/2*-1," -256)")}};return{tag:"g",attributes:k({},r.outer),children:[{tag:"g",attributes:k({},r.inner),children:[{tag:a.icon.tag,children:a.icon.children,attributes:k(k({},a.icon.attributes),r.path)}]}]}}}},{hooks:function(){return{parseNodeAttributes:function(t,a){var e=a.getAttribute("data-fa-mask"),e=e?Qt(e.split(" ").map(function(t){return t.trim()})):qt();return e.prefix||(e.prefix=Rt),t.mask=e,t.maskId=a.getAttribute("data-fa-mask-id"),t}}},provides:function(t){t.generateAbstractMask=function(t){var a=t.children,e=t.attributes,n=t.main,r=t.mask,i=t.maskId,o=t.transform,s=n.width,c=n.icon,f=r.width,t=r.icon,o=(r=(n={transform:o,containerWidth:f,iconWidth:s}).transform,o=n.containerWidth,f=n.iconWidth,s={transform:"translate(".concat(o/2," 256)")},n="translate(".concat(32*r.x,", ").concat(32*r.y,") "),o="scale(".concat(r.size/16*(r.flipX?-1:1),", ").concat(r.size/16*(r.flipY?-1:1),") "),r="rotate(".concat(r.rotate," 0 0)"),{outer:s,inner:{transform:"".concat(n," ").concat(o," ").concat(r)},path:{transform:"translate(".concat(f/2*-1," -256)")}}),r={tag:"rect",attributes:k(k({},$a),{},{fill:"white"})},f=c.children?{children:c.children.map(Ja)}:{},f={tag:"g",attributes:k({},o.inner),children:[Ja(k({tag:c.tag,attributes:k(k({},c.attributes),o.path)},f))]},o={tag:"g",attributes:k({},o.outer),children:[f]},f="mask-".concat(i||rt()),i="clip-".concat(i||rt()),o={tag:"mask",attributes:k(k({},$a),{},{id:f,maskUnits:"userSpaceOnUse",maskContentUnits:"userSpaceOnUse"}),children:[r,o]},o={tag:"defs",children:[{tag:"clipPath",attributes:{id:i},children:"g"===(t=t).tag?t.children:[t]},o]};return a.push(o,{tag:"rect",attributes:k({fill:"currentColor","clip-path":"url(#".concat(i,")"),mask:"url(#".concat(f,")")},$a)}),{children:a,attributes:e}}}},{provides:function(t){var i=!1;g.matchMedia&&(i=g.matchMedia("(prefers-reduced-motion: reduce)").matches),t.missingIconAbstract=function(){var t=[],a={fill:"currentColor"},e={attributeType:"XML",repeatCount:"indefinite",dur:"2s"};t.push({tag:"path",attributes:k(k({},a),{},{d:"M156.5,447.7l-12.6,29.5c-18.7-9.5-35.9-21.2-51.5-34.9l22.7-22.7C127.6,430.5,141.5,440,156.5,447.7z M40.6,272H8.5 c1.4,21.2,5.4,41.7,11.7,61.1L50,321.2C45.1,305.5,41.8,289,40.6,272z M40.6,240c1.4-18.8,5.2-37,11.1-54.1l-29.5-12.6 C14.7,194.3,10,216.7,8.5,240H40.6z M64.3,156.5c7.8-14.9,17.2-28.8,28.1-41.5L69.7,92.3c-13.7,15.6-25.5,32.8-34.9,51.5 L64.3,156.5z M397,419.6c-13.9,12-29.4,22.3-46.1,30.4l11.9,29.8c20.7-9.9,39.8-22.6,56.9-37.6L397,419.6z M115,92.4 c13.9-12,29.4-22.3,46.1-30.4l-11.9-29.8c-20.7,9.9-39.8,22.6-56.8,37.6L115,92.4z M447.7,355.5c-7.8,14.9-17.2,28.8-28.1,41.5 l22.7,22.7c13.7-15.6,25.5-32.9,34.9-51.5L447.7,355.5z M471.4,272c-1.4,18.8-5.2,37-11.1,54.1l29.5,12.6 c7.5-21.1,12.2-43.5,13.6-66.8H471.4z M321.2,462c-15.7,5-32.2,8.2-49.2,9.4v32.1c21.2-1.4,41.7-5.4,61.1-11.7L321.2,462z M240,471.4c-18.8-1.4-37-5.2-54.1-11.1l-12.6,29.5c21.1,7.5,43.5,12.2,66.8,13.6V471.4z M462,190.8c5,15.7,8.2,32.2,9.4,49.2h32.1 c-1.4-21.2-5.4-41.7-11.7-61.1L462,190.8z M92.4,397c-12-13.9-22.3-29.4-30.4-46.1l-29.8,11.9c9.9,20.7,22.6,39.8,37.6,56.9 L92.4,397z M272,40.6c18.8,1.4,36.9,5.2,54.1,11.1l12.6-29.5C317.7,14.7,295.3,10,272,8.5V40.6z M190.8,50 c15.7-5,32.2-8.2,49.2-9.4V8.5c-21.2,1.4-41.7,5.4-61.1,11.7L190.8,50z M442.3,92.3L419.6,115c12,13.9,22.3,29.4,30.5,46.1 l29.8-11.9C470,128.5,457.3,109.4,442.3,92.3z M397,92.4l22.7-22.7c-15.6-13.7-32.8-25.5-51.5-34.9l-12.6,29.5 C370.4,72.1,384.4,81.5,397,92.4z"})});var n=k(k({},e),{},{attributeName:"opacity"}),r={tag:"circle",attributes:k(k({},a),{},{cx:"256",cy:"364",r:"28"}),children:[]};return i||r.children.push({tag:"animate",attributes:k(k({},e),{},{attributeName:"r",values:"28;14;28;28;14;28;"})},{tag:"animate",attributes:k(k({},n),{},{values:"1;0;1;1;0;1;"})}),t.push(r),t.push({tag:"path",attributes:k(k({},a),{},{opacity:"1",d:"M263.7,312h-16c-6.6,0-12-5.4-12-12c0-71,77.4-63.9,77.4-107.8c0-20-17.8-40.2-57.4-40.2c-29.1,0-44.3,9.6-59.2,28.7 c-3.9,5-11.1,6-16.2,2.4l-13.1-9.2c-5.6-3.9-6.9-11.8-2.6-17.2c21.2-27.2,46.4-44.7,91.2-44.7c52.3,0,97.4,29.8,97.4,80.2 c0,67.6-77.4,63.5-77.4,107.8C275.7,306.6,270.3,312,263.7,312z"}),children:i?[]:[{tag:"animate",attributes:k(k({},n),{},{values:"1;0;0;0;0;1;"})}]}),i||t.push({tag:"path",attributes:k(k({},a),{},{opacity:"0",d:"M232.5,134.5l7,168c0.3,6.4,5.6,11.5,12,11.5h9c6.4,0,11.7-5.1,12-11.5l7-168c0.3-6.8-5.2-12.5-12-12.5h-23 C237.7,122,232.2,127.7,232.5,134.5z"}),children:[{tag:"animate",attributes:k(k({},n),{},{values:"0;0;1;1;0;0;"})}]}),{tag:"g",attributes:{class:"missing"},children:t}}}},{hooks:function(){return{parseNodeAttributes:function(t,a){a=a.getAttribute("data-fa-symbol");return t.symbol=null!==a&&(""===a||a),t}}}}],Zt={},Object.keys(ta).forEach(function(t){-1===aa.indexOf(t)&&delete ta[t]}),p.forEach(function(t){var a,e=t.mixout?t.mixout():{};Object.keys(e).forEach(function(a){"function"==typeof e[a]&&(Qa[a]=e[a]),"object"===r(e[a])&&Object.keys(e[a]).forEach(function(t){Qa[a]||(Qa[a]={}),Qa[a][t]=e[a][t]})}),t.hooks&&(a=t.hooks(),Object.keys(a).forEach(function(t){Zt[t]||(Zt[t]=[]),Zt[t].push(a[t])})),t.provides&&t.provides(ta)}),function(t){try{for(var a=arguments.length,e=new Array(1<a?a-1:0),n=1;n<a;n++)e[n-1]=arguments[n];t.apply(void 0,e)}catch(t){if(!F)throw t}}(function(t){y&&(g.FontAwesome||(g.FontAwesome=sa),ht(function(){ca(),na("bootstrap")})),vt.hooks=k(k({},vt.hooks),{},{addPack:function(t,a){vt.styles[t]=k(k({},vt.styles[t]||{}),a),Bt(),ca()},addPacks:function(t){t.forEach(function(t){var a=m(t,2),t=a[0],a=a[1];vt.styles[t]=k(k({},vt.styles[t]||{}),a)}),Bt(),ca()},addShims:function(t){var a;(a=vt.shims).push.apply(a,l(t)),Bt(),ca()}})})}();</script>
+
+  
+  
+  <!-- Qualified -->
+  <script>
+    (function(w,q){w['QualifiedObject']=q;w[q]=w[q]||function(){
+    (w[q].q=w[q].q||[]).push(arguments)};})(window,'qualified')
+  </script>
+  <script async="" src="https://js.qualified.com/qualified.js?token=ZFTcG3Wxwf4bL5Am"></script>
+  <!-- End Qualified -->
+  
+  
+<script src="https://dev.visualwebsiteoptimizer.com/7.0/va-a5c0d5ae0ec31d5386122ce367975f97.js" crossorigin="anonymous" fetchpriority="high" type="text/javascript"></script><script src="https://dev.visualwebsiteoptimizer.com/7.0/track-a5c0d5ae0ec31d5386122ce367975f97.js" crossorigin="anonymous" fetchpriority="high" type="text/javascript"></script><script src="https://dev.visualwebsiteoptimizer.com/analysis/4.0/opa-3a80afd41a85d9dfbf00f6fdad35ff35.js" crossorigin="anonymous" fetchpriority="high" type="text/javascript"></script><script type="text/javascript" async="" src="//munchkin.marketo.net/munchkin-beta.js"></script><script type="application/javascript" async="" src="https://tracking.g2crowd.com/attribution_tracking/conversions/3451.js?p=https://www.adroll.com/&amp;e="></script><script src="https://unpkg.com/web-vitals@3.0.0/dist/web-vitals.attribution.iife.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A41wt2Lsq30A9Ox/WehogvJckPI4aY9RoSxhb8FMtVnqaUle1AtI6Yf7Wk+7+Wm0AfDDOkMX+Wn6wnDpBWYgWwYAAAB8eyJvcmlnaW4iOiJodHRwczovL2Fkcm9sbC5jb206NDQzIiwiZmVhdHVyZSI6IkludGVyZXN0Q29ob3J0QVBJIiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script type="text/javascript" src="https://d.adroll.com/consent/check/VMYZUWPHFRH37EAOEU2EQS?pv=74365714833.13861&amp;arrfrr=https%3A%2F%2Fwww.adroll.com%2F&amp;_s=13ba1a49818d0ba21e9072457ec7faa1&amp;_b=2"></script><script src="https://cdn.heapanalytics.com/js/replay/4375-Main-prod-heap/container.js" data-cfasync="false" async="true" data-vendor="auryc" data-role="container" charset="utf-8"></script><style>#q-messenger-frame-skip-link{animation:none 0s ease 0s 1 normal none running !important;-webkit-backface-visibility:visible !important;backface-visibility:visible !important;background:transparent none repeat 0 0 / auto auto padding-box border-box scroll !important;border:medium none currentColor !important;border-collapse:separate !important;-o-border-image:none !important;border-image:none !important;border-radius:0 !important;border-spacing:0 !important;bottom:auto !important;box-shadow:none !important;box-sizing:content-box !important;caption-side:top !important;clear:none !important;clip:auto !important;color:#000 !important;-moz-columns:auto !important;columns:auto !important;-moz-column-count:auto !important;column-count:auto !important;-moz-column-fill:balance !important;column-fill:balance !important;grid-column-gap:normal !important;-moz-column-gap:normal !important;column-gap:normal !important;-moz-column-rule:medium none currentColor !important;column-rule:medium none currentColor !important;-moz-column-span:1 !important;column-span:1 !important;-moz-column-width:auto !important;column-width:auto !important;content:normal !important;counter-increment:none !important;counter-reset:none !important;cursor:auto !important;direction:ltr !important;display:inline !important;empty-cells:show !important;float:none !important;font-family:serif !important;font-size:medium !important;font-style:normal !important;font-feature-settings:normal !important;font-variant:normal !important;font-weight:normal !important;font-stretch:normal !important;line-height:normal !important;height:auto !important;-webkit-hyphens:none !important;hyphens:none !important;left:auto !important;letter-spacing:normal !important;list-style:disc outside none !important;margin:0 !important;max-height:none !important;max-width:none !important;min-height:0 !important;min-width:0 !important;opacity:1 !important;orphans:2 !important;outline:medium none invert !important;overflow:visible !important;overflow-x:visible !important;overflow-y:visible !important;padding:0 !important;page-break-after:auto !important;page-break-before:auto !important;page-break-inside:auto !important;perspective:none !important;perspective-origin:50% 50% !important;position:static !important;right:auto !important;-moz-tab-size:8 !important;-o-tab-size:8 !important;tab-size:8 !important;table-layout:auto !important;text-align:left !important;-moz-text-align-last:auto !important;text-align-last:auto !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;top:auto !important;transform:none !important;transform-origin:50% 50% 0 !important;transform-style:flat !important;transition:none 0s ease 0s !important;unicode-bidi:normal !important;vertical-align:baseline !important;visibility:visible !important;white-space:normal !important;widows:2 !important;width:auto !important;word-spacing:normal !important;z-index:auto !important;all:initial !important;border:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;-webkit-clip-path:inset(50%) !important;clip-path:inset(50%) !important;height:1px !important;overflow:hidden !important;margin:-1px !important;padding:0 !important;position:absolute !important;width:1px !important;white-space:nowrap !important}#q-messenger-frame-skip-link:focus{animation:none 0s ease 0s 1 normal none running !important;-webkit-backface-visibility:visible !important;backface-visibility:visible !important;background:transparent none repeat 0 0 / auto auto padding-box border-box scroll !important;border:medium none currentColor !important;border-collapse:separate !important;-o-border-image:none !important;border-image:none !important;border-radius:0 !important;border-spacing:0 !important;bottom:auto !important;box-shadow:none !important;box-sizing:content-box !important;caption-side:top !important;clear:none !important;clip:auto !important;color:#000 !important;-moz-columns:auto !important;columns:auto !important;-moz-column-count:auto !important;column-count:auto !important;-moz-column-fill:balance !important;column-fill:balance !important;grid-column-gap:normal !important;-moz-column-gap:normal !important;column-gap:normal !important;-moz-column-rule:medium none currentColor !important;column-rule:medium none currentColor !important;-moz-column-span:1 !important;column-span:1 !important;-moz-column-width:auto !important;column-width:auto !important;content:normal !important;counter-increment:none !important;counter-reset:none !important;cursor:auto !important;direction:ltr !important;display:inline !important;empty-cells:show !important;float:none !important;font-family:serif !important;font-size:medium !important;font-style:normal !important;font-feature-settings:normal !important;font-variant:normal !important;font-weight:normal !important;font-stretch:normal !important;line-height:normal !important;height:auto !important;-webkit-hyphens:none !important;hyphens:none !important;left:auto !important;letter-spacing:normal !important;list-style:disc outside none !important;margin:0 !important;max-height:none !important;max-width:none !important;min-height:0 !important;min-width:0 !important;opacity:1 !important;orphans:2 !important;outline:medium none invert !important;overflow:visible !important;overflow-x:visible !important;overflow-y:visible !important;padding:0 !important;page-break-after:auto !important;page-break-before:auto !important;page-break-inside:auto !important;perspective:none !important;perspective-origin:50% 50% !important;position:static !important;right:auto !important;-moz-tab-size:8 !important;-o-tab-size:8 !important;tab-size:8 !important;table-layout:auto !important;text-align:left !important;-moz-text-align-last:auto !important;text-align-last:auto !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;top:auto !important;transform:none !important;transform-origin:50% 50% 0 !important;transform-style:flat !important;transition:none 0s ease 0s !important;unicode-bidi:normal !important;vertical-align:baseline !important;visibility:visible !important;white-space:normal !important;widows:2 !important;width:auto !important;word-spacing:normal !important;z-index:auto !important;all:initial !important;position:fixed !important;top:10px !important;left:10px !important;z-index:2147483647 !important;background:#fafafa !important;color:#122124 !important;padding:1rem !important;cursor:pointer !important;border-radius:4px !important;outline:2px solid -webkit-focus-ring-color !important;outline-offset:2px !important}#q-messenger-frame{position:fixed !important;z-index:2147483642 !important;display:block !important;visibility:visible !important;content-visibility:visible !important;opacity:1 !important;top:auto !important;left:auto !important;bottom:0 !important;right:0 !important;height:0 !important;width:0 !important;overflow:hidden !important;background-color:rgba(0,0,0,0) !important;border:0 !important}#q-messenger-frame.qlfd-maximized,#q-messenger-frame.maximized{max-height:calc(100vh - 150px);min-height:480px;width:538px !important}#q-messenger-frame.qlfd-maximized.qlfd-is-mobile,#q-messenger-frame.maximized.qlfd-is-mobile{height:100% !important;width:100% !important;min-height:100% !important;max-height:100% !important}#q-messenger-frame.qlfd-full-height{height:100% !important;width:320px !important;min-height:100% !important;max-height:100% !important}#q-messenger-frame.qlfd-disable-pointer-events{pointer-events:none !important}#q-messenger-frame.qlfd-full-screen{height:100vh !important;width:100% !important;max-height:100vh}#q-messenger-frame.qlfd-not-full-screen{transition:background-color 300ms,height 0s 300ms,width 0s 300ms !important}</style><script id="__adroll_consent_banner_el" type="text/javascript" src="https://s.adroll.com/j/consent_tcfv2.js"></script><style type="text/css" id="adroll_consent_style">.adroll_consent_container{position:relative}.adroll_consent_banner_container{bottom:0;display:none;position:fixed;right:0}.adroll_consent_persistent_icon{opacity:.5;display:none;margin-top:-34px;right:1px;position:absolute}.adroll_persistent_icon_wrapper{display:inline-block;height:34px;width:50px}.adroll_persistent_icon_wrapper>span{background:#fff;border:1px #d6d6d6 solid;border-radius:39% 0 0 39%;box-sizing:border-box;display:inline-block;height:inherit}.adroll_persistent_icon_wrapper>span>svg{height:100%;margin-left:5%;vertical-align:top;width:100%}.adroll_consent_close_icon{background:#fff;border-radius:100%;box-shadow:4px -1px 10px rgba(0,0,0,.4);box-sizing:border-box;color:#666;cursor:pointer;display:none;font-size:20px;font-weight:normal;height:21px;padding-top:4px;text-align:center;position:absolute;right:-10px;top:-10px;width:20px}.adroll_consent_banner{color:#222;font-family:"Arial",sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;line-height:15px;text-decoration:none;background-color:#fff;bottom:20px;border-radius:2px;box-shadow:0 0 10px 0 rgba(0,0,0,.5);display:block;padding:0;pointer-events:auto;position:fixed;right:20px;width:600px;z-index:2147483647}.adroll_consent_banner a{color:blue;font-family:"Arial",sans-serif;font-size:11px;font-style:normal;font-weight:normal;letter-spacing:normal;line-height:1.69;text-decoration:none}.adroll_consent_banner ul{list-style-type:disc;padding-left:13px}.adroll_consent_banner li{color:#222;font-family:"Arial",sans-serif;font-size:11px;font-style:normal;font-weight:normal;letter-spacing:normal;line-height:1.69;text-decoration:none}.adroll_consent_banner .adroll_consent_button{border-radius:1px;display:block;margin-left:35px;margin-bottom:10px;padding:10px 30px;pointer-events:auto;text-align:center}.adroll_consent_banner .adroll_consent_button_bar{text-align:center}.adroll_consent_banner .adroll_consent_button_bar a{display:inline-block !important}.adroll_consent_banner a#adroll_consent_settings{display:block;width:32%}.adroll_consent_banner a#adroll_consent_accept,.adroll_consent_banner a#adroll_consent_reject{display:block;width:48%}.adroll_consent_banner #adroll_reject,.adroll_consent_banner #adroll_allow_all{border-radius:3px;cursor:pointer;border:1px #ccc solid !important}.adroll_consent_banner #adroll_reject{float:left;color:#004c99;background-color:#fff;margin-left:100px}.adroll_consent_banner #adroll_reject:hover{color:#fff;background-color:#004c99}.adroll_consent_banner #adroll_allow_all{float:left;background-color:#fff;color:#004c99;margin-left:65px;border-radius:3px;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none}.adroll_consent_banner #adroll_allow_all:hover{color:#fff;background-color:#004c99}.adroll_consent_banner #adroll_settings{float:left;color:#004c99;background-color:#fff;margin-top:5px;padding:0}.adroll_consent_banner .adroll_button_text{display:inline-block;font-family:Arial;font-size:11px;font-weight:bold;line-height:22px;padding:0;text-transform:uppercase;word-break:normal;word-wrap:normal}.adroll_consent_banner .adroll_consent_text{color:#5c5c5c;font-family:"Arial",sans-serif;font-size:11px;font-style:normal;font-weight:normal;letter-spacing:normal;line-height:1.69;text-decoration:none;display:block;margin:-30px 15px 15px 15px}.adroll_consent_banner .adroll_consent_notice_title{margin:12px 0 -12px;text-align:left !important}.adroll_consent_banner .adroll_consent_notice_title a{display:inline-block !important}.adroll_consent_banner .adroll_consent_notice_text{margin-top:80px !important}.adroll_consent_banner .adroll_consent_title{font-weight:bold;line-height:1.88;margin:15px 22px;font-size:16px}.adroll_consent_banner .adroll_consent_notice_title_text{float:left;width:350px}.adroll_consent_banner .adroll_consent_notice_title_settings{float:right;width:150px}.adroll_consent_banner .adroll_consent_notice{border-width:1px;display:inline-block;filter:alpha(opacity=90)}.adroll_consent_banner .adroll_consent_box{box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;padding:2px 4px;margin-top:5px;text-align:left}.adroll_consent_banner .adroll_consent_box .adroll_nextroll_logo .adroll_persistent_icon_wrapper{height:17px;width:25px;vertical-align:bottom}.adroll_consent_banner .adroll_consent_box:before{background:#d8d8d8;content:" ";display:block;height:1px;margin:-3px auto 5px;width:50%}.adroll_consent_banner .adroll_consent_box:first-child:before{display:none}.adroll_consent_banner .adroll_consent_switch{position:relative;display:inline-block;width:40px;height:22px}.adroll_consent_banner .adroll_consent_switch input{opacity:0;width:0;height:0}.adroll_consent_banner .adroll_consent_slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s}.adroll_consent_banner .adroll_consent_slider:before{position:absolute;content:"";height:15px;width:15px;left:4px;bottom:4px;background-color:#fff;-webkit-transition:.4s;transition:.4s}.adroll_consent_banner input:checked+.adroll_consent_slider{background-color:#3db280}.adroll_consent_banner input:focus+.adroll_consent_slider{box-shadow:0 0 1px #3db280}.adroll_consent_banner input:checked+.adroll_consent_slider:before{-webkit-transform:translateX(16px);-ms-transform:translateX(16px);transform:translateX(16px)}.adroll_consent_banner .adroll_consent_slider.adroll_consent_round{border-radius:34px}.adroll_consent_banner .adroll_consent_slider.adroll_consent_round:before{border-radius:50%}.adroll_consent_banner .adroll_consent_switch_first_page{float:right;margin-right:15px}.adroll_consent_banner .adroll_consent_first_page_logo{margin-left:10px;width:22px;top:6px;left:10px;position:relative}@media only screen and (max-width:600px){.adroll_consent_banner{bottom:0;height:auto;left:0;margin:0;right:0;width:98%}.adroll_consent_banner .adroll_consent_notice{height:405px;overflow:scroll}.adroll_consent_banner .adroll_consent_notice_title_text{width:100%}.adroll_consent_banner .adroll_consent_notice_title_settings{width:80px;margin-top:-30px}.adroll_consent_banner .adroll_consent_text{font-size:10px}.adroll_consent_banner .adroll_button_text{font-size:11px}.adroll_consent_banner .adroll_consent_button{margin-left:auto}.adroll_consent_banner .adroll_consent_button_bar{width:100%}.adroll_consent_banner #adroll_reject{margin-left:auto}.adroll_consent_banner #adroll_allow_all{margin-left:40px}.adroll_consent_banner #adchoices-icon{height:12px;width:14px}.adroll_consent_banner a#adroll_consent_accept,.adroll_consent_banner a#adroll_consent_reject{width:auto}}@media only print{.adroll_consent_banner{display:none}}</style></head>
+
+
+<body class="section-home">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4PPZ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  
+  <header id="nav-wrapper">
+  <!-- Start Navigation Bar -->
+  <nav class="navbar js-navbar">
+    <ul class="menu">
+      <li>
+        <a aria-label="Go to the AdRoll.com homepage" href="/" class="current grow">
+          <span hidden="">AdRoll</span>
+          <svg width="80px" height="15px" class="logo adroll" enable-background="new 0 0 887 165" viewBox="0 0 887 165" xmlns="http://www.w3.org/2000/svg"><path id="adroll-mark" d="m178 81.1c0-44.5-35-80.6-80.6-80.6-30.3 0-56.6 16.6-70.4 41.3l39.3 39.3c0-17.2 14.5-31.1 31.1-31.1 17.6 0 31.1 13.9 31.1 31.1s-13.6 31.1-31.1 31.1h-.1-66.9c-16.6 0-30.1 13.5-30.1 30.1v19.4h97.1c45.3 0 80.6-36.1 80.6-80.6" fill="#0dbdff"></path><path id="adroll-wordmark" d="m545.2 71.6h37.6c14.6 0 22.2-6.9 22.2-19.8 0-13.1-7.6-20-22.2-20h-37.6zm21.7 31.4h-21.7v58.7h-33.7v-143.1c0-10 8.1-18.1 18.2-18.1h54.1c34.9 0 56.1 21 56.1 51.1 0 24.2-13.6 42.6-37.2 49.1l42 61h-40.4zm320.1 54.4c-6.6 4.3-14.4 7.3-22.8 7.3-23.2 0-34.1-15.9-34.1-38.5v-117.3l31.9-7.6v125.2c0 6.3 3.1 10.2 8.7 10.2 1.7 0 3.6-.4 5.4-1.2zm-55.7 0c-6.6 4.3-14.4 7.3-22.8 7.3-23.2 0-34.1-15.9-34.1-38.5v-104l31.9-7.9v112.2c0 6.3 3.1 10.2 8.7 10.2 1.7 0 3.6-.4 5.4-1.2zm-100.1-54c0-18.7-12-31.6-30-31.6s-30 12.7-30 31.6 12 31.6 30 31.6 30-12.7 30-31.6m-92.6 0c0-35.9 26.3-61 62.6-61s62.8 24.9 62.8 61c0 36.2-26.6 61.3-62.8 61.3-36.3 0-62.6-25.1-62.6-61.3m-367.6-6.8 23-61.6 23 61.6zm-1.2-84.7-59 149.8h35.8l12.6-33.8h69.5l12.6 33.8h35.8l-63.5-161.2h-26.9c-7.4 0-14.1 4.5-16.9 11.4m164.7 123.1c-17.8 0-30-12.7-30-31.6s12.2-31.6 30-31.6 30 12.7 30 31.6c0 19.4-12.5 31.6-30 31.6m27.9-78.1c-7.9-9.2-19.9-14.5-34.4-14.5-31.2 0-56.1 24.9-56.1 60.8 0 36.2 24.9 61.5 55.2 61.5 16.2 0 28.9-7.1 37-18.9l1.4 15.9h28.6v-161.2h-13.5c-10 0-18.2 8.1-18.2 18.1z" fill="#333"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a class="hasDropdown dropdown"><span>Why AdRoll? <span class="change-icon"><svg width="13" height="14" class="svg-inline chevron-down" aria-hidden="true" focusable="false" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M432.6 209.3l-191.1 183.1C235.1 397.8 229.1 400 224 400s-11.97-2.219-16.59-6.688L15.41 209.3C5.814 200.2 5.502 184.1 14.69 175.4c9.125-9.625 24.38-9.938 33.91-.7187L224 342.8l175.4-168c9.5-9.219 24.78-8.906 33.91 .7187C442.5 184.1 442.2 200.2 432.6 209.3z"></path></svg></span></span></a>
+        <ul class="nav-container nav-container-single why-adroll">
+          <ul>
+            <li><a href="/why-adroll-digital-marketing-platform">Why AdRoll</a></li>
+            <li><a href="/managed-services">Managed Services</a></li>
+            <li><a href="/customers">Case Studies</a></li>
+          </ul>
+        </ul>
+      </li>
+      <li>
+        <a class="hasDropdown dropdown"><span>Marketing Platform <span class="change-icon"><svg width="13" height="14" class="svg-inline chevron-down" aria-hidden="true" focusable="false" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M432.6 209.3l-191.1 183.1C235.1 397.8 229.1 400 224 400s-11.97-2.219-16.59-6.688L15.41 209.3C5.814 200.2 5.502 184.1 14.69 175.4c9.125-9.625 24.38-9.938 33.91-.7187L224 342.8l175.4-168c9.5-9.219 24.78-8.906 33.91 .7187C442.5 184.1 442.2 200.2 432.6 209.3z"></path></svg></span></span></a>
+        <ul class="nav-container nav-container-multi  nav-platform">
+          <div class="container__list container__list-multi">
+            <div class="nav-items">
+              <ul>
+                <li class="heading"><a href="/marketing-platform">Marketing Platform</a></li>
+                <li><a href="/features/audience-and-segmentation">Audience &amp; Segmentation</a></li>
+                <li><a href="/features/marketing-automation-builder">Marketing Automation</a></li>
+                <li><a href="/features/consent-management">Customer Privacy Protection</a></li>
+              </ul>
+              <ul>
+                <li class="heading">Campaigns</li>
+                <li><a href="/features/retargeting">Retargeting Ads</a></li>
+                <li><a href="/features/brand-awareness">Brand Awareness Ads</a></li>
+              </ul>
+              <ul>
+                <li class="heading"><a href="/features/digital-advertising-platform">Marketing Channels</a></li>
+                <li><a href="/features/display-advertising-platform">Display Advertising</a></li>
+                <li><a href="/features/video-advertising-platform">Video Advertising</a></li>
+                <li><a href="/features/native-advertising-platform">Native Advertising</a></li>
+                <li><a href="/features/email">Email Marketing</a></li>
+              </ul>
+              <ul>
+                <li class="heading"><a href="/features/social-media-advertising-platform">Connected Channels</a></li>
+                <li><a href="/features/facebook-ads-tool">Facebook Advertisting</a></li>
+                <li><a href="/features/instagram-advertising-platform">Instagram Advertisting</a></li>
+                <li><a href="/features/tiktok-ads-platform">TikTok Advertisting</a></li>
+                <li><a href="/features/pinterest-ad-management-tool">Pinterest Advertisting</a></li>
+                <li><a href="/features/google-ads-reporting-tool">Google Advertising</a></li>
+              </ul>
+              <ul>
+                <li class="heading">Analytics</li>
+                <li><a href="/features/reporting">Cross-channel Performance</a></li>
+                <li><a href="/features/cross-channel-attribution">Cross-channel Attribution</a></li>
+              </ul>
+            </div>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a class="hasDropdown dropdown"><span>For Ecommerce <span class="change-icon"><svg width="13" height="14" class="svg-inline chevron-down" aria-hidden="true" focusable="false" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M432.6 209.3l-191.1 183.1C235.1 397.8 229.1 400 224 400s-11.97-2.219-16.59-6.688L15.41 209.3C5.814 200.2 5.502 184.1 14.69 175.4c9.125-9.625 24.38-9.938 33.91-.7187L224 342.8l175.4-168c9.5-9.219 24.78-8.906 33.91 .7187C442.5 184.1 442.2 200.2 432.6 209.3z"></path></svg></span></span></a>
+        <ul class="nav-container nav-container-single ecommerce-platforms">
+          <ul>
+            <li><a href="/ecommerce-marketing">AdRoll for ecommerce</a></li>
+            <li><a href="/ecommerce-marketing/shopify">Shopify</a></li>
+            <li><a href="/ecommerce-marketing/shopify-plus">Shopify Plus</a></li>
+            <li><a href="/ecommerce-marketing/woocommerce">WooCommerce</a></li>
+            <li><a href="/ecommerce-marketing/wix">Wix</a></li>
+            <li><a href="/ecommerce-marketing/bigcommerce">BigCommerce</a></li>
+          </ul>
+        </ul>
+      </li>
+      <li>
+        <a href="/pricing">Pricing</a>
+      </li>
+      <li>
+        <a class="hasDropdown dropdown"><span>Resources <span class="change-icon"><svg width="13" height="14" class="svg-inline chevron-down" aria-hidden="true" focusable="false" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M432.6 209.3l-191.1 183.1C235.1 397.8 229.1 400 224 400s-11.97-2.219-16.59-6.688L15.41 209.3C5.814 200.2 5.502 184.1 14.69 175.4c9.125-9.625 24.38-9.938 33.91-.7187L224 342.8l175.4-168c9.5-9.219 24.78-8.906 33.91 .7187C442.5 184.1 442.2 200.2 432.6 209.3z"></path></svg></span></span></a>
+        <ul class="nav-container nav-container-multi  nav-resources">
+          <div class="container__list container__list-multi">
+            <div class="nav-items">
+              <ul>
+                <li class="heading">Marketing Resources</li>
+                <li><a href="/resources">Resource Library</a></li>
+                <li><a href="/blog">AdRoll Blog</a></li>
+                <li><a href="/holiday-marketing-guide">Holiday Marketing Resources</a></li>
+                <li><a href="/learn-more/retargeting">What is Retargeting?</a></li>
+                <li><a href="/glossary">Marketing Glossary</a></li>
+                <li><a href="/state-of-digital-marketing-report">State of Digital Marketing Report</a></li>
+              </ul>
+              <ul>
+                <li class="heading">Free Tools</li>
+                <li><a href="/return-on-ad-spend-calculator/">Return On Ad Spend Calculator</a></li>
+                <li><a href="/campaign-utm-url-builder">AdRoll UTM Link Builder</a></li>
+                <li><a href="/discount-calculator">Discount Profit Margin Calculator</a></li>
+              </ul>
+              <ul>
+                <li class="heading">Community</li>
+                <li><a href="/community">Growth Guerilla Collective</a></li>
+                <li><a href="/small-business-shopping-list">Small Business Shopping List</a></li>
+                <li><a href="/events">Events</a></li>
+              </ul>
+              <ul>
+                <li class="heading">Customer Support</li>
+                <li><a href="https://help.adroll.com/hc/en-us/articles/360037601172-Getting-Started-Guide">Getting Started</a></li>
+                <li><a href="https://help.adroll.com/hc/en-us">Help Center</a></li>
+                <li><a href="/research-panel">Research Panel</a></li>
+              </ul>
+            </div>
+            <div class="nav-promo promo">
+              <div class="content">
+                <a href="/holiday-marketing-guide">
+                  <div class="promo__thumbnail">
+                    
+                    <img width="343" height="90" alt="Power up your holiday marketing" loading="lazy" class="lazy loaded" data-src="/assets/img/promo/holiday-marketing-hero.png?auto=webp&amp;fm=png&amp;width=393" srcset="/assets/img/promo/holiday-marketing-hero.png?auto=webp&amp;fm=png&amp;width=393,
+                              /assets/img/promo/holiday-marketing-hero.png?auto=webp&amp;fm=png&amp;width=393&amp;dpr=1.5 1.5x,
+                              /assets/img/promo/holiday-marketing-hero.png?auto=webp&amp;fm=png&amp;width=393&amp;dpr=2 2x" src="/assets/img/promo/holiday-marketing-hero.png?auto=webp&amp;fm=png&amp;width=393" data-ll-status="loaded">
+                  </div>
+                  <h4 class="promo__heading">Power up your holiday marketing</h4>
+                  <p class="promo__copy">It might seem early, but the race to holiday revenue is on! 🏃We’re here to guide you through your mission to generate brand awareness, maximize budget, and create campaigns your target audience can’t ignore.</p>
+                  <span class="promo__link cta-secondary">Play Now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </li>
+
+      
+      <li>
+        <a href="https://app.adroll.com/account/signin">Log in</a>
+      </li>
+      <li>
+        
+        
+          <a class="cta" href="/pricing">Get Started</a>
+        
+      </li>
+      
+      
+    </ul>
+  </nav>
+  <!-- End Navigation Bar -->
+
+  <nav id="mobile-nav">
+    <div class="nav-logo icon-1">
+      <a href="/"><img width="59" height="11" src="/assets/svg/logo-adroll.svg" alt="AdRoll logo. "></a>
+    </div>
+    
+    <div id="mobile-nav-cta">
+      <a class="cta" href="/pricing">Get Started</a>
+    </div>
+    
+    <div id="mobile-nav-action">
+      <a id="simple-menu" href="#nav">
+        <svg width="28px" height="32px" class="svg-inline bars" aria-hidden="true" focusable="false" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 88C0 74.75 10.75 64 24 64H424C437.3 64 448 74.75 448 88C448 101.3 437.3 112 424 112H24C10.75 112 0 101.3 0 88zM0 248C0 234.7 10.75 224 24 224H424C437.3 224 448 234.7 448 248C448 261.3 437.3 272 424 272H24C10.75 272 0 261.3 0 248zM424 432H24C10.75 432 0 421.3 0 408C0 394.7 10.75 384 24 384H424C437.3 384 448 394.7 448 408C448 421.3 437.3 432 424 432z"></path></svg>
+        <svg width="20px" height="32px" class="svg-inline xmark" aria-hidden="true" focusable="false" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M312.1 375c9.369 9.369 9.369 24.57 0 33.94s-24.57 9.369-33.94 0L160 289.9l-119 119c-9.369 9.369-24.57 9.369-33.94 0s-9.369-24.57 0-33.94L126.1 256L7.027 136.1c-9.369-9.369-9.369-24.57 0-33.94s24.57-9.369 33.94 0L160 222.1l119-119c9.369-9.369 24.57-9.369 33.94 0s9.369 24.57 0 33.94L193.9 256L312.1 375z"></path></svg>
+    </a></div><a id="simple-menu" href="#nav">
+    </a><div class="sidr right" id="sidr" style="transition: right 0.2s ease 0s;"><a id="simple-menu" href="#nav">
+      </a><ul class="nav-content"><a id="simple-menu" href="#nav">
+        </a><li class="first-logo"><a id="simple-menu" href="#nav">
+          </a><a href="/">
+            <span hidden="" style="display: none;">AdRoll</span>
+            <img width="125" height="23" src="/assets/svg/logo-adroll-white.svg" alt="AdRoll logo. ">
+          </a>
+        </li>
+        <li>
+          <a href="/why-adroll-digital-marketing-platform">Why AdRoll?</a>
+          <ul>
+            <li><a href="/managed-services">Managed Services</a></li>
+            <li><a href="/customers">Case Studies</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/ecommerce-marketing">AdRoll for ecommerce</a>
+          <ul>
+            <li><a href="/ecommerce-marketing/shopify">Shopify</a></li>
+            <li><a href="/ecommerce-marketing/shopify-plus">Shopify Plus</a></li>
+            <li><a href="/ecommerce-marketing/woocommerce">WooCommerce</a></li>
+            <li><a href="/ecommerce-marketing/wix">Wix</a></li>
+            <li><a href="/ecommerce-marketing/bigcommerce">BigCommerce</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/marketing-platform">Marketing platform</a>
+          <ul>
+            <li><a href="/marketing-platform">Platform Overview</a></li>
+            <li><a href="/features/retargeting">Retargeting Ads</a></li>
+            <li><a href="/features/brand-awareness">Brand Awareness Ads</a></li>
+            <li><a href="/features/digital-advertising-platform">Marketing Channels</a></li>
+            <li><a href="/features/social-media-advertising-platform">Connected Channels</a></li>
+            <li><a href="/features/audience-and-segmentation">Audience &amp; Segmentation</a></li>
+            <li><a href="/features/email">Email Marketing</a></li>
+            <li><a href="/features/marketing-automation-builder">Marketing Automation</a></li>
+            <li><a href="/features/reporting">Reporting &amp; Insights</a></li>
+          </ul>
+        </li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li>
+          <a href="/resources">Resources</a>
+          <ul>
+            <li><a href="/blog">AdRoll Blog</a></li>
+            <li><a href="/third-party-cookies">Third-Party Cookie Trail Guides</a></li>
+            <li><a href="/glossary">Marketing Glossary</a></li>
+            <li><a href="/holiday-marketing-guide">Holiday Marketing Resources</a></li>
+            <li><a href="/state-of-digital-marketing-report">State of Digital Marketing Report</a></li>
+            <li><a href="/return-on-ad-spend-calculator/">Return On Ad Spend Calculator</a></li>
+            <li><a href="/campaign-utm-url-builder">AdRoll UTM Link Builder</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/community">Growth Guerilla Collective</a></li>
+            <li><a href="/small-business-shopping-list">Small Business Shopping List</a></li>
+            <li><a href="https://help.adroll.com/hc/en-us/articles/360037601172-Getting-Started-Guide">Getting Started</a></li>
+            <li><a href="https://help.adroll.com/hc/en-us">Help Center</a></li>
+            <li><a href="/research-panel">Beta Program</a></li>   
+          </ul>
+        </li>
+        <li>
+          <a href="https://app.adroll.com/account/signin">Log in</a>
+        </li>
+        <li>
+          <a id="mobile-try" class="cta" href="/pricing">Get Started</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+  
+
+  <div class="main">
+    
+
+<div id="homepage">
+
+  <section id="hp-hero" class="bkgd-coconut">
+      <div id="hero-left">
+          <h1>Smaller budgets need smarter dollars</h1>
+          <p>Create, manage, and analyze your display, Facebook, Instagram, Pinterest, TikTok, and email campaigns from a single platform. AdRoll helps marketers do more with less.</p>
+        <p>
+          <a class="cta" href="/pricing">Get Started</a>
+          &nbsp;&nbsp;<a class="cta-alt" href="/contact">Get In Touch</a>
+        </p>
+      </div>
+      <div id="hero-right">
+          <img width="576" height="566" src="/assets/img/homepage/hero-machine.png?format=png&amp;auto=webp&amp;width=576" loading="eager" alt="" srcset="/assets/img/homepage/hero-machine.png?format=jpg&amp;auto=webp&amp;width=576,
+              /assets/img/homepage/hero-machine.png?format=jpg&amp;auto=webp&amp;width=576&amp;dpr=1.5 1.5x,
+              /assets/img/homepage/hero-machine.png?format=jpg&amp;auto=webp&amp;width=576&amp;dpr=2 2x">
+      </div>
+  </section>
+
+  <section class="container padding-top-4em padding-bottom-4em">
+    <div class="row container-middle-align">
+      <div class="col_6">
+        <h2 class="rotatingText">AdRoll works for the<br>
+        <span class="cycle" style="display: inline; opacity: 0.996252;">established marketer.</span>
+        <span class="cycle">big business marketing department.</span>
+        <span class="cycle">one-person marketing team.</span>
+        <span class="cycle">scrappy new entrepreneur.</span>
+        <span class="cycle">ecommerce store owner.</span>
+        <span class="cycle">marketing newbie.</span></h2>
+        <p>Our industry-first automation builder gives you full control of campaigns across display, social, and email — all from one place.</p>
+        <p class="cta-tag"><a class="cta-secondary" href="/features/marketing-automation-builder">Explore automation builder</a></p>
+      </div>
+      <div class="col_6 container-middle-align">
+        <img width="400" height="313" src="/assets/img/ecommerce-marketing/img-automation_studio.png?format=png&amp;auto=webp&amp;width=400" loading="eager" alt="" srcset="/assets/img/ecommerce-marketing/img-automation_studio.png?format=jpg&amp;auto=webp&amp;width=400,
+              /assets/img/ecommerce-marketing/img-automation_studio.png?format=jpg&amp;auto=webp&amp;width=400&amp;dpr=1.5 1.5x,
+              /assets/img/ecommerce-marketing/img-automation_studio.png?format=jpg&amp;auto=webp&amp;width=400&amp;dpr=2 2x">
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="col_12">
+        <div id="logos">
+          <div class="logo-wrap">
+            <img width="209" height="86" alt="Lounge Underwear logo. " loading="lazy" class="lazy loaded" data-src="/assets/img/logos/lounge.png?format=png&amp;auto=webp&amp;width=209" srcset="/assets/img/logos/lounge.png?format=png&amp;auto=webp&amp;width=209,
+                      /assets/img/logos/lounge.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=1.5 1.5x,
+                      /assets/img/logos/lounge.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=2 2x" src="/assets/img/logos/lounge.png?format=png&amp;auto=webp&amp;width=209" data-ll-status="loaded">
+          </div>
+          <div class="logo-wrap">  
+            <img width="209" height="29" alt="TOPO Designs logo." loading="lazy" class="lazy loaded" data-src="/assets/img/logos/topo-designs.png?format=png&amp;auto=webp&amp;width=209" srcset="/assets/img/logos/topo-designs.png?format=png&amp;auto=webp&amp;width=209,
+                      /assets/img/logos/topo-designs.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=1.5 1.5x,
+                      /assets/img/logos/topo-designs.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=2 2x" src="/assets/img/logos/topo-designs.png?format=png&amp;auto=webp&amp;width=209" data-ll-status="loaded">
+          </div>
+          <div class="logo-wrap">
+            <img width="209" height="54" alt="Peyton Jewelry logo. " loading="lazy" class="lazy loaded" data-src="/assets/img/logos/peyton-jewelry.png?format=png&amp;auto=webp&amp;width=209" srcset="/assets/img/logos/peyton-jewelry.png?format=png&amp;auto=webp&amp;width=209,
+                      /assets/img/logos/peyton-jewelry.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=1.5 1.5x,
+                      /assets/img/logos/peyton-jewelry.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=2 2x" src="/assets/img/logos/peyton-jewelry.png?format=png&amp;auto=webp&amp;width=209" data-ll-status="loaded">
+          </div>
+          <div class="logo-wrap">
+            <img width="209" height="18" alt="Shady Rays logo. " loading="lazy" class="lazy loaded" data-src="/assets/img/logos/shady-rays.png?format=png&amp;auto=webp&amp;width=209" srcset="/assets/img/logos/shady-rays.png?format=png&amp;auto=webp&amp;width=209,
+                    /assets/img/logos/shady-rays.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=1.5 1.5x,
+                    /assets/img/logos/shady-rays.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=2 2x" src="/assets/img/logos/shady-rays.png?format=png&amp;auto=webp&amp;width=209" data-ll-status="loaded">
+          </div>
+          <div class="logo-wrap">
+            <img width="209" height="30" alt="Exploding Kittens logo. " loading="lazy" class="lazy loaded" data-src="/assets/img/logos/exploading-kittens.png?format=png&amp;auto=webp&amp;width=209" srcset="/assets/img/logos/exploading-kittens.png?format=png&amp;auto=webp&amp;width=209,
+                    /assets/img/logos/exploading-kittens.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=1.5 1.5x,
+                    /assets/img/logos/exploading-kittens.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=2 2x" src="/assets/img/logos/exploading-kittens.png?format=png&amp;auto=webp&amp;width=209" data-ll-status="loaded">
+          </div>
+          <div class="logo-wrap">
+            <img width="209" height="55" alt="Head Kandy logo. " loading="lazy" class="lazy loaded" data-src="/assets/img/logos/head-kandy.png?format=png&amp;auto=webp&amp;width=209" srcset="/assets/img/logos/head-kandy.png?format=png&amp;auto=webp&amp;width=209,
+                    /assets/img/logos/head-kandy.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=1.5 1.5x,
+                    /assets/img/logos/head-kandy.png?format=png&amp;auto=webp&amp;width=209&amp;dpr=2 2x" src="/assets/img/logos/head-kandy.png?format=png&amp;auto=webp&amp;width=209" data-ll-status="loaded">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bkgd-extra-light-charcoal padding-top-6em padding-bottom-6em">
+    <div class="row container container-middle-align">
+      <div class="col_6 container-middle-align padding-image">
+        <img width="398" height="254" loading="lazy" alt="" src="/assets/img/homepage/customers-find.png?format=png&amp;auto=webp&amp;width=398" srcset="/assets/img/homepage/customers-find.png?format=png&amp;auto=webp&amp;width=398,
+                /assets/img/homepage/customers-find.png?format=png&amp;auto=webp&amp;width=398&amp;dpr=1.5 1.5x,
+                /assets/img/homepage/customers-find.png?format=png&amp;auto=webp&amp;width=398&amp;dpr=2 2x">
+      </div>
+      <div class="col_6">
+        <h2>For 15 years, we've been the leader in helping our customers find their best customers</h2>
+        <p>The AdRoll platform is powered by 15+ years of data from hundreds of thousands of brands and billions of shoppers. Let our expertise find the right customers for your business.</p>
+        <p class="cta-tag"><a class="cta-secondary" href="/why-adroll-digital-marketing-platform">Learn more</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container padding-top-6em padding-bottom-3em">
+    <div class="row">
+      <div class="col_6">
+        <h2>Save time and energy by running all your campaigns across millions of websites and mobile apps — from one place</h2>
+        <p>When we say one-stop shop, we mean one-stop. Launch, pause, and edit ad campaigns across all the places you want to advertise, plus use that data to see your campaigns holistically and make improvements.</p>
+        <p class="cta-tag"><a class="cta-secondary" href="/features/social-media-advertising-platform">Explore social ads manager</a></p>
+      </div>
+      <div class="col_6 container-middle-align padding-image">
+        <img width="398" height="276" loading="lazy" alt="" src="/assets/img/homepage/save-time.png?format=png&amp;auto=webp&amp;width=398" srcset="/assets/img/homepage/save-time.png?format=png&amp;auto=webp&amp;width=398,
+                    /assets/img/homepage/save-time.png?format=png&amp;auto=webp&amp;width=398&amp;dpr=1.5 1.5x,
+                    /assets/img/homepage/save-time.png?format=png&amp;auto=webp&amp;width=398&amp;dpr=2 2x">
+      </div>
+    </div>
+  </section>
+
+  <section class="container padding-top-3em padding-bottom-3em">
+    <div class="row">
+      <div class="col_6 container-middle-align padding-image">
+        <img width="398" height="259" src="/assets/img/homepage/correct-choices.png?format=png&amp;auto=webp&amp;width=398" loading="lazy" alt="" srcset="/assets/img/homepage/correct-choices.png?format=png&amp;auto=webp&amp;width=398,
+              /assets/img/homepage/correct-choices.png?format=png&amp;auto=webp&amp;width=398&amp;dpr=1.5 1.5x,
+              /assets/img/homepage/correct-choices.png?format=png&amp;auto=webp&amp;width=398&amp;dpr=2 2x">
+      </div>
+      <div class="col_6">
+        <h2>Our retargeting and brand awareness ads make billions of correct choices every day</h2>
+        <p>Our AI does what even the most savvy marketer alone cannot. Our powerful machine learning makes more predictions per second than the NASDAQ to attract the right customers to your site and get them buying again and again.</p>
+        <p class="cta-tag"><a class="cta-secondary" href="/features/retargeting">Explore retargeting ads</a></p>
+        <p class="cta-tag"><a class="cta-secondary" href="/features/brand-awareness">Explore brand awareness ads</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container padding-top-3em padding-bottom-6em">
+    <div class="row">
+      <div class="col_6">
+        <h2>Experts to manage your advertising</h2>
+        <p>Want to run effective campaigns but don’t have the bandwidth to manage different platforms? AdRoll managed services can be an extension of your marketing team, providing you with a dedicated platform expert to partner with, helping you and your team achieve your marketing goals and maximize return from your campaigns.</p>
+        <p class="cta-tag"><a class="cta-secondary" href="/managed-services">Get the support you deserve</a></p>
+      </div>
+      <div class="col_6 container-middle-align padding-image">
+        <img width="398" height="203" src="/assets/img/homepage/experts.png?format=png&amp;auto=webp&amp;width=398" loading="lazy" alt="" srcset="/assets/img/homepage/experts.png?format=png&amp;auto=webp&amp;width=398,
+              /assets/img/homepage/experts.png?format=png&amp;auto=webp&amp;width=398&amp;dpr=1.5 1.5x,
+              /assets/img/homepage/experts.png?format=png&amp;auto=webp&amp;width=398&amp;dpr=2 2x">
+      </div>
+    </div>
+  </section>
+
+  <section id="quote-callout">
+    <div class="quote-callout-wrapper container">
+      <div class="callout-quote">
+        <img width="150" height="128" data-src="/assets/img/homepage/logo-volcanica.png?format=png&amp;auto=webp&amp;with=150" alt="" loading="lazy" class="lazy" srcset="/assets/img/homepage/logo-volcanica.png?format=png&amp;auto=webp&amp;width=150,
+              /assets/img/homepage/logo-volcanica.png?format=png&amp;auto=webp&amp;width=150&amp;dpr=1.5 1.5x,
+              /assets/img/homepage/logo-volcanica.png?format=png&amp;auto=webp&amp;width=150&amp;dpr=2 2x">
+        <span>Since last year, <b>our revenue has increased 191%</b>, <b>our attributed conversions 177%</b>, and our <b>engagement 33%</b>. We’re reaching and converting customers higher in the funnel.<b>"</b></span>
+      </div>
+      <div class="callout-block lazy" data-bg="/assets/svg/bkgd/blob-pink.svg">
+        <p><b>AdRoll customers</b> make
+        <span><b>$165B</b></span>
+        in sales <b>every year</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container text-center-align padding-top-5em padding-bottom-4em">
+    
+
+    
+
+        
+
+            <a title="AdRoll is a leader in Display Advertising on G2" href="https://www.g2.com/products/adroll/reviews?utm_source=rewards-badge"><img width="125" height="162" loading="lazy" style="width: 125px;" alt="AdRoll is a leader in Display Advertising on G2" src="https://images.g2crowd.com/uploads/report_medal/image/1004323/medal.svg"></a>
+            <a title="AdRoll is a leader in Email Marketing on G2" href="https://www.g2.com/products/adroll/reviews?utm_source=rewards-badge"><img width="125" height="162" loading="lazy" style="width: 125px;" alt="AdRoll is a leader in Email Marketing on G2" src="https://images.g2crowd.com/uploads/report_medal/image/1004327/medal.svg"></a>
+            <a title="AdRoll is a leader in Small-Business Attribution on G2" href="https://www.g2.com/products/adroll/reviews?utm_source=rewards-badge"><img width="125" height="162" loading="lazy" style="width: 125px;" alt="AdRoll is a leader in Small-Business Attribution on G2" src="https://images.g2crowd.com/uploads/report_medal/image/1004364/medal.svg"></a>
+            <a title="AdRoll is a leader in Mid-Market Display Advertising on G2" href="https://www.g2.com/products/adroll/reviews?utm_source=rewards-badge"><img width="125" height="162" loading="lazy" style="width: 125px;" alt="AdRoll is a leader in Mid-Market Display Advertising on G2" src="https://images.g2crowd.com/uploads/report_medal/image/1004321/medal.svg"></a>
+            <a title="AdRoll is a leader in Enterprise Mobile Advertising on G2" href="https://www.g2.com/products/adroll/reviews?utm_source=rewards-badge"><img width="125" height="162" loading="lazy" style="width: 125px;" alt="AdRoll is a leader in Enterprise Mobile Advertising on G2" src="https://images.g2crowd.com/uploads/report_medal/image/1004342/medal.svg"></a>
+
+        
+
+    
+    
+  
+  </section>
+
+  <section class="bkgd-coconut footer-wrapper-stack">
+  <div class="container row container-center-align">
+    <div class="col_7 text-center-align">
+      <h2>Increase ROI. Learn from your data. Maximize sales.</h2>
+      
+      
+        <a class="cta" href="/pricing">Get Started</a>
+      
+      &nbsp;&nbsp;<a class="cta-alt" href="/contact">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+</div>
+  </div>
+
+  
+    
+      <footer>
+  <div id="footer-nav">
+    <div class="container">
+      <div id="footer-nav-bottom">
+        <ul class="footer-flex-container">
+          <li class="footer-block">
+            <a>Why AdRoll?</a>
+            <ul style="margin-bottom: 2em;">
+              <li><a href="/why-adroll-digital-marketing-platform">Overview</a></li>
+              <li><a href="/pricing">Pricing</a></li>
+            </ul>
+            <a>For ecommmerce stores</a>
+            <ul style="margin-bottom: 2em;">
+              <li><a href="/ecommerce-marketing">AdRoll for ecommerce</a></li>
+              <li><a href="/ecommerce-marketing/shopify">Shopify</a></li>
+              <li><a href="/ecommerce-marketing/woocommerce">WooCommerce</a></li>
+              <li><a href="/ecommerce-marketing/bigcommerce">BigCommerce</a></li>
+            </ul>
+          </li>
+          <li class="footer-block">
+            <a>Marketing Platform</a>
+            <ul style="margin-bottom: 2em;">
+              <li><a href="/marketing-platform">One platform, every need</a></li>
+              <li><a href="/marketing-platform/find-more-customers">Find more customers</a></li>
+              <li><a href="/marketing-platform/build-profitable-relationships">Build profitable relationships</a></li>
+              <li><a href="/marketing-platform/track-and-improve-results">Track and improve results</a></li>
+              <li><a href="/marketing-platform/protect-customer-data">Protect customer data</a></li>
+            </ul>
+            <a>Marketing Recipes</a>
+            <ul style="margin-bottom: 2em;">
+              <li><a href="/marketing-recipes">What are marketing recipes?</a></li>
+              <li><a href="/marketing-recipes/abandoned-cart-recovery">Abandoned cart recovery</a></li>
+              <li><a href="/marketing-recipes/customer-loyalty">Customer loyalty</a></li>
+              <li><a href="/marketing-recipes/retargeting">Retargeting</a></li>
+              <li><a href="/marketing-recipes/brand-awareness">Brand awareness</a></li>
+            </ul>
+          </li>
+          <li class="footer-block">
+            <a>Resources</a>
+            <ul>
+              <li><a href="/resources">Resource library</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/community">Community</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="https://help.adroll.com/hc/en-us" target="_blank" rel="noopener">Help Center</a></li>
+              <li><a href="/third-party-cookies">Third-Party Cookies</a></li>
+              <li><a href="/campaign-utm-url-builder">AdRoll UTM Link Builder</a></li>
+              <li><a href="/digital-marketing-minute">Digital Marketing Newsletter</a></li>
+            </ul>
+          </li>
+          <li class="footer-block">
+            <a>Partners</a>
+            <ul>
+              <li><a href="/partners" title="Partners">Overview</a></li>
+              <li><a href="/partners/agency">Agencies</a></li>
+              <li><a href="https://solutions.adroll.com">Agency Directory</a></li>
+              <li><a href="https://partners.adroll.com">Partner Directory</a></li>
+              <li><a href="/referral-program/sign-up">Referral Program</a></li>
+              <li><a href="https://developers.adroll.com/" target="_blank" rel="noopener">API docs</a></li>
+            </ul>
+          </li>
+          <li class="footer-block">
+            <a>Company</a>
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li id="footer-news"><a href="/about/news">News</a></li>
+              <li><a href="https://www.nextroll.com/careers" target="_blank" rel="noopener">Careers</a></li>
+              <li><a href="https://tech.nextroll.com" target="_blank" rel="noopener">NextRoll Engineering</a></li>
+            </ul>
+          </li>
+          <li class="footer-block">
+            <div id="footer-social">
+              <ul>
+                <li>
+                  <a aria-label="View AdRoll on Facebook" href="https://www.facebook.com/adroll" target="_blank" rel="noopener">
+                    <svg class="svg-inline facebook" aria-hidden="true" focusable="false" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>  
+                  </a>
+                </li>
+                <li>
+                  <a aria-label="View AdRoll on LinkedIn" href="https://www.linkedin.com/showcase/adroll" target="_blank" rel="noopener">
+                    <svg class="svg-inline linkedin" aria-hidden="true" focusable="false" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                  </a>
+                </li>
+                <li>
+                  <a aria-label="View AdRoll on Instagram" href="https://www.instagram.com/adroll" target="_blank" rel="noopener">
+                    <svg class="svg-inline instagram" aria-hidden="true" focusable="false" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                  </a>
+                </li>
+                <li>
+                  <a aria-label="View AdRoll on Twitter" href="https://twitter.com/AdRoll" target="_blank" rel="noopener">
+                    <svg class="svg-inline twitter" aria-hidden="true" focusable="false" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="footer-affiliates">
+              <ul>
+                <li class="footer-sub-logo iab"><a href="https://www.iab.net/?source=AdRoll" target="_blank" rel="noopener">iab Member</a></li>
+                <li class="footer-sub-logo nai"><a href="https://www.networkadvertising.org/" target="_blank" rel="noopener">NAI Member</a></li>
+                <li class="footer-sub-logo tr"><a href="https://www.tagtoday.net/" target="_blank" rel="noopener">TAG</a></li>
+              </ul>
+            </div>
+            <div id="footer-g2">
+              <a href="https://www.g2.com/products/adroll/reviews?utm_source=review-widget" title="Read reviews of AdRoll on G2">
+                <img class="full-width lazy" style="max-width: 200px" width="150" height="75" alt="Read AdRoll reviews on G2" loading="lazy" data-src="https://www.g2.com/products/adroll/widgets/stars?color=white&amp;type=read">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer-sub">
+    <div class="container">
+      <ul class="footer-flex-container">
+        <li class="footer-sub-logo nextroll"><a href="https://www.nextroll.com" target="_blank" rel="noopener">
+          <img height="20" width="135" src="/assets/svg/logo-nextroll.svg" alt="NextRoll logo. " loading="lazy" class="lazy">
+        </a></li>
+        <li class="bu-logos">
+          <ul>
+            <li><a href="/"><img width="80" height="15" src="/assets/svg/logo-adroll.svg" alt="AdRoll logo. " loading="lazy" class="lazy"></a></li>
+            <li><a href="https://www.rollworks.com" target="_blank" rel="noopener"><img width="111" height="15" src="/assets/svg/logo-rollworks.svg" alt="Rollworks logo. " loading="lazy" class="lazy"></a></li>
+          </ul>
+        </li>
+        <li>
+          <p class="nextroll-supports">NextRoll is as an equal opportunity employer.<br>
+          <a href="https://www.nextroll.com/what-we-stand-for" target="_blank" rel="noopener">We stand alongside organizations that support our Rollers and Community</a>.</p>
+        </li><li>
+          <ul>
+            <li><a href="https://www.nextroll.com/careers" target="_blank" rel="noopener">Careers</a></li>
+            <li><a href="https://www.nextroll.com/trust-center" target="_blank" rel="noopener">Trust Center</a></li>
+            <li><a href="https://www.nextroll.com/terms" target="_blank" rel="noopener">Terms of Service</a></li>
+            <li><a href="https://www.nextroll.com/website-terms" target="_blank" rel="noopener">Website Terms of Use</a></li>
+            <li><a href="https://www.nextroll.com/privacy" target="_blank" rel="noopener">Privacy Notice</a></li>
+            <li><a href="https://www.nextroll.com/infringement-policy" target="_blank" rel="noopener">Infringement Policy</a></li>
+            <li><a href="https://app.adroll.com/optout" target="_blank" rel="noopener">Ad Opt Out</a></li>
+            <li><a href="https://www.nextroll.com/privacy#website-13" target="_blank" rel="noopener">CCPA Notice at Collection</a></li>
+            <li><a href="https://app.adroll.com/adchoices" target="_blank" rel="noopener">AdChoices</a></li>
+          </ul>
+          <p class="your-privacy-choices"><a href="/your-privacy-choices" target="_blank" rel="noopener"><span>Your Privacy Choices</span> <img src="/assets/img/your-privacy-choices.png" alt="Your Privacy Choices" loading="lazy" width="25" height="15"></a></p>
+          <p>© 2006-2023, NextRoll, Inc. All rights reserved. AdRoll is a division of NextRoll. To learn more please visit <a href="https://www.nextroll.com" target="_blank" rel="noopener">nextroll.com</a>.</p>
+          <p class="ccpa"><a href="https://app.adroll.com/optout/email" target="_blank" rel="noopener">Do Not Sell or Share My Personal Information</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- Aggregate G2 Rating Structured Data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@type": "AggregateRating",
+    "itemReviewed": {
+        "@type": "WebApplication",
+        "image": "https://www.adroll.com/assets/img/adroll-logo-black.png",
+        "name": "AdRoll",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "all",
+        "browserRequirements": "requires Javascript support",
+        "offers": {
+          "@type": "AggregateOffer",
+          "offeredBy": {
+          "@type": "Organization",
+          "name": "AdRoll"
+          },
+          "highPrice": "432.00",
+          "lowPrice": "0.00",
+          "offerCount": "2",
+          "priceCurrency": "USD",
+          "priceSpecification": [
+              {
+                  "@type": "UnitPriceSpecification",
+                  "price": "0.00",
+                  "priceCurrency": "USD",
+                  "name": "Ads",
+                  "referenceQuantity": {
+                      "@type": "QuantitativeValue",
+                      "value": "1",
+                      "unitCode": "MON"
+                  }
+              },
+              {
+                  "@type": "UnitPriceSpecification",
+                  "price": "36.00",
+                  "priceCurrency": "USD",
+                  "name": "Marketing & Ads Plus",
+                  "referenceQuantity": {
+                      "@type": "QuantitativeValue",
+                      "value": "1",
+                      "unitCode": "MON"
+                  }
+              }
+          ]
+      },
+    
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "ratingCount": "152"
+      }
+    },
+    "ratingValue": "4.4",
+    "ratingCount": "152"
+    
+}
+</script>
+
+    
+  
+
+  
+  
+
+  <!-- Site Javascript -->
+  <script src="/js/site.js?id=99a6458ec3a39f4c4cde2efc613bf269" type="module"></script>
+
+  
+
+
+
+<script type="text/javascript" id="">!function(){var a=window.analytics=window.analytics||[];if(!a.initialize)if(a.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{a.invoked=!0;a.methods="trackSubmit trackClick trackLink trackForm pageview identify reset group track ready alias debug page once off on".split(" ");a.factory=function(b){return function(){var c=Array.prototype.slice.call(arguments);c.unshift(b);a.push(c);return a}};for(var e=0;e<a.methods.length;e++){var f=a.methods[e];a[f]=a.factory(f)}a.load=
+function(b,c){var d=document.createElement("script");d.type="text/javascript";d.async=!0;d.src="https://cdn.segment.com/analytics.js/v1/"+b+"/analytics.min.js";b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(d,b);a._loadOptions=c};a.SNIPPET_VERSION="4.1.0";a.load("Sy0LGznWXipqk72a6SJ8Dd1wqAonKqxR",{integrations:{All:!0,Drift:!1,Drift:!1,"Clearbit Enrichment":!1,"Clearbit Reveal":!1}});a.page()}}();</script><script type="text/javascript" id="">(function(){function b(){!1===c&&(c=!0,Munchkin.init("964-WFU-818",{wsInfo:"j1RQ"}))}var c=!1,a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//munchkin.marketo.net/munchkin-beta.js";a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||b()};a.onload=b;document.getElementsByTagName("head")[0].appendChild(a)})();</script><script type="text/javascript" id="">(function(d,e,f,b,c,a){c="";b="https://tracking.g2crowd.com/attribution_tracking/conversions/"+d+".js?p\x3d"+encodeURI(e)+"\x26e\x3d"+c;a=document.createElement("script");a.type="application/javascript";a.async=!0;a.src=b;f.getElementsByTagName("head")[0].appendChild(a)})("3451",document.location.href,document);</script><script type="text/javascript" id="">(function(){var a=google_tag_manager["rm"]["568119"](2)-0+1,b="www.adroll.com";document.cookie="adrPageCount\x3d"+a+";domain\x3d"+b+";path\x3d/;"})();</script><script type="text/javascript" id="web-vitals-ga4">function sendToDataLayer(a){var c=a.rating,b=a.attribution,d=b?b.largestShiftTarget||b.element||b.eventTarget||"":"(not set)";a={name:a.name,id:a.id,value:a.value,delta:a.delta,rating:c,valueRounded:Math.round("CLS"===a.name?1E3*a.value:a.value),deltaRounded:Math.round("CLS"===a.name?1E3*a.delta:a.delta),debugTarget:d,debugEvent:b?b.eventType||"":"",debugTiming:b?b.loadState||"":"",eventTime:b?b.largestShiftTime||b.lcpEntry&&b.lcpEntry.startTime||b.eventTime||"":""};dataLayer.push({event:"coreWebVitals",
+webVitalsMeasurement:a})};</script>
+<script type="text/javascript" id="web-vitals-cdn">(function(){var a=document.createElement("script");a.src="https://unpkg.com/web-vitals@3.0.0/dist/web-vitals.attribution.iife.js";a.onload=function(){webVitals.onCLS(sendToDataLayer);webVitals.onFID(sendToDataLayer);webVitals.onLCP(sendToDataLayer);webVitals.onFCP(sendToDataLayer);webVitals.onTTFB(sendToDataLayer);webVitals.onINP(sendToDataLayer)};document.head.appendChild(a)})();</script><script type="text/javascript" id="">(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://ws.zoominfo.com/pixel/MWB1NQftcHfyFVwRkJok";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+<noscript>
+        <img src="https://ws.zoominfo.com/pixel/MWB1NQftcHfyFVwRkJok" width="1" height="1" style="display: none;">
+</noscript><script type="text/javascript" id="">adroll_adv_id="VMYZUWPHFRH37EAOEU2EQS";adroll_pix_id="47TO2ID2HZGCXBUDT6O72I";adroll_version="2.0";
+(function(a,e,c,d,b){a.__adroll_loaded=!0;a.adroll=a.adroll||[];a.adroll.f=["setProperties","identify","track"];var f="https://s.adroll.com/j/"+adroll_adv_id+"/roundtrip.js";for(b=0;b<a.adroll.f.length;b++)a.adroll[a.adroll.f[b]]=a.adroll[a.adroll.f[b]]||function(g){return function(){a.adroll.push([g,arguments])}}(a.adroll.f[b]);c=e.createElement("script");d=e.getElementsByTagName("script")[0];c.async=1;c.src=f;d.parentNode.insertBefore(c,d)})(window,document);adroll.track("pageView");</script><iframe name="" class="qlfd-not-mobile" id="q-messenger-frame" data-mirrored="true" allow="camera;microphone" title="Qualified Messenger" style="
+            height: 450px !important;
+            width: 320px !important;
+            visibility: hidden !important;
+            content-visibility: hidden !important;
+          " src="https://app.qualified.com/w/1/ZFTcG3Wxwf4bL5Am/messenger?uuid=1bded2d1-af57-491d-b300-3d374e6061f4"></iframe><div id="adroll_consent_container" class="adroll_consent_container" style="z-index: 2147483647;"><div id="adroll_consent_banner_container" class="adroll_consent_banner_container" style="display: block;"><div id="adroll_consent_banner" class="adroll_consent_banner" style="display: block;"><div class="adroll_consent_close_icon">×</div><div class="adroll_consent_notice"><div class="adroll_consent_notice_title"><div class="adroll_consent_notice_title_text"><img class="adroll_consent_first_page_logo" src="https://s.adroll.com/i/favicon/nextroll-32x32.png" alt=""> <span id="adroll_consent_title" class="adroll_consent_title">We Value Your Privacy</span></div><div class="adroll_consent_notice_title_settings"><a href="javascript:void(0)" id="adroll_consent_settings"><div id="adroll_settings" class="adroll_consent_button"><div class="adroll_button_text">Settings</div></div></a></div></div><div class="adroll_consent_notice_text"><span class="adroll_consent_text" id="navigate"><div class="adroll_consent_box">NextRoll, Inc. ("NextRoll") and our <a href="javascript:void(0)" class="adroll_consent_banner_partners_link_class">18 advertising partners</a> use cookies and similar technologies on this site and use personal data (e.g., your IP address). If you consent, the cookies, device identifiers, or other information can be stored or accessed on your device for the purposes described below. You can click "Allow All" or "Decline All" or click Settings above to customise your consent regarding the purposes and features for which your personal data will be processed and/or the partners with whom you will share personal data.</div><div class="adroll_consent_box">NextRoll and our <a href="javascript:void(0)" class="adroll_consent_banner_partners_link_class">advertising partners</a> process personal data to: ● Store and/or access information on a device; ● Create a personalised content profile; ● Select personalised content; ● Personalised advertising, advertising measurement, audience research and services development; ● Services development. For some of the purposes above, our advertising partners: ● Use precise geolocation data. Some of our partners rely on their legitimate business interests to process personal data. View our <a href="javascript:void(0)" class="adroll_consent_banner_partners_link_class">advertising partners</a> if you wish to provide or deny consent for specific partners, review the purposes each partner believes they have a legitimate interest for, and object to such processing.</div><div class="adroll_consent_box">If you select Decline All, you will still be able to view content on this site and you will still receive advertising, but the advertising will not be tailored for you. You may change your setting whenever you see the <span class="adroll_nextroll_logo"><span class="adroll_persistent_icon_wrapper"><span><svg version="1.0" aria-labelledby="adroll_persistent_icon_desc" xmlns="http://www.w3.org/2000/svg" width="400.000000pt" height="400.000000pt" viewBox="0 0 400.000000 400.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)" fill="#4d4d4d" stroke="none"><desc id="adroll_persistent_icon_desc">Manage consent preferences</desc><path d="M1859 3285 c-2 -2 -24 -6 -49 -10 -116 -16 -251 -60 -375 -121 -154 -75 -240 -137 -356 -256 -185 -189 -306 -427 -353 -698 -15 -84 -16 -336 -2 -405 4 -16 9 -43 12 -60 12 -65 58 -204 90 -274 19 -41 34 -75 34 -77 0 -1 -96 -4 -212 -6 -195 -4 -218 -6 -273 -27 -137 -54 -251 -155 -310 -275 -48 -97 -62 -155 -64 -274 l-2 -100 1078 3 c593 1 1094 6 1113 9 19 4 73 16 120 27 327 78 632 304 804 599 79 135 143 313 162 455 3 22 7 51 10 65 6 40 6 220 -1 280 -17 137 -59 285 -114 402 -17 34 -29 63 -28 65 1 1 92 4 202 6 185 4 206 6 273 30 85 31 186 99 239 162 90 109 132 225 137 383 l3 102 -1067 0 c-587 -1 -1069 -3 -1071 -5z m279 -688 c111 -28 208 -83 293 -168 118 -117 180 -261 182 -422 2 -182 -56 -321 -185 -450 -66 -65 -142 -112 -235 -144 -68 -23 -93 -27 -193 -26 -131 0 -196 17 -302 76 -70 39 -158 120 -205 188 -35 51 -80 152 -88 200 -3 18 -8 36 -11 40 -7 11 -6 177 1 213 20 103 80 223 152 305 80 91 232 176 348 194 37 6 212 1 243 -6z"></path></g></svg></span></span></span> on this site.</div></span></div></div><div class="adroll_consent_button_bar"><a href="javascript:void(0)" id="adroll_consent_reject"><div id="adroll_reject" class="adroll_consent_button"><div class="adroll_button_text">Decline All</div></div></a><a href="javascript:void(0)" id="adroll_consent_accept"><div id="adroll_allow_all" class="adroll_consent_button"><div class="adroll_button_text">Allow All</div></div></a></div></div></div><div class="adroll_consent_persistent_icon" id="nextroll_consent_persistent_icon" style="display: none;"><a href="javascript:void(0)" id="adroll_consent_persistent_icon_href"><span id="adroll_nextroll_logo"><span class="adroll_persistent_icon_wrapper"><span><svg version="1.0" aria-labelledby="adroll_persistent_icon_desc" xmlns="http://www.w3.org/2000/svg" width="400.000000pt" height="400.000000pt" viewBox="0 0 400.000000 400.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)" fill="#4d4d4d" stroke="none"><desc id="adroll_persistent_icon_desc">Manage consent preferences</desc><path d="M1859 3285 c-2 -2 -24 -6 -49 -10 -116 -16 -251 -60 -375 -121 -154 -75 -240 -137 -356 -256 -185 -189 -306 -427 -353 -698 -15 -84 -16 -336 -2 -405 4 -16 9 -43 12 -60 12 -65 58 -204 90 -274 19 -41 34 -75 34 -77 0 -1 -96 -4 -212 -6 -195 -4 -218 -6 -273 -27 -137 -54 -251 -155 -310 -275 -48 -97 -62 -155 -64 -274 l-2 -100 1078 3 c593 1 1094 6 1113 9 19 4 73 16 120 27 327 78 632 304 804 599 79 135 143 313 162 455 3 22 7 51 10 65 6 40 6 220 -1 280 -17 137 -59 285 -114 402 -17 34 -29 63 -28 65 1 1 92 4 202 6 185 4 206 6 273 30 85 31 186 99 239 162 90 109 132 225 137 383 l3 102 -1067 0 c-587 -1 -1069 -3 -1071 -5z m279 -688 c111 -28 208 -83 293 -168 118 -117 180 -261 182 -422 2 -182 -56 -321 -185 -450 -66 -65 -142 -112 -235 -144 -68 -23 -93 -27 -193 -26 -131 0 -196 17 -302 76 -70 39 -158 120 -205 188 -35 51 -80 152 -88 200 -3 18 -8 36 -11 40 -7 11 -6 177 1 213 20 103 80 223 152 305 80 91 232 176 348 194 37 6 212 1 243 -6z"></path></g></svg></span></span></span></a></div></div></body></html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html><html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths grunticon js-ready" lang="en-US" style=""><head><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/favicon-16x16.png" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="manifest" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/manifest.json">
+	<link rel="mask-icon" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/safari-pinned-tab.svg" color="#29aae0">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/images/mstile-144x144.png">
+	<meta name="theme-color" content="#29aae0">
+
+	<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/grunticon/output/icons.data.svg.css" media="all"><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/cwQvQhsy4_nYdnSDY4u7O5_B/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-JtvhFQlPQ6LL/+I5aABhkbXo/hmh5M6IvL9vK+ecFqveRPvf7P6cGzs1DEyU5A3c"></script><script src="https://connect.facebook.net/signals/config/1583129918380982?v=2.9.138&amp;r=stable&amp;domain=www.centrahealthcare.com" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}}); 
+/* ]]> */
+</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nursing and Allied Staffing&nbsp;- Centra Healthcare Solutions</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.centrahealthcare.com/xmlrpc.php">
+
+
+
+	<!-- INSERT INTO SR LAB START -->
+
+	<!-- string replace - DO NOT DELETE -->
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/css/liquid-slider.css">
+    <link rel="stylesheet" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/css/owl.carousel.css">
+
+	<!-- INSERT INTO SR LAB END -->
+	
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.6 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Find great travel nursing &amp; therapy jobs at Centra Healthcare Solutions.&nbsp;">
+	<link rel="canonical" href="https://www.centrahealthcare.com/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Nursing and Allied Staffing&nbsp;- Centra Healthcare Solutions">
+	<meta property="og:description" content="Find great travel nursing &amp; therapy jobs at Centra Healthcare Solutions.&nbsp;">
+	<meta property="og:url" content="https://www.centrahealthcare.com/">
+	<meta property="og:site_name" content="Centra Healthcare Solutions">
+	<meta property="article:modified_time" content="2023-09-27T17:57:41+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.centrahealthcare.com/","url":"https://www.centrahealthcare.com/","name":"Nursing and Allied Staffing - Centra Healthcare Solutions","isPartOf":{"@id":"https://www.centrahealthcare.com/#website"},"datePublished":"2016-01-18T19:13:01+00:00","dateModified":"2023-09-27T17:57:41+00:00","description":"Find great travel nursing & therapy jobs at Centra Healthcare Solutions. ","breadcrumb":{"@id":"https://www.centrahealthcare.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.centrahealthcare.com/"]}]},{"@type":"BreadcrumbList","@id":"https://www.centrahealthcare.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.centrahealthcare.com/#website","url":"https://www.centrahealthcare.com/","name":"Centra Healthcare Solutions","description":"Our Commitment is Permanent","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.centrahealthcare.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.22.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No tracking code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.centrahealthcare.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://www.centrahealthcare.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.1" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="jquery-ui-styles-css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css?ver=6.4.1" type="text/css" media="all">
+<link rel="stylesheet" id="jobbee_style-css" href="https://www.centrahealthcare.com/wp-content/plugins/jobbee/styles_jobbee.css?ver=6.4.1" type="text/css" media="all">
+<link rel="stylesheet" id="wpsm_ac-font-awesome-front-css" href="https://www.centrahealthcare.com/wp-content/plugins/responsive-accordion-and-collapse/css/font-awesome/css/font-awesome.min.css?ver=6.4.1" type="text/css" media="all">
+<link rel="stylesheet" id="wpsm_ac_bootstrap-front-css" href="https://www.centrahealthcare.com/wp-content/plugins/responsive-accordion-and-collapse/css/bootstrap-front.css?ver=6.4.1" type="text/css" media="all">
+<link rel="stylesheet" id="sr_theme-style-css" href="https://www.centrahealthcare.com/wp-content/themes/centra_theme/style.css?ver=1.0" type="text/css" media="all">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.2/modernizr.min.js?ver=2.7.2" id="modernizr-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://www.centrahealthcare.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.centrahealthcare.com/wp-json/wp/v2/pages/10"><link rel="shortlink" href="https://www.centrahealthcare.com/">
+<link rel="alternate" type="application/json+oembed" href="https://www.centrahealthcare.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.centrahealthcare.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.centrahealthcare.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.centrahealthcare.com%2F&amp;format=xml">
+
+<script>/*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+
+!function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;d<t.length;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;d<n.length;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;d<r.length;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s}(grunticon,this)}();
+grunticon(["https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/grunticon/output/icons.data.svg.css", "https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/grunticon/output/icons.data.png.css", "https://www.centrahealthcare.com/wp-content/themes/centra_theme/sr_chassis/source/grunticon/output/icons.fallback.css"],grunticon.svgLoadedCallback);</script><noscript><link href="https://www.centrahealthcare.com/wp-content/themes/centra_themesr_chassis/source/grunticon/output/icons.fallback.css" rel="stylesheet"></noscript><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>	
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1583129918380982'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1583129918380982&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+<script src="https://www.centrahealthcare.com/wp-includes/js/wp-emoji-release.min.js?ver=6.4.1" defer=""></script><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+
+<body class="home page-template-default page page-id-10 desktop gecko windows page-home jbr_sm_layout js-loaded">
+	<!--[if lt IE 9]>
+		<p class="browsehappy" style="text-align: center;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+<div id="outer-wrap" class="page-wrapper">
+<div id="inner-wrap" class="hfeed site">
+
+		<header id="masthead" class="site-header" role="banner">
+                <div class="phonenumber"><a href="tel:8005350076">800.535.0076</a></div>
+		<div class="header-content">
+
+			<a class="nav-btn nav-toggle-btn button btn--ghost" href="#nav">MENU <i class="sr-icon-menu"></i></a>
+
+			<div class="site-branding">
+				<h1 class="site-title">
+					<a href="https://www.centrahealthcare.com/" class="logo-link" title="Centra Healthcare Solutions" rel="home">
+						<div class="srbt-svg-centra_logo_white-ds logo" style="background-image: none;"><svg xmlns="http://www.w3.org/2000/svg" width="404.13" height="116.889" viewBox="-6.403 -5.294 404.13 116.889"><path fill="#FFF" d="M321.816 24.61c-7.54.02-12.84 4.12-15.074 5.73l.023-.102V24.64h-11.81v52.005h11.81v-24.32c0-11.71 6.08-17.287 15.025-17.287 3.315 0 6.03 1.08 6.03 1.08V25.163s-3.517-.553-6.004-.553M271.835 13.87h-11.91v48.45c0 11.42 6.2 15.257 14.962 15.257 4.43 0 7.777-.982 10.73-2.656v-9.745c-2.362 1.184-4.727 1.772-7.384 1.772-4.036 0-6.398-1.87-6.398-6.5V34.954h13.98V24.715h-13.98V13.87zM119.646 76.71c-15.007 0-26.762-11.34-26.762-25.818V50.7c0-14.83 11.59-26.012 26.96-26.012 8.585 0 14.79 2.414 20 7.808l-8.024 8.39c-2.88-2.827-6.406-5.293-12.075-5.293-7.717 0-13.76 6.55-13.76 14.914v.193c0 8.753 6.034 15.105 14.352 15.105 5.4 0 9.065-2.408 12.165-5.152l7.623 7.496c-4.382 4.52-10 8.56-20.48 8.56M169.43 24.688c-14.465 0-25.373 11.182-25.373 26.01v.194c0 15.2 11.045 25.82 26.858 25.82 8.51 0 15.394-2.925 20.473-8.688l-7.39-6.356c-4.11 3.545-7.896 5.004-12.888 5.004-7.26 0-12.305-3.932-13.836-10.784l-.23-1.037h37.227c.075-.924.134-1.687.134-2.803v-.192c0-12.533-6.542-27.167-24.974-27.167m0 10.04c6.262 0 10.648 4.002 11.902 10.754h-24.066c1.525-6.75 6.013-10.755 12.164-10.755M353.766 28.025l-3.895-3.31-4.14 3.453c-14.6 12.517-23.374 29.722-24.814 48.554h11.74a56.78 56.78 0 0 1 2.52-12.86h29.316a56.812 56.812 0 0 1 2.53 12.86h11.767c-1.475-18.907-10.322-36.158-25.024-48.697M339.31 54.22c2.58-4.747 5.88-9.23 9.91-13.418l.61-.634.61.634c4.03 4.19 7.33 8.672 9.914 13.418H339.31zM389.934 70.095a4.07 4.07 0 0 0-1.637-1.625c-.693-.38-1.42-.566-2.175-.566s-1.48.188-2.177.566a4.11 4.11 0 0 0-1.638 1.625 4.474 4.474 0 0 0-.596 2.217c0 .768.195 1.5.585 2.195.39.696.934 1.24 1.63 1.63a4.422 4.422 0 0 0 4.39 0 4.173 4.173 0 0 0 1.628-1.63 4.416 4.416 0 0 0-.01-4.412m-.732 3.983c-.314.56-.75.998-1.31 1.312a3.535 3.535 0 0 1-1.764.473 3.525 3.525 0 0 1-1.762-.473 3.342 3.342 0 0 1-1.31-1.312 3.58 3.58 0 0 1-.47-1.767c0-.62.16-1.217.48-1.784a3.34 3.34 0 0 1 1.314-1.308 3.6 3.6 0 0 1 1.744-.454c.605 0 1.188.15 1.746.454.56.306.998.74 1.317 1.308.32.568.48 1.164.48 1.785a3.46 3.46 0 0 1-.464 1.768"></path><path fill="#FFF" d="M387.308 73.157a2.377 2.377 0 0 0-.315-.36 1.24 1.24 0 0 0-.33-.175c.4-.057.71-.206.932-.446.22-.24.33-.528.33-.866 0-.244-.06-.47-.176-.67a1.17 1.17 0 0 0-.44-.45c-.174-.097-.418-.158-.732-.187a47.515 47.515 0 0 0-1.497-.012h-.947v4.682h.948V72.75h.25c.265 0 .48.065.654.196.173.134.393.455.656.966l.392.76h1.175l-.554-.944c-.197-.334-.31-.525-.345-.57m-.82-1.21c-.134.043-.474.062-1.022.062h-.386v-1.277h.386c.54 0 .882.022 1.02.066.14.043.245.116.32.218.074.103.11.22.11.35 0 .134-.038.254-.113.36a.604.604 0 0 1-.316.22"></path><path fill="#F6921E" d="M45.428 47.442l.28.052c4.148.777 8.155 1.92 11.99 3.398 12.425-4.772 23.012-13.1 30.57-24.195l-9.425-5.416c-7.098 10.363-17.137 17.494-29.866 21.195l-.78.227-.198-.79c-3.21-12.87-2.11-25.136 3.256-36.484L41.808 0c-5.767 12.134-7.616 25.482-5.474 38.63a68.368 68.368 0 0 1 8.91 8.597l.184.215z"></path><path fill="#29AAE1" d="M78.79 80.49l9.45-5.42C80.68 63.99 70.107 55.672 57.698 50.89a68.22 68.22 0 0 1-11.747 3.335l-.498.088-.29.354a68.03 68.03 0 0 1-8.937 8.784c-2.06 13.035-.19 26.26 5.537 38.283l9.43-5.41c-5.372-11.354-6.47-23.62-3.25-36.477l.197-.79.783.228C61.657 63 71.695 70.138 78.79 80.49"></path><path fill="#38C74A" d="M45.428 47.442l2.903 3.37-2.878 3.503.5-.088a68.502 68.502 0 0 0 11.746-3.335 68.348 68.348 0 0 0-11.99-3.398l-.28-.052z"></path><path fill="#D3235A" d="M39.5 50.822l-.066-.188a68.55 68.55 0 0 1-3.1-12.005C25.94 30.283 13.406 25.32 0 24.364L.074 35.26c12.52.916 23.737 5.995 33.358 15.126l.59.562-.582.57C23.953 60.772 12.802 66 .29 67.077l.072 10.87c13.273-1.106 25.642-6.15 35.864-14.494a68.087 68.087 0 0 1 3.092-12.14l.182-.492z"></path><path fill="#F05A24" d="M39.434 50.635l.066.188 1.553-4.19 4.375.81-.185-.215a68.557 68.557 0 0 0-8.91-8.597 68.34 68.34 0 0 0 3.1 12.005"></path><path fill="#662E90" d="M45.45 54.315l-4.417.772L39.5 50.82l-.183.49c-1.42 4-2.444 8.062-3.09 12.142a68.2 68.2 0 0 0 8.933-8.785l.29-.352z"></path><path fill="#2E3191" d="M45.428 47.442l-4.375-.81-1.553 4.19 1.534 4.267 4.418-.775 2.88-3.502z"></path><path fill="#FFF" d="M96.657 82.822h1.973v7.765c.872-1.436 2.255-2.588 4.536-2.588 3.204 0 5.074 2.15 5.074 5.304v8.228h-1.974v-7.74c0-2.46-1.332-3.998-3.666-3.998-2.28 0-3.972 1.666-3.972 4.15v7.588h-1.974v-18.71h.003zM120.206 100.12c1.817 0 3.1-.743 4.177-1.87l1.23 1.103c-1.332 1.485-2.947 2.484-5.46 2.484-3.64 0-6.61-2.793-6.61-6.92 0-3.844 2.69-6.918 6.354-6.918 3.92 0 6.177 3.126 6.177 7.02 0 .18 0 .385-.025.69H115.54c.282 2.796 2.332 4.41 4.664 4.41m3.87-5.996c-.23-2.41-1.615-4.46-4.23-4.46-2.28 0-4.02 1.897-4.304 4.46h8.534zM130.455 97.687v-.052c0-2.845 2.306-4.33 5.662-4.33 1.69 0 2.87.23 4.05.562v-.41c0-2.356-1.437-3.587-3.92-3.587-1.564 0-2.794.384-4.024.947l-.59-1.613c1.46-.667 2.87-1.128 4.818-1.128 1.87 0 3.333.513 4.28 1.46.92.923 1.385 2.205 1.385 3.897v8.1h-1.948v-1.975c-.923 1.178-2.436 2.254-4.768 2.254-2.485 0-4.945-1.41-4.945-4.125m9.737-1.026v-1.23a13.662 13.662 0 0 0-3.87-.56c-2.46 0-3.868 1.075-3.868 2.664v.052c0 1.665 1.537 2.64 3.332 2.64 2.434-.002 4.406-1.463 4.406-3.565M148.39 82.82h1.976v18.71h-1.975zM157.564 98.02v-7.995h-1.846v-1.742h1.846v-3.998h1.974v3.998h4.203v1.742h-4.202v7.738c0 1.614.896 2.204 2.23 2.204.665 0 1.23-.128 1.922-.46v1.69c-.69.358-1.437.56-2.385.56-2.127.003-3.74-1.047-3.74-3.738M169.146 82.822h1.975v7.765c.873-1.436 2.256-2.588 4.535-2.588 3.203 0 5.074 2.15 5.074 5.304v8.228h-1.974v-7.74c0-2.46-1.332-3.998-3.665-3.998-2.28 0-3.97 1.666-3.97 4.15v7.588h-1.976l.002-18.71zM186.03 94.97v-.05c0-3.743 2.923-6.92 6.79-6.92 2.514 0 4.076 1.05 5.308 2.356l-1.31 1.385c-1.05-1.103-2.228-2-4.02-2-2.69 0-4.742 2.282-4.742 5.128v.05c0 2.87 2.103 5.15 4.87 5.15 1.69 0 2.998-.845 4.05-1.974l1.254 1.18c-1.332 1.486-2.92 2.562-5.406 2.562-3.87 0-6.793-3.15-6.793-6.866M202.405 97.687v-.052c0-2.845 2.307-4.33 5.663-4.33 1.692 0 2.87.23 4.05.562v-.41c0-2.356-1.436-3.587-3.922-3.587-1.562 0-2.793.384-4.02.947l-.59-1.613c1.46-.667 2.87-1.128 4.816-1.128 1.87 0 3.33.513 4.28 1.46.922.923 1.383 2.205 1.383 3.897v8.1h-1.947v-1.975c-.923 1.178-2.435 2.254-4.767 2.254-2.485 0-4.945-1.41-4.945-4.125m9.74-1.026v-1.23a13.668 13.668 0 0 0-3.87-.56c-2.46 0-3.87 1.075-3.87 2.664v.052c0 1.665 1.537 2.64 3.33 2.64 2.435-.002 4.41-1.463 4.41-3.565M220.162 88.28h1.973v3.46c.975-2.203 2.896-3.792 5.407-3.69v2.127h-.152c-2.896 0-5.255 2.076-5.255 6.074v5.28h-1.973V88.28zM237.74 100.12c1.82 0 3.102-.743 4.178-1.87l1.23 1.103c-1.333 1.485-2.947 2.484-5.46 2.484-3.64 0-6.61-2.793-6.61-6.92 0-3.844 2.69-6.918 6.354-6.918 3.92 0 6.177 3.126 6.177 7.02 0 .18 0 .385-.026.69h-10.507c.282 2.796 2.332 4.41 4.664 4.41m3.87-5.996c-.23-2.41-1.613-4.46-4.228-4.46-2.28 0-4.022 1.897-4.305 4.46h8.534zM247.452 99.71l1.665-2.562c1.485 1.078 3.05 1.642 4.332 1.642 1.126 0 1.64-.41 1.64-1.024v-.052c0-.847-1.333-1.127-2.846-1.59-1.923-.563-4.102-1.46-4.102-4.125v-.053c0-2.793 2.255-4.356 5.022-4.356 1.742 0 3.64.592 5.126 1.592l-1.486 2.688c-1.358-.794-2.717-1.28-3.716-1.28-.948 0-1.437.41-1.437.947v.052c0 .768 1.31 1.126 2.794 1.64 1.924.64 4.15 1.562 4.15 4.074v.052c0 3.05-2.28 4.434-5.252 4.434-1.918-.004-4.07-.644-5.89-2.08M262.646 94.74v-.054c0-3.945 3.18-7.148 7.458-7.148 4.254 0 7.405 3.15 7.405 7.1v.05c0 3.946-3.18 7.15-7.458 7.15-4.254 0-7.406-3.15-7.406-7.1m11.02 0v-.052c0-2.023-1.46-3.793-3.613-3.793-2.23 0-3.562 1.72-3.562 3.742v.05c0 2.025 1.462 3.794 3.614 3.794 2.23 0 3.562-1.715 3.562-3.74M282.428 82.82h3.896v18.71h-3.896zM291.806 96.687v-8.893h3.896v7.662c0 1.846.87 2.795 2.356 2.795 1.486 0 2.435-.948 2.435-2.794v-7.662h3.896v13.736h-3.897v-1.947c-.896 1.152-2.05 2.203-4.022 2.203-2.948 0-4.664-1.947-4.664-5.1M310.434 97.635v-6.51h-1.64v-3.33h1.64V84.28h3.896v3.512h3.23v3.332h-3.23v5.867c0 .898.385 1.334 1.256 1.334a3.98 3.98 0 0 0 1.922-.486v3.127c-.82.485-1.768.794-3.075.794-2.384 0-4-.948-4-4.125M322.426 82.82h4.1v3.462h-4.1v-3.46zm.102 4.974h3.896v13.736h-3.896V87.794zM331.342 94.74v-.054c0-3.945 3.178-7.148 7.458-7.148 4.254 0 7.406 3.15 7.406 7.1v.05c0 3.946-3.18 7.15-7.458 7.15-4.254 0-7.406-3.15-7.406-7.1m11.02 0v-.052c0-2.023-1.462-3.793-3.613-3.793-2.23 0-3.563 1.72-3.563 3.742v.05c0 2.025 1.46 3.794 3.614 3.794 2.23 0 3.562-1.715 3.562-3.74M350.944 87.794h3.896v1.948c.896-1.154 2.052-2.205 4.023-2.205 2.947 0 4.663 1.948 4.663 5.1v8.895h-3.896V93.87c0-1.847-.87-2.795-2.356-2.795s-2.436.948-2.436 2.795v7.662h-3.896l.002-13.738zM367.753 99.71l1.666-2.562c1.483 1.078 3.05 1.642 4.33 1.642 1.127 0 1.64-.41 1.64-1.024v-.052c0-.847-1.333-1.127-2.845-1.59-1.922-.563-4.102-1.46-4.102-4.125v-.053c0-2.793 2.256-4.356 5.023-4.356 1.742 0 3.64.592 5.125 1.592l-1.485 2.688c-1.357-.794-2.717-1.28-3.716-1.28-.95 0-1.436.41-1.436.947v.052c0 .768 1.307 1.126 2.793 1.64 1.922.64 4.15 1.562 4.15 4.074v.052c0 3.05-2.28 4.434-5.254 4.434-1.918-.004-4.07-.644-5.89-2.08M226.38 24.91c-17.28.04-24.075 14.044-24.075 26.97l.088 24.684 12.08.05.036-29.253c0-6.047 4.497-12.34 12.11-12.342 7.613.002 12.108 6.295 12.108 12.343l.024 29.254 12.055-.05-.107-24.683c0-12.926-6.4-26.93-24.32-26.97"></path></svg></div>
+					</a>
+				</h1>
+			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	<nav id="nav" class="main-navigation" role="navigation">
+
+		<header class="site-header nav__header">
+			<div class="header-content">
+
+				<a class="nav-btn close-btn nav-toggle-btn" id="nav-close-btn" href="#top"><i class="sr-icon-cross"></i></a>
+
+				<div class="site-branding">
+					<div class="site-title">
+						<a href="https://www.centrahealthcare.com/" class="logo-link" title="Centra Healthcare Solutions" rel="home">
+							<div class="srbt-svg-centra_logo_white-ds logo" style="background-image: none;"><svg xmlns="http://www.w3.org/2000/svg" width="404.13" height="116.889" viewBox="-6.403 -5.294 404.13 116.889"><path fill="#FFF" d="M321.816 24.61c-7.54.02-12.84 4.12-15.074 5.73l.023-.102V24.64h-11.81v52.005h11.81v-24.32c0-11.71 6.08-17.287 15.025-17.287 3.315 0 6.03 1.08 6.03 1.08V25.163s-3.517-.553-6.004-.553M271.835 13.87h-11.91v48.45c0 11.42 6.2 15.257 14.962 15.257 4.43 0 7.777-.982 10.73-2.656v-9.745c-2.362 1.184-4.727 1.772-7.384 1.772-4.036 0-6.398-1.87-6.398-6.5V34.954h13.98V24.715h-13.98V13.87zM119.646 76.71c-15.007 0-26.762-11.34-26.762-25.818V50.7c0-14.83 11.59-26.012 26.96-26.012 8.585 0 14.79 2.414 20 7.808l-8.024 8.39c-2.88-2.827-6.406-5.293-12.075-5.293-7.717 0-13.76 6.55-13.76 14.914v.193c0 8.753 6.034 15.105 14.352 15.105 5.4 0 9.065-2.408 12.165-5.152l7.623 7.496c-4.382 4.52-10 8.56-20.48 8.56M169.43 24.688c-14.465 0-25.373 11.182-25.373 26.01v.194c0 15.2 11.045 25.82 26.858 25.82 8.51 0 15.394-2.925 20.473-8.688l-7.39-6.356c-4.11 3.545-7.896 5.004-12.888 5.004-7.26 0-12.305-3.932-13.836-10.784l-.23-1.037h37.227c.075-.924.134-1.687.134-2.803v-.192c0-12.533-6.542-27.167-24.974-27.167m0 10.04c6.262 0 10.648 4.002 11.902 10.754h-24.066c1.525-6.75 6.013-10.755 12.164-10.755M353.766 28.025l-3.895-3.31-4.14 3.453c-14.6 12.517-23.374 29.722-24.814 48.554h11.74a56.78 56.78 0 0 1 2.52-12.86h29.316a56.812 56.812 0 0 1 2.53 12.86h11.767c-1.475-18.907-10.322-36.158-25.024-48.697M339.31 54.22c2.58-4.747 5.88-9.23 9.91-13.418l.61-.634.61.634c4.03 4.19 7.33 8.672 9.914 13.418H339.31zM389.934 70.095a4.07 4.07 0 0 0-1.637-1.625c-.693-.38-1.42-.566-2.175-.566s-1.48.188-2.177.566a4.11 4.11 0 0 0-1.638 1.625 4.474 4.474 0 0 0-.596 2.217c0 .768.195 1.5.585 2.195.39.696.934 1.24 1.63 1.63a4.422 4.422 0 0 0 4.39 0 4.173 4.173 0 0 0 1.628-1.63 4.416 4.416 0 0 0-.01-4.412m-.732 3.983c-.314.56-.75.998-1.31 1.312a3.535 3.535 0 0 1-1.764.473 3.525 3.525 0 0 1-1.762-.473 3.342 3.342 0 0 1-1.31-1.312 3.58 3.58 0 0 1-.47-1.767c0-.62.16-1.217.48-1.784a3.34 3.34 0 0 1 1.314-1.308 3.6 3.6 0 0 1 1.744-.454c.605 0 1.188.15 1.746.454.56.306.998.74 1.317 1.308.32.568.48 1.164.48 1.785a3.46 3.46 0 0 1-.464 1.768"></path><path fill="#FFF" d="M387.308 73.157a2.377 2.377 0 0 0-.315-.36 1.24 1.24 0 0 0-.33-.175c.4-.057.71-.206.932-.446.22-.24.33-.528.33-.866 0-.244-.06-.47-.176-.67a1.17 1.17 0 0 0-.44-.45c-.174-.097-.418-.158-.732-.187a47.515 47.515 0 0 0-1.497-.012h-.947v4.682h.948V72.75h.25c.265 0 .48.065.654.196.173.134.393.455.656.966l.392.76h1.175l-.554-.944c-.197-.334-.31-.525-.345-.57m-.82-1.21c-.134.043-.474.062-1.022.062h-.386v-1.277h.386c.54 0 .882.022 1.02.066.14.043.245.116.32.218.074.103.11.22.11.35 0 .134-.038.254-.113.36a.604.604 0 0 1-.316.22"></path><path fill="#F6921E" d="M45.428 47.442l.28.052c4.148.777 8.155 1.92 11.99 3.398 12.425-4.772 23.012-13.1 30.57-24.195l-9.425-5.416c-7.098 10.363-17.137 17.494-29.866 21.195l-.78.227-.198-.79c-3.21-12.87-2.11-25.136 3.256-36.484L41.808 0c-5.767 12.134-7.616 25.482-5.474 38.63a68.368 68.368 0 0 1 8.91 8.597l.184.215z"></path><path fill="#29AAE1" d="M78.79 80.49l9.45-5.42C80.68 63.99 70.107 55.672 57.698 50.89a68.22 68.22 0 0 1-11.747 3.335l-.498.088-.29.354a68.03 68.03 0 0 1-8.937 8.784c-2.06 13.035-.19 26.26 5.537 38.283l9.43-5.41c-5.372-11.354-6.47-23.62-3.25-36.477l.197-.79.783.228C61.657 63 71.695 70.138 78.79 80.49"></path><path fill="#38C74A" d="M45.428 47.442l2.903 3.37-2.878 3.503.5-.088a68.502 68.502 0 0 0 11.746-3.335 68.348 68.348 0 0 0-11.99-3.398l-.28-.052z"></path><path fill="#D3235A" d="M39.5 50.822l-.066-.188a68.55 68.55 0 0 1-3.1-12.005C25.94 30.283 13.406 25.32 0 24.364L.074 35.26c12.52.916 23.737 5.995 33.358 15.126l.59.562-.582.57C23.953 60.772 12.802 66 .29 67.077l.072 10.87c13.273-1.106 25.642-6.15 35.864-14.494a68.087 68.087 0 0 1 3.092-12.14l.182-.492z"></path><path fill="#F05A24" d="M39.434 50.635l.066.188 1.553-4.19 4.375.81-.185-.215a68.557 68.557 0 0 0-8.91-8.597 68.34 68.34 0 0 0 3.1 12.005"></path><path fill="#662E90" d="M45.45 54.315l-4.417.772L39.5 50.82l-.183.49c-1.42 4-2.444 8.062-3.09 12.142a68.2 68.2 0 0 0 8.933-8.785l.29-.352z"></path><path fill="#2E3191" d="M45.428 47.442l-4.375-.81-1.553 4.19 1.534 4.267 4.418-.775 2.88-3.502z"></path><path fill="#FFF" d="M96.657 82.822h1.973v7.765c.872-1.436 2.255-2.588 4.536-2.588 3.204 0 5.074 2.15 5.074 5.304v8.228h-1.974v-7.74c0-2.46-1.332-3.998-3.666-3.998-2.28 0-3.972 1.666-3.972 4.15v7.588h-1.974v-18.71h.003zM120.206 100.12c1.817 0 3.1-.743 4.177-1.87l1.23 1.103c-1.332 1.485-2.947 2.484-5.46 2.484-3.64 0-6.61-2.793-6.61-6.92 0-3.844 2.69-6.918 6.354-6.918 3.92 0 6.177 3.126 6.177 7.02 0 .18 0 .385-.025.69H115.54c.282 2.796 2.332 4.41 4.664 4.41m3.87-5.996c-.23-2.41-1.615-4.46-4.23-4.46-2.28 0-4.02 1.897-4.304 4.46h8.534zM130.455 97.687v-.052c0-2.845 2.306-4.33 5.662-4.33 1.69 0 2.87.23 4.05.562v-.41c0-2.356-1.437-3.587-3.92-3.587-1.564 0-2.794.384-4.024.947l-.59-1.613c1.46-.667 2.87-1.128 4.818-1.128 1.87 0 3.333.513 4.28 1.46.92.923 1.385 2.205 1.385 3.897v8.1h-1.948v-1.975c-.923 1.178-2.436 2.254-4.768 2.254-2.485 0-4.945-1.41-4.945-4.125m9.737-1.026v-1.23a13.662 13.662 0 0 0-3.87-.56c-2.46 0-3.868 1.075-3.868 2.664v.052c0 1.665 1.537 2.64 3.332 2.64 2.434-.002 4.406-1.463 4.406-3.565M148.39 82.82h1.976v18.71h-1.975zM157.564 98.02v-7.995h-1.846v-1.742h1.846v-3.998h1.974v3.998h4.203v1.742h-4.202v7.738c0 1.614.896 2.204 2.23 2.204.665 0 1.23-.128 1.922-.46v1.69c-.69.358-1.437.56-2.385.56-2.127.003-3.74-1.047-3.74-3.738M169.146 82.822h1.975v7.765c.873-1.436 2.256-2.588 4.535-2.588 3.203 0 5.074 2.15 5.074 5.304v8.228h-1.974v-7.74c0-2.46-1.332-3.998-3.665-3.998-2.28 0-3.97 1.666-3.97 4.15v7.588h-1.976l.002-18.71zM186.03 94.97v-.05c0-3.743 2.923-6.92 6.79-6.92 2.514 0 4.076 1.05 5.308 2.356l-1.31 1.385c-1.05-1.103-2.228-2-4.02-2-2.69 0-4.742 2.282-4.742 5.128v.05c0 2.87 2.103 5.15 4.87 5.15 1.69 0 2.998-.845 4.05-1.974l1.254 1.18c-1.332 1.486-2.92 2.562-5.406 2.562-3.87 0-6.793-3.15-6.793-6.866M202.405 97.687v-.052c0-2.845 2.307-4.33 5.663-4.33 1.692 0 2.87.23 4.05.562v-.41c0-2.356-1.436-3.587-3.922-3.587-1.562 0-2.793.384-4.02.947l-.59-1.613c1.46-.667 2.87-1.128 4.816-1.128 1.87 0 3.33.513 4.28 1.46.922.923 1.383 2.205 1.383 3.897v8.1h-1.947v-1.975c-.923 1.178-2.435 2.254-4.767 2.254-2.485 0-4.945-1.41-4.945-4.125m9.74-1.026v-1.23a13.668 13.668 0 0 0-3.87-.56c-2.46 0-3.87 1.075-3.87 2.664v.052c0 1.665 1.537 2.64 3.33 2.64 2.435-.002 4.41-1.463 4.41-3.565M220.162 88.28h1.973v3.46c.975-2.203 2.896-3.792 5.407-3.69v2.127h-.152c-2.896 0-5.255 2.076-5.255 6.074v5.28h-1.973V88.28zM237.74 100.12c1.82 0 3.102-.743 4.178-1.87l1.23 1.103c-1.333 1.485-2.947 2.484-5.46 2.484-3.64 0-6.61-2.793-6.61-6.92 0-3.844 2.69-6.918 6.354-6.918 3.92 0 6.177 3.126 6.177 7.02 0 .18 0 .385-.026.69h-10.507c.282 2.796 2.332 4.41 4.664 4.41m3.87-5.996c-.23-2.41-1.613-4.46-4.228-4.46-2.28 0-4.022 1.897-4.305 4.46h8.534zM247.452 99.71l1.665-2.562c1.485 1.078 3.05 1.642 4.332 1.642 1.126 0 1.64-.41 1.64-1.024v-.052c0-.847-1.333-1.127-2.846-1.59-1.923-.563-4.102-1.46-4.102-4.125v-.053c0-2.793 2.255-4.356 5.022-4.356 1.742 0 3.64.592 5.126 1.592l-1.486 2.688c-1.358-.794-2.717-1.28-3.716-1.28-.948 0-1.437.41-1.437.947v.052c0 .768 1.31 1.126 2.794 1.64 1.924.64 4.15 1.562 4.15 4.074v.052c0 3.05-2.28 4.434-5.252 4.434-1.918-.004-4.07-.644-5.89-2.08M262.646 94.74v-.054c0-3.945 3.18-7.148 7.458-7.148 4.254 0 7.405 3.15 7.405 7.1v.05c0 3.946-3.18 7.15-7.458 7.15-4.254 0-7.406-3.15-7.406-7.1m11.02 0v-.052c0-2.023-1.46-3.793-3.613-3.793-2.23 0-3.562 1.72-3.562 3.742v.05c0 2.025 1.462 3.794 3.614 3.794 2.23 0 3.562-1.715 3.562-3.74M282.428 82.82h3.896v18.71h-3.896zM291.806 96.687v-8.893h3.896v7.662c0 1.846.87 2.795 2.356 2.795 1.486 0 2.435-.948 2.435-2.794v-7.662h3.896v13.736h-3.897v-1.947c-.896 1.152-2.05 2.203-4.022 2.203-2.948 0-4.664-1.947-4.664-5.1M310.434 97.635v-6.51h-1.64v-3.33h1.64V84.28h3.896v3.512h3.23v3.332h-3.23v5.867c0 .898.385 1.334 1.256 1.334a3.98 3.98 0 0 0 1.922-.486v3.127c-.82.485-1.768.794-3.075.794-2.384 0-4-.948-4-4.125M322.426 82.82h4.1v3.462h-4.1v-3.46zm.102 4.974h3.896v13.736h-3.896V87.794zM331.342 94.74v-.054c0-3.945 3.178-7.148 7.458-7.148 4.254 0 7.406 3.15 7.406 7.1v.05c0 3.946-3.18 7.15-7.458 7.15-4.254 0-7.406-3.15-7.406-7.1m11.02 0v-.052c0-2.023-1.462-3.793-3.613-3.793-2.23 0-3.563 1.72-3.563 3.742v.05c0 2.025 1.46 3.794 3.614 3.794 2.23 0 3.562-1.715 3.562-3.74M350.944 87.794h3.896v1.948c.896-1.154 2.052-2.205 4.023-2.205 2.947 0 4.663 1.948 4.663 5.1v8.895h-3.896V93.87c0-1.847-.87-2.795-2.356-2.795s-2.436.948-2.436 2.795v7.662h-3.896l.002-13.738zM367.753 99.71l1.666-2.562c1.483 1.078 3.05 1.642 4.33 1.642 1.127 0 1.64-.41 1.64-1.024v-.052c0-.847-1.333-1.127-2.845-1.59-1.922-.563-4.102-1.46-4.102-4.125v-.053c0-2.793 2.256-4.356 5.023-4.356 1.742 0 3.64.592 5.125 1.592l-1.485 2.688c-1.357-.794-2.717-1.28-3.716-1.28-.95 0-1.436.41-1.436.947v.052c0 .768 1.307 1.126 2.793 1.64 1.922.64 4.15 1.562 4.15 4.074v.052c0 3.05-2.28 4.434-5.254 4.434-1.918-.004-4.07-.644-5.89-2.08M226.38 24.91c-17.28.04-24.075 14.044-24.075 26.97l.088 24.684 12.08.05.036-29.253c0-6.047 4.497-12.34 12.11-12.342 7.613.002 12.108 6.295 12.108 12.343l.024 29.254 12.055-.05-.107-24.683c0-12.926-6.4-26.93-24.32-26.97"></path></svg></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->
+
+		<div class="grid-two-thirds nav__section nav__content form--alignleft">		
+			<div class="menu_content cp"><h2 class="mc__title">Say Hello!</h2><div class="mc__content"><div class="grid-half "><script type="text/javascript"></script>
+                <div class="gf_browser_gecko gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework" data-form-theme="legacy" data-form-index="0" id="gform_wrapper_7"><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_7" id="gform_7" action="/" data-formid="7">
+                        <div class="gform-body gform_body"><ul id="gform_fields_7" class="gform_fields top_label form_sublabel_below description_below"><li id="field_7_1" class="gfield gfield--type-text gfield--float-label gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_7_1"><label class="gfield_label gform-field-label" for="input_7_1">Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input name="input_1" id="input_7_1" type="text" value="" class="medium" tabindex="1000" aria-required="true" aria-invalid="false"> </div></li><li id="field_7_4" class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible gfield--float-label" data-js-reload="field_7_4"><label class="gfield_label gform-field-label" for="input_7_4">Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_email">
+                            <input name="input_4" id="input_7_4" type="text" value="" class="medium" tabindex="1001" aria-required="true" aria-invalid="false">
+                        </div></li><li id="field_7_5" class="gfield gfield--type-phone gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible gfield--float-label" data-js-reload="field_7_5"><label class="gfield_label gform-field-label" for="input_7_5">Phone<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_phone"><input name="input_5" id="input_7_5" type="text" value="" class="medium" tabindex="1002" aria-required="true" aria-invalid="false"></div></li><li id="field_7_6" class="gfield gfield--type-textarea field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible gfield--float-label" data-js-reload="field_7_6"><label class="gfield_label gform-field-label" for="input_7_6">Message</label><div class="ginput_container ginput_container_textarea"><textarea name="input_6" id="input_7_6" class="textarea medium" tabindex="1003" aria-invalid="false" rows="10" cols="50"></textarea></div></li><li id="field_7_7" class="gfield gfield--type-captcha field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_7_7"><label class="gfield_label gform-field-label" for="input_7_7">CAPTCHA</label><div id="input_7_7" class="ginput_container ginput_recaptcha gform-initialized" data-sitekey="6LcmqrcUAAAAAKxxSUEdt3xC-7pc4t_MGSpmQ7TL" data-theme="light" data-tabindex="1004" data-badge=""><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-23r2wybr923" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcmqrcUAAAAAKxxSUEdt3xC-7pc4t_MGSpmQ7TL&amp;co=aHR0cHM6Ly93d3cuY2VudHJhaGVhbHRoY2FyZS5jb206NDQz&amp;hl=en&amp;v=cwQvQhsy4_nYdnSDY4u7O5_B&amp;theme=light&amp;size=normal&amp;cb=ry40qbblj0mf" tabindex="1004"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></li><li id="field_7_8" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below gfield_visibility_visible gfield--float-label" data-js-reload="field_7_8"><label class="gfield_label gform-field-label" for="input_7_8">Comments</label><div class="ginput_container"><input name="input_8" id="input_7_8" type="text" value=""></div><div class="gfield_description" id="gfield_description_7_8">This field is for validation purposes and should be left unchanged.</div></li></ul></div>
+        <div class="gform_footer top_label"> <input type="submit" id="gform_submit_button_7" class="gform_button button" value="Submit" tabindex="1005" onclick="if(window[&quot;gf_submitting_7&quot;]){return false;}  window[&quot;gf_submitting_7&quot;]=true;  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_7&quot;]){return false;} window[&quot;gf_submitting_7&quot;]=true;  jQuery(&quot;#gform_7&quot;).trigger(&quot;submit&quot;,[true]); }"><p class="privacyDisclaimer">**By clicking SUBMIT you affirm that all information provided by you is true and correct, acknowledge your review of Centra's <a href="https://www.centrahealthcare.com/privacy-policy/" target="_blank">Privacy Policy</a>, and agree to be bound by same. We look forward to working with you!</p> <input type="hidden" name="gform_ajax" value="form_id=7&amp;title=&amp;description=&amp;tabindex=0&amp;theme=data-form-theme='legacy'">
+            <input type="hidden" class="gform_hidden" name="is_submit_7" value="1">
+            <input type="hidden" class="gform_hidden" name="gform_submit" value="7">
+            
+            <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+            <input type="hidden" class="gform_hidden" name="state_7" value="WyJbXSIsIjE0OTNhYzY0NGRjYTM3YTY4NTkwNjNlNzczODAxZTg4Il0=">
+            <input type="hidden" class="gform_hidden" name="gform_target_page_number_7" id="gform_target_page_number_7" value="0">
+            <input type="hidden" class="gform_hidden" name="gform_source_page_number_7" id="gform_source_page_number_7" value="1">
+            <input type="hidden" name="gform_field_values" value="">
+            
+        </div>
+                        <p style="display: none !important;"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="1701992350414"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
+                        </div>
+		                <iframe style="display:none;width:0px;height:0px;" src="about:blank" name="gform_ajax_frame_7" id="gform_ajax_frame_7" title="This iframe contains the logic required to handle Ajax powered Gravity Forms."></iframe>
+		                <script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 7, 'https://www.centrahealthcare.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_7').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_7');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_7').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_7').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_7').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_7').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_7').val();gformInitSpinner( 7, 'https://www.centrahealthcare.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [7, current_page]);window['gf_submitting_7'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_7').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [7]);window['gf_submitting_7'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_7').text());}, 50);}else{jQuery('#gform_7').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [7, current_page]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 7, currentPage: current_page } });} );} ); 
+/* ]]> */
+</script>
+</div><div class="grid-half grid--small-padding-left">800.535.0076<br>
+<a href="mailto:questions@centrahealthcare.com" style="word-wrap: break-word;display: block;">questions@centrahealthcare.com</a><br>
+<br>
+<br>
+Centra Healthcare Solutions<br>
+1000 Corporate Drive Suite 280<br>
+Fort Lauderdale, FL 33334<br>
+
+<div class="icon-nav socialicons">
+<div><a class="menu_item_wrapper" title="facebook" href="https://www.facebook.com/CentraHealthcare/" target="_blank"><i class="sr-icon-facebook"></i></a>
+<a class="menu_item_wrapper" title="linkedin" href="https://www.linkedin.com/groups/3706380/profile" target="_blank"><i class="sr-icon-linkedin"></i></a>
+<a class="menu_item_wrapper" title="instagram" href="https://www.instagram.com/centrasocial/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+</div>
+</div>
+</div></div></div>		</div>
+
+		<div class="grid-third nav__section nav__menu hasfirstbg">
+			<div class="block">
+				<div class="is-vishidden screen-reader-text skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+				<div class="nav__mobile_contact">		
+					<div class="sr-accordion"><div class="sr-accordion__trigger"><a class="button" href="#">Say Hello!</a></div><div class="sr-accordion__content"><div class="mobile-content-wrapper">800.535.0076<br>
+<a href="mailto:questions@centrahealthcare.com" style="word-wrap: break-word;display: block;">questions@centrahealthcare.com</a><br>
+<br>
+<br>
+Centra Healthcare Solutions<br>
+1000 Corporate Drive Suite 280<br>
+Fort Lauderdale, FL 33334<br></div></div></div>				</div>
+				<div class="menu-main-nav-container"><ul id="menu-main-nav" class="menu"><li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-22" aria-haspopup="true"><a href="https://www.centrahealthcare.com/">Home<img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-61" aria-haspopup="true"><a href="https://www.centrahealthcare.com/about-centra/">Meet Centra<i class="sr-icon-arrow-down2"></i><img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a>
+<ul class="sub-menu">
+	<li id="menu-item-3206" class="no-image menu-item menu-item-type-post_type menu-item-object-page menu-item-3206" aria-haspopup="true"><a href="https://www.centrahealthcare.com/life-of-a-centurion/">The Life<img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a></li>
+</ul>
+</li>
+<li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62" aria-haspopup="true"><a href="https://www.centrahealthcare.com/key-employees/">Key Employees<img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a></li>
+<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-64" aria-haspopup="true"><a href="https://www.centrahealthcare.com/clients/">Clients<i class="sr-icon-arrow-down2"></i><img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a>
+<ul class="sub-menu">
+	<li id="menu-item-3687" class="no-image menu-item menu-item-type-post_type menu-item-object-page menu-item-3687" aria-haspopup="true"><a href="https://www.centrahealthcare.com/managed-services-provider/">MSP<img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a></li>
+</ul>
+</li>
+<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-63" aria-haspopup="true"><a href="https://www.centrahealthcare.com/find-a-healthcare-career/">Find a Healthcare Career<i class="sr-icon-arrow-down2"></i><img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a>
+<ul class="sub-menu">
+	<li id="menu-item-2628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2628" aria-haspopup="true"><a href="https://www.centrahealthcare.com/healthcare-jobs-nationwide/">Nationwide Jobs<img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a></li>
+</ul>
+</li>
+<li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item menu-item-67" aria-haspopup="true"><a target="_blank" href="https://jobs.centrahealthcare.com/">Job Search<i class="sr-icon-arrow-down2"></i><img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a>
+<ul class="sub-menu">
+	<li id="menu-item-60" class="no-image menu-item menu-item-type-post_type menu-item-object-page menu-item-60" aria-haspopup="true"><a href="https://www.centrahealthcare.com/apply/">Quick Apply<img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a></li>
+</ul>
+</li>
+<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65" aria-haspopup="true"><a href="https://www.centrahealthcare.com/centrahub/">CentraHub<img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59" aria-haspopup="true"><a href="https://www.centrahealthcare.com/blog/">Blog<img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a></li>
+<li id="menu-item-68" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68" aria-haspopup="true"><a target="_blank" href="https://myapps.paychex.com/landing_remote/login.do">Employee Login<img src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png" class="navIcon"></a></li>
+</ul></div>			</div>
+		</div>
+
+
+
+	</nav><!-- #site-navigation -->
+
+	
+	<div id="content" class="site-content">
+	<div id="primary" class="content-area l-main">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-10" class="post-10 page type-page status-publish hentry">
+
+	<div class="entry-content">
+
+		<div id="ca1" class="rbkgd rwd-background ca__section rbkgd--pageheader  hasoverlay haspetalsbg petalsbg   active" data-video="" data-vidtype="" style="background-image: url(&quot;https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_72927080-1-1806x1200.jpg&quot;);" data-rwd-small="https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_72927080-1-602x400.jpg" data-rwd-medium="https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_72927080-1-1204x800.jpg" data-rwd-large="https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_72927080-1-1806x1200.jpg" data-rwd-full="https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_72927080-1-3010x2000.jpg"><div class="srbt-svg-petals petals__background-svg" style="background-image: none;"><svg xmlns="http://www.w3.org/2000/svg" width="165" height="165" viewBox="0 0 165 165"><path class="petals__petal petals__petal--yellow" opacity=".8" fill="#F6921E" d="M142.09 19.637a68.327 68.327 0 0 0-3.1-12.005l-.066-.187-1.534-4.267-4.418.773-.5.09a68.27 68.27 0 0 0-11.746 3.334c-12.403 4.764-22.975 13.072-30.53 24.14-5.768 12.134-7.672 25.45-5.53 38.6a68.418 68.418 0 0 0 3.1 12.004l.067.187 1.534 4.268 4.418-.773.5-.09a68.182 68.182 0 0 0 11.746-3.334c12.404-4.763 22.976-13.07 30.53-24.14 5.768-12.134 7.672-25.45 5.53-38.6z"></path><path class="petals__petal petals__petal--blue" opacity=".8" fill="#29AAE1" d="M136.453 106.62c-7.56-11.078-18.014-19.465-30.423-24.245a68.31 68.31 0 0 0-11.99-3.397l-.28-.052-4.373-.81-1.555 4.19-.182.49a68.176 68.176 0 0 0-3.09 12.14c-2.034 12.855-.236 25.89 5.307 37.78 7.56 11.078 18.014 19.465 30.423 24.245a68.31 68.31 0 0 0 11.99 3.398l.28.052 4.373.81 1.555-4.19.182-.488c1.418-4 2.445-8.062 3.09-12.142 2.034-12.854.236-25.89-5.307-37.78z"></path><path class="petals__petal petals__petal--pink" opacity=".8" fill="#D3235A" d="M93.76 78.926l-.185-.215a68.368 68.368 0 0 0-8.91-8.596c-10.13-8.14-22.306-13.05-35.335-14.176-.167.012-.332-.058-.498-.045-.167-.013-.33.057-.498.045-13.03 1.125-25.205 6.037-35.336 14.175a68.305 68.305 0 0 0-8.91 8.597l-.184.215L1 82.297 3.88 85.8l.29.353a68.13 68.13 0 0 0 8.933 8.785c10.153 8.286 22.424 13.312 35.593 14.465l-.206-.02c.045-.003.297.038.342.034l.136.014.083-.035c13.17-1.152 25.357-6.17 35.51-14.458a68.255 68.255 0 0 0 8.933-8.784l.29-.354 2.88-3.503-2.903-3.37z"></path></svg></div><div class="petals__background rbkgd__overlay overlay_opacity overlay_opacity--heavy firstheavygradientbg"></div><div class="rbkgd__content"><div class="rbkgd__content_wrapper accent"><div class="rbkgd__section"><div class="contentright clearfix "><div class="contentright__wrapper"><h1>Start here, <strong>go anywhere.</strong></h1>
+<p class="big">Centra is the center of your healthcare world.<br>
+Wherever you want to take your career, we’re right there with you.</p>
+</div></div><div class="petals"><a href="Yellow+petal" class="petals__link petals__link--1" data-petal="petals__petal--yellow" onclick="sendGAPageView('local-assignment')"><i class="sr-icon-bracket-l"></i> Local Assignment <i class="sr-icon-bracket-r"></i></a><a href="Pink+petal" class="petals__link petals__link--2" data-petal="petals__petal--pink" onclick="sendGAPageView('travel-assignment')"><i class="sr-icon-bracket-l"></i> Travel Assignment <i class="sr-icon-bracket-r"></i></a><a href="Cyan+petal" class="petals__link petals__link--3" data-petal="petals__petal--blue" onclick="sendGAPageView('permanent-placement')"><i class="sr-icon-bracket-l"></i> Permanent Placement <i class="sr-icon-bracket-r"></i></a><div class="petals__content"></div></div><a class="para_jump" alt="Click to scroll down." href="#"><i class="sr-icon-arrow-d"></i></a>
+</div></div></div></div><div id="ca2" class="rbkgd ca__section imgalignrighthalf  active"><div class="rbkgd__sideimg rwd-background" style="background-image: url(&quot;https://www.centrahealthcare.com/wp-content/uploads/2016/05/Stocksy_txp6e3cec2aW8z000_Medium_717780-1-800x1200.jpg&quot;);" data-rwd-small="https://www.centrahealthcare.com/wp-content/uploads/2016/05/Stocksy_txp6e3cec2aW8z000_Medium_717780-1-267x400.jpg" data-rwd-medium="https://www.centrahealthcare.com/wp-content/uploads/2016/05/Stocksy_txp6e3cec2aW8z000_Medium_717780-1-533x800.jpg" data-rwd-large="https://www.centrahealthcare.com/wp-content/uploads/2016/05/Stocksy_txp6e3cec2aW8z000_Medium_717780-1-800x1200.jpg" data-rwd-full="https://www.centrahealthcare.com/wp-content/uploads/2016/05/Stocksy_txp6e3cec2aW8z000_Medium_717780-1.jpg"><div class="rbkgd__overlay overlay_opacity overlay_opacity--heavy seventhlightgradientbg "></div></div><div class="rbkgd__content"><div class="rbkgd__content_wrapper accent"><h2 class="rbkgd__title ">The Center Of Your Healthcare World</h2><div class="rbkgd__section"><p><big>It’s an exciting time to be in the healthcare industry. From the Atlantic to the Pacific, local to national - new adventures and challenges await you and your healthcare career if you know how to seek them out.</big></p>
+<p><big>That’s where Centra comes in. We can help you find those opportunities and provide the support you need to grab your dream career. From application to onboarding, Centra has your back.</big></p>
+<p><big>Ready to start searching for the perfect job and <a href="/about#ca4">begin your journey as a Centurion?</a></big></p>
+<p><a class="button" href="https://jobs.centrahealthcare.com/">Search Jobs</a></p>
+</div></div></div></div><div id="ca3" class="rbkgd ca__section hasoverlay hasbluepurplebg bluepurplebg  " data-video="" data-vidtype=""><div class=""></div><div class="rbkgd__content"><div class="rbkgd__content_wrapper accent"><h2 class="rbkgd__title ">Our Mission</h2><div class="rbkgd__section"><p><big class="highlight topalign" style="color: #fff;">Unparalleled service enabling healthcare professionals to concentrate on caring for America</big></p>
+</div></div></div></div><div id="ca4" class="rbkgd rwd-background ca__section hasoverlay  " data-video="" data-vidtype="" style="background-image: url(&quot;https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_89591884-1-1798x1200.jpg&quot;);" data-rwd-small="https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_89591884-1-599x400.jpg" data-rwd-medium="https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_89591884-1-1199x800.jpg" data-rwd-large="https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_89591884-1-1798x1200.jpg" data-rwd-full="https://www.centrahealthcare.com/wp-content/uploads/2016/05/AdobeStock_89591884-1-2996x2000.jpg"><div class=""></div><div class="rbkgd__content"><div class="rbkgd__content_wrapper accent"><div class="rbkgd__section"><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/physical-therapist-jobs/"><span class="btn--large-inner">Physical Therapist Jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/physical-therapist-assistant-jobs/"><span class="btn--large-inner">Physical Therapist Assistant Jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/speech-language-pathologist-jobs/"><span class="btn--large-inner">Speech Language Pathologist Jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/registered-nurse-jobs"><span class="btn--large-inner">Registered Nurse&nbsp;jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/licensed-practical-vocational-nurse-jobs"><span class="btn--large-inner">Licensed Practical / Vocational Nurse Jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/certified-nursing-assistant-jobs/"><span class="btn--large-inner">Certified Nursing Assistant Jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/nursing-management-jobs"><span class="btn--large-inner">Nursing Management Jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/occupational-therapist-jobs"><span class="btn--large-inner">Occupational Therapist jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="occupational-therapy-assistant-jobs"><span class="btn--large-inner">Occupational Therapy Assistant Jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/certified-hand-therapist-jobs/"><span class="btn--large-inner">Certified Hand Therapist Jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/rehabilitation-management-jobs"><span class="btn--large-inner">rehabilitation management jobs</span></a></div><div class="grid-dynamic "><a class="button btn--alt btn--large" href="/travel-jobs/"><span class="btn--large-inner">travel jobs</span></a></div>
+</div></div></div></div><div id="ca5" class="rbkgd ca__section " data-video="" data-vidtype=""><div class=""></div><div class="rbkgd__content"><div class="rbkgd__content_wrapper accent"><h2 class="rbkgd__title ">Everything you need to stay centered.</h2><div class="rbkgd__section"><h5 class="topalign">Visit Your</h5>
+<div class="srbt-svg-centrahub_logo"></div>
+<p>Easy access to employee resources, the Centra Blog,<br>
+and our Referral Program.</p>
+<p><a class="btn" href="/centrahub/">Let's go</a></p>
+</div></div></div></div><div id="ca6" class="rbkgd ca__section hasoverlay hasbluepurplebg bluepurplebg  " data-video="" data-vidtype=""><div class=""></div><div class="rbkgd__content"><div class="rbkgd__content_wrapper accent"><h2 class="rbkgd__title ">One point of contact, available anytime.</h2><div class="rbkgd__section"><p><big class="highlight topalign">As soon as you need us, we're there for you.</big></p>
+<div class="grid-half "><big>800.535.0076</big><br>
+<big><a href="mailto:questions@centrahealthcare.com">questions@centrahealthcare.com</a></big><p></p>
+</div><div class="grid-half "><big>Centra Healthcare Solutions</big><br>
+<big>1000 Corporate Drive Suite 280</big><br>
+<big>Fort Lauderdale, FL 33334</big></div>
+</div></div></div></div>	</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+</div>
+<!-- #content -->
+<footer id="colophon" class="site-footer eighthbg hasoverlay" role="contentinfo">
+  <div id="footer-main" class="footer-main footer-content lc clearfix">
+        <aside id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="footer-sec-wrapper">
+<aside><div class="jointcommission"><img src="https://www.centrahealthcare.com/wp-content/uploads/2019/05/jointcommission.png" alt="Joint Commission"></div></aside>
+<aside><div class="greatplace"><a href="https://www.greatplacetowork.com/certified-company/7008231" title="Rating and Review" target="_blank" rel="noopener"><img src="https://www.greatplacetowork.com/images/profiles/7008231/companyBadge.png" alt="Review" width="120"></a></div></aside>
+<aside>
+<div class="icon-nav socialicons">
+<div><a class="menu_item_wrapper" title="facebook" href="https://www.facebook.com/CentraHealthcare/" target="_blank" rel="noopener"><i class="sr-icon-facebook"></i></a>
+<a class="menu_item_wrapper" title="linkedin" href="https://www.linkedin.com/groups/3706380/profile" target="_blank" rel="noopener"><i class="sr-icon-linkedin"></i></a>
+<a class="menu_item_wrapper" title="instagram" href="https://www.instagram.com/centrasocial/" target="_blank" rel="noopener"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+</div>
+</div>
+</aside>
+<aside>
+<div class="foot-right-logo"><img src="/wp-content/uploads/2022/04/sun-sentinel-top-places.png" alt="Sun Sentinel Top Work Places"></div>
+</aside>
+</div></div></aside><aside id="text-3" class="widget widget_text">			<div class="textwidget"><p>If you have concerns about the quality and safety of patient care provided by Centra’s employees, you may report to The Joint Commission by clicking <a href="https://apps.jointcommission.org/QMSInternet/IncidentEntry.aspx?_ga=2.34734949.532308831.1690557536-2129167960.1690557536&amp;_gl=1*1vvqfvf*_ga*MjEyOTE2Nzk2MC4xNjkwNTU3NTM2*_ga_K31T0BHP4T*MTY5MDU1NzUzNi4xLjEuMTY5MDU1NzY2Ny4wLjAuMA..*_ga_WY9P72K1RC*MTY5MDU1NzUzNi4xLjEuMTY5MDU1NzY2Ny4zNC4wLjA." rel="noopener" target="_blank">here</a>. The Joint Commission and Centra Healthcare will not tolerate any retaliation against employees from good faith reporting of a compliance concern. </p>
+<p>Copyright © 2023 Centra Healthcare Solutions, Inc. All Rights Reserved. <a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-and-conditions-of-use/">Terms of Service</a></p>
+<div class="clear"></div>
+<div class="foot-mobile-logos">
+<aside>
+<div class="jointcommission"><img decoding="async" src="https://www.centrahealthcare.com/wp-content/uploads/2019/05/jointcommission.png" alt="Joint Commission"></div>
+</aside>
+<aside>
+<div class="greatplace"><a title="Rating and Review" href="https://www.greatplacetowork.com/certified-company/7008231" target="_blank" rel="noopener"><img decoding="async" src="https://www.greatplacetowork.com/images/profiles/7008231/companyBadge.png" alt="Review" width="120"></a></div>
+</aside>
+<aside>
+<div class="foot-right-logo"><img decoding="async" src="/wp-content/uploads/2022/04/sun-sentinel-top-places.png" alt="Sun Sentinel Top Work Places"></div>
+</aside>
+</div>
+</div>
+		</aside>      </div>
+</footer>
+<!-- #colophon -->
+
+</div>
+<!-- #page .inner-wrap -->
+</div>
+<!-- .page-wrapper  .outer-wrap --> 
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script> 
+<script src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/js/jquery.liquid-slider.min.js"></script> 
+<script src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/js/wow.js"></script> 
+<script src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/js/owl.carousel.js"></script> 
+<script src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/js/WPEngine-advanced-tracking.js"></script> 
+<script src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/js/custom.js"></script> 
+<script>
+jQuery(function ($) {
+$( document ).ready(function() {
+   $("#nav li a").append("<img src='https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/images/btn-logo.png' class='navIcon'/>");
+   });
+});
+</script> 
+<script>
+	new WOW().init();
+</script> 
+<script>
+function sendGAPageView(name) {
+	 console.log(name);
+	 __gaTracker('set', 'page', name);
+	 __gaTracker('send', 'pageview');
+	}
+</script>
+
+
+<div id="srbt-modal" class="srbt-modal"><div class="srbt-modal__bg"></div><div id="srbt-modal__inner" class="srbt-modal__inner"></div></div><div id="srbt-loader" class="srbt-loader"><div id="srbt-loader__inner" class="srbt-loader__inner">Loading...</div></div>
+<script>
+(function($) {
+	var ignore = location.pathname.match(/\/thank-you/) != null;
+
+	function createCookie(name,value,days) {
+	    var expires = "";
+	    if (days) {
+	        var date = new Date();
+	        date.setTime(date.getTime() + (days*24*60*60*1000));
+	        expires = "; expires=" + date.toUTCString();
+	    }
+	    document.cookie = name + "=" + value + expires + "; path=/";
+	}
+	
+	function readCookie(name) {
+	    var nameEQ = name + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0;i < ca.length;i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	    }
+	    return null;
+	}
+	
+	if ( ! ignore) {
+		if ( ! readCookie('refurl')) {
+			createCookie('refurl', location.href, 7);
+		}
+	
+		function updateField(e) {
+			$('#input_2_18').val(readCookie('refurl'));
+		}
+
+		$(document).ready(updateField);
+		$(document).ready(function() {
+			$(document).on('DOMNodeInserted', function(e) {
+				if($(e.target).hasClass('entry-content')) {
+					updateField();
+				}
+			});
+		});
+	} else {
+		createCookie('refurl', 0, -1);
+	}
+})(jQuery);
+</script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.2" id="jquery-ui-menu-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608" id="wp-a11y-js"></script>
+<script type="text/javascript" id="jquery-ui-autocomplete-js-extra">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.2" id="jquery-ui-autocomplete-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-content/plugins/jobbee/assets/js/jobbee_init.min.js?ver=2" id="jobbee_init-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-content/plugins/responsive-accordion-and-collapse/js/accordion-custom.js?ver=6.4.1" id="call_ac-custom-js-front-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-content/plugins/responsive-accordion-and-collapse/js/accordion.js?ver=6.4.1" id="call_ac-js-front-js"></script>
+<script type="text/javascript" src="https://www.centrahealthcare.com/wp-content/themes/centra_theme/assets/js/init.min.js" id="sr_scripts-js"></script>
+<script type="text/javascript" defer="defer" src="https://www.centrahealthcare.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.17" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/www.centrahealthcare.com\/wp-content\/plugins\/gravityforms\/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/www.centrahealthcare.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.centrahealthcare.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"5760ecebc3ed0ebf48530e08c4698cbf","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://www.centrahealthcare.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.17" id="gform_gravityforms-js"></script>
+<script type="text/javascript" defer="defer" src="https://www.google.com/recaptcha/api.js?hl=en&amp;ver=6.4.1#038;render=explicit" id="gform_recaptcha-js"></script>
+<script type="text/javascript" defer="defer" src="https://www.centrahealthcare.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=2.7.17" id="gform_masked_input-js"></script>
+<script type="text/javascript" defer="defer" src="https://www.centrahealthcare.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=59d951b75d934ae23e0ea7f9776264aa" id="gform_gravityforms_utils-js"></script>
+<script type="text/javascript" defer="defer" src="https://www.centrahealthcare.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=4ef53fe41c14a48b294541d9fc37387e" id="gform_gravityforms_theme_vendors-js"></script>
+<script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"5760ecebc3ed0ebf48530e08c4698cbf"}}},"hmr_dev":"","public_path":"https:\/\/www.centrahealthcare.com\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://www.centrahealthcare.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=f4d12a887a23a8c5755fd2b956bc8fcf" id="gform_gravityforms_theme-js"></script>
+<script defer="" type="text/javascript" src="https://www.centrahealthcare.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1700116941" id="akismet-frontend-js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 7) {jQuery('#input_7_5').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {jQuery(document).trigger('gform_post_render', [7, 1]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 7, currentPage: 1 } });} ); 
+/* ]]> */
+</script>
+<p id="a11y-speak-intro-text" class="a11y-speak-intro-text" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" hidden="hidden">Notifications</p><div id="a11y-speak-assertive" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-polite" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes" name="c-23r2wybr923" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=cwQvQhsy4_nYdnSDY4u7O5_B&amp;k=6LcmqrcUAAAAAKxxSUEdt3xC-7pc4t_MGSpmQ7TL" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
