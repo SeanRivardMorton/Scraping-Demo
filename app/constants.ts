@@ -1,6 +1,6 @@
 export enum ChatProvider {
   Drift = "Drift",
-  SalesForce = "SalesForce",
+  SalesForce = "salesforceliveagent",
   None = "None",
   Both = "Both",
 }

@@ -3,17 +3,17 @@ import findCompanyChatProviders from "../functions/findCompanyChatProviders";
 
 const router = express.Router();
 
-interface FindRequest extends Request {
-  query: {
-    companyName?: string;
-  };
-}
-
 // this endpoint was part of the original app, but the readme specified
 // that there should be a /find endpoint.
 router.post("/drift", async (req, res) => {
   res.send([{ companyName: "", hasDrift: false }]);
 });
+
+interface FindRequest extends Request {
+  query: {
+    companyName?: string;
+  };
+}
 
 // supports a query parameter to find a specific company.
 // example: /chat/find?companyName=absolute

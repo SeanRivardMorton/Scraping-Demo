@@ -7,6 +7,7 @@ import {
 import * as cheerio from "cheerio";
 import * as fs from "fs";
 import * as path from "path";
+import { crawler } from "./crawler";
 
 export const readFile = async (filePath: string) => {
   try {
@@ -62,6 +63,9 @@ export const parseHTML = async (html: string, fileName: string) => {
   const hasSalesForce = containsKeywords(html, SALESFORCE_EMBED_KEYWORD);
   // some companies don't have a title tag, so we'll use the file name instead.
   const companyName = getMetaData(html).companyName || fileName.split(".")[0];
+
+  const crawled = await crawler("https://syndigo.com/");
+  console.log(crawled);
 
   // depending on interpretation of the requirements, this might not be needed.
   const chatProvider =
