@@ -11,11 +11,17 @@
   "author": "Momentum",
   "license": "ISC",
   "dependencies": {
+    "@extra/humanize": "^4.2.1-next.613",
     "body-parser": "^1.20.2",
     "cheerio": "^1.0.0-rc.12",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "ghost-cursor": "^1.1.19",
     "puppeteer": "^21.5.2",
+    "puppeteer-autoscroll-down": "^2.0.0",
+    "puppeteer-cmp-clicker": "^1.0.3",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
